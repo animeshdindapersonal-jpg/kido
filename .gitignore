@@ -31,5 +31,7 @@ credentials/
 _test_out/
 tmp_kido_*/
 dist/
+_dist/
+_build/
 kido.spec
 nul
