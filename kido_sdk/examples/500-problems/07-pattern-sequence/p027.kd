@@ -1,0 +1,11 @@
+# p027: Binary pattern (0, 1, 0, 1... up to 10)
+print "Binary pattern (10 terms):"
+remember bit = 0
+repeat 10 times as i
+    print bit
+    if bit is 0
+        remember bit = 1
+    else
+        remember bit = 0
+
+

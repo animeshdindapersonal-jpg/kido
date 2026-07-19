@@ -1,0 +1,7 @@
+# Life: Morning routine
+list steps = "wake" "dress" "eat" "brush" "pack"
+print "Morning routine:"
+repeat length steps times as i
+    print i "." steps at i
+
+

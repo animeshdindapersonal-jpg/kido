@@ -1,0 +1,63 @@
+# 30. 2048 Game - Row Merge Logic
+fun merge_row row
+    # Remove zeros
+    list non_zero
+    remember row_len = length row
+    remember i = 1
+    repeat forever
+        if i bigger row_len
+            stop
+        remember val = row at i
+        if not val is 0
+            add non_zero val
+        remember i = i + 1
+    
+    # Merge adjacent same values
+    list merged
+    remember score = 0
+    remember i = 1
+    remember nz_len = length non_zero
+    repeat forever
+        if i bigger nz_len
+            stop
+        remember i1 = i + 1
+        if i1 smaller or same nz_len
+            remember val_i = non_zero at i
+            remember val_i1 = non_zero at i1
+            if val_i is val_i1
+                remember new_val = val_i * 2
+                add merged new_val
+                remember score = score + new_val
+                remember i = i + 2
+            else
+                add merged non_zero at i
+                remember i = i + 1
+        else
+            add merged non_zero at i
+            remember i = i + 1
+    
+    # Pad with zeros
+    remember merged_len = length merged
+    repeat forever
+        if merged_len bigger or same 4
+            stop
+        add merged 0
+        remember merged_len = merged_len + 1
+    
+    return merged
+
+print "=== 2048 Row Merge ==="
+list row1 = 2 2 0 0
+list row2 = 2 2 2 2
+list row3 = 4 0 0 4
+list row4 = 2 4 2 4
+
+remember m1 = merge_row row1
+remember m2 = merge_row row2
+remember m3 = merge_row row3
+remember m4 = merge_row row4
+
+print row1 "->" m1
+print row2 "->" m2
+print row3 "->" m3
+print row4 "->" m4

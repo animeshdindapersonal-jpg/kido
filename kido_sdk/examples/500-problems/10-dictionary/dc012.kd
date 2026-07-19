@@ -1,0 +1,25 @@
+# dc012: Daily Schedule
+# Map times to activities throughout the day
+
+dict schedule = {
+    "8:00 AM": "Wake up",
+    "9:00 AM": "School starts",
+    "12:00 PM": "Lunch",
+    "3:00 PM": "Play time",
+    "7:00 PM": "Dinner",
+    "9:00 PM": "Bedtime"
+}
+
+print "=== DAILY SCHEDULE ==="
+print ""
+
+remember times = keys schedule
+repeat length times times as i
+    remember t = times at i
+    print t "->" schedule at t
+print ""
+
+print "Number of activities:" length times
+
+
+

@@ -1,0 +1,25 @@
+# s006: Story - The Lost Puppy
+# A simple story with choices
+
+print "=== THE LOST PUPPY ==="
+print ""
+
+remember choice = 1
+
+print "One day, a little puppy wandered into the park."
+print "He was lost and looked very sad."
+print "A girl named Lily found him."
+print ""
+
+if choice is 1
+    print "Lily decided to help the puppy find his home."
+    print "She checked the tag on his collar."
+    print "The puppy's name was Max and he lived on Oak Street."
+    print "Lily walked Max all the way home."
+    print "Max's owner was so happy and gave Lily a big thank you!"
+
+print ""
+print "THE END - Max was safe thanks to Lily!"
+
+
+

@@ -1,0 +1,20 @@
+# s012: Joke Generator
+# Random joke from list of setup and punchline
+
+print "=== JOKE GENERATOR ==="
+print ""
+
+list setups = "Why did the chicken cross the road?" "What do you a bear with no teeth?" "Why did the banana go to the doctor?" "What do you a sleeping dinosaur?" "Why did the math book look so sad?"
+list punchlines = "To get to the other side!" "A gummy bear!" "Because it was not peeling well!" "A dino-snore!" "Because it had too many problems!"
+
+remember idx = random 1 length setups
+
+print "Here is a joke for you!"
+print ""
+print setups at idx
+print punchlines at idx
+print ""
+print "Ba dum tss!"
+
+
+

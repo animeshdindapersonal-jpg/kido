@@ -1,0 +1,20 @@
+  # Favorite animals list
+  # Real-world use: personal preferences list
+list animals
+add animals "dog"
+add animals "cat"
+add animals "elephant"
+add animals "dolphin"
+add animals "eagle"
+add animals "horse"
+print "=== FAVORITE ANIMALS ==="
+print animals
+print ""
+print "My top favorite:"
+print animals at 1
+print ""
+if has animals "dolphin"
+  print "Dolphins are in my favorites!"
+
+
+

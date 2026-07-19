@@ -1,0 +1,8 @@
+remember str = "the quick brown fox"
+remember word = "brown"
+remember pos = find str word
+print "Sentence: " str
+print "Word '" word "' found at position: " pos
+
+
+

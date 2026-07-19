@@ -1,0 +1,34 @@
+# d030: Recycling Sorter
+# Plastic/Paper/Glass/Metal categories
+
+fun sort_recycling item
+    list plastic_items = "bottle" "bag" "container" "toy"
+    list paper_items = "newspaper" "magazine" "cardboard" "book"
+    list glass_items = "jar" "bottle" "mirror" "window"
+    list metal_items = "can" "foil" "tool" "coin"
+
+    if plastic_items has item
+        return "PLASTIC - Put in the plastic recycling bin"
+
+    if paper_items has item
+        return "PAPER - Put in the paper recycling bin"
+
+    if glass_items has item
+        return "GLASS - Put in the glass recycling bin"
+
+    if metal_items has item
+        return "METAL - Put in the metal recycling bin"
+
+    return "UNKNOWN - Check with your local recycling center"
+
+print "=== RECYCLING SORTER ==="
+print ""
+
+list items_to_sort = "newspaper" "bottle" "can" "jar" "cardboard" "foil" "toy" "food"
+
+repeat length items_to_sort times as i
+    remember item = items_to_sort at i
+    print "Item:" item "->" sort_recycling item
+
+
+

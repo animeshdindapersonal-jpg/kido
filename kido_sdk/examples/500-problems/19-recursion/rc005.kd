@@ -1,0 +1,9 @@
+# Recursion: Power
+fun power b e
+    if e is 0
+        return 1
+    else
+        return b * power(b, e - 1)
+print "2^10 =" power(2, 10)
+
+

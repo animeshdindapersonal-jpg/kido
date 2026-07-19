@@ -1,0 +1,9 @@
+# Kilograms to pounds: Convert your pet's weight
+remember kg = 25
+remember pounds = kg * 2.20462
+print "Your dog weighs " kg " kilograms."
+print "That is " pounds " pounds!"
+remember rounded = round pounds
+print "About " rounded " pounds."
+
+

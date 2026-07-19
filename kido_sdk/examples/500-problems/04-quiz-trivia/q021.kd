@@ -1,0 +1,63 @@
+# q021: Flag Quiz
+# Describe a flag, kid guesses the country
+
+print "=== Flag Quiz ==="
+print "I'll describe a flag, you guess the country!"
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: This flag has red and white stripes and 50 white stars on blue."
+ask "Which country: " answer
+
+if answer is "USA" or answer is "United States" or answer is "America" or answer is "united states"
+    print "Correct! The USA flag has stars and stripes."
+    remember score = score + 1
+else
+    print "That's the flag of the United States of America."
+
+print ""
+print "Question 2: This flag is a red circle on a white background."
+ask "Which country: " answer2
+
+if answer2 is "Japan" or answer2 is "japan"
+    print "Correct! That's the Japanese flag."
+    remember score = score + 1
+else
+    print "That's the flag of Japan."
+
+print ""
+print "Question 3: This flag has three vertical stripes: green, white, and orange."
+ask "Which country: " answer3
+
+if answer3 is "Ireland" or answer3 is "ireland"
+    print "Correct! That's the Irish flag."
+    remember score = score + 1
+else
+    print "That's the flag of Ireland."
+
+print ""
+print "Question 4: This flag is a green rectangle with a crescent and star."
+ask "Which country: " answer4
+
+if answer4 is "Pakistan" or answer4 is "pakistan"
+    print "Correct! That's the Pakistani flag."
+    remember score = score + 1
+else
+    print "That's the flag of Pakistan."
+
+print ""
+print "Question 5: This flag has a red maple leaf in the middle."
+ask "Which country: " answer5
+
+if answer5 is "Canada" or answer5 is "canada"
+    print "Correct! That's the Canadian flag!"
+    remember score = score + 1
+else
+    print "That's the flag of Canada."
+
+print ""
+print "Flag Quiz Score: " score "/" total
+
+
+

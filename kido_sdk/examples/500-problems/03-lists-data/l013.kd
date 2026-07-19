@@ -1,0 +1,22 @@
+  # Sports team lineup
+  # Real-world use: coach organizing team positions
+list team
+add team "Goalkeeper: Mike"
+add team "Defender: John"
+add team "Defender: Sara"
+add team "Midfielder: Tom"
+add team "Forward: Lisa"
+add team "Forward: Alex"
+print "=== TEAM LINEUP ==="
+print team
+print ""
+print "Starting lineup:"
+print "1. "
+print team at 1
+print "2. "
+print team at 2
+print "3. "
+print team at 3
+
+
+

@@ -1,0 +1,6 @@
+# Time: Age in months
+remember years = 10
+remember months = years * 12
+print "Age" years "years =" months "months old"
+
+

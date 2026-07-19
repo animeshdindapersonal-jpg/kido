@@ -1,0 +1,47 @@
+# Hide and seek simulator
+print "=== HIDE AND SEEK ==="
+print ""
+list seekers = "Alex" "Jordan"
+list hiders = "Sam" "Taylor" "Morgan"
+list spots = "Behind the curtain" "Under the bed" "In the closet" "Behind the tree" "Under the table"
+
+print "Let's play Hide and Seek!"
+print ""
+
+remember idx = 1
+repeat length hiders times
+    print hiders idx " hides..."
+    remember spot = random spots
+    print "  " hiders idx " hides " spot
+    remember idx = idx + 1
+
+print ""
+print "--- Seeking ---"
+remember sIdx = 1
+repeat length seekers times
+    print seekers sIdx " starts counting: 10, 9, 8..."
+    print seekers sIdx " is looking!"
+    remember hIdx = 1
+    repeat length hiders times
+        remember found = random 1 2
+        if found is 1
+            print "  Found " hiders hIdx "!"
+            remove hiders hIdx
+            if empty hiders
+                print ""
+                print "All hiders found!"
+                stop
+        else
+            print "  Can't find " hiders hIdx " yet!"
+        remember hIdx = hIdx + 1
+    print ""
+    remember sIdx = sIdx + 1
+
+if not empty hiders
+    print "Remaining hiders: " hiders
+    print "They win! Great hiding spots!"
+else
+    print "Seekers win! Everyone was found!"
+
+
+

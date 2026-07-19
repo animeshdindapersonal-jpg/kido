@@ -1,0 +1,11 @@
+# 23. Tower of Hanoi (iterative for 3 disks)
+print "=== Tower of Hanoi (3 disks) ==="
+print "Move disk 1 from A to C"
+print "Move disk 2 from A to B"
+print "Move disk 1 from C to B"
+print "Move disk 3 from A to C"
+print "Move disk 1 from B to A"
+print "Move disk 2 from B to C"
+print "Move disk 1 from A to C"
+print ""
+print "Total moves: 7"

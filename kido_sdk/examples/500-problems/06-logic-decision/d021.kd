@@ -1,0 +1,40 @@
+# d021: Can I Watch TV?
+# Homework done AND time smaller 8pm
+
+fun can_watch_tv homework_done current_hour
+    if homework_done is yes and current_hour smaller 20
+        return yes
+    return no
+
+print "=== CAN I WATCH TV? ==="
+print ""
+
+print "Homework done? yes, Current time: 6pm"
+if can_watch_tv yes 18 is yes
+    print "  YES! You can watch TV."
+else
+    print "  NO, you cannot watch TV."
+print ""
+
+print "Homework done? no, Current time: 6pm"
+if can_watch_tv no 18 is yes
+    print "  YES! You can watch TV."
+else
+    print "  NO, you cannot watch TV. Finish your homework first!"
+print ""
+
+print "Homework done? yes, Current time: 9pm"
+if can_watch_tv yes 21 is yes
+    print "  YES! You can watch TV."
+else
+    print "  NO, you cannot watch TV. It's past 8pm!"
+print ""
+
+print "Homework done? no, Current time: 9pm"
+if can_watch_tv no 21 is yes
+    print "  YES! You can watch TV."
+else
+    print "  NO, you cannot watch TV. Too late and homework not done!"
+
+
+

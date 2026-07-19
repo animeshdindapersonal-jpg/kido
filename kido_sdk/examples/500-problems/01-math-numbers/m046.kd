@@ -1,0 +1,10 @@
+# Multiples of a number: Find multiples up to a limit
+remember num = 7
+remember limit = 50
+remember multiple = num
+print "Multiples of " num " up to " limit ":"
+while multiple smaller or same limit
+  print multiple
+  multiple = multiple + num
+
+

@@ -1,0 +1,29 @@
+# Stats: Dice rolls
+remember ones = 0
+remember twos = 0
+remember threes = 0
+remember fours = 0
+remember fives = 0
+remember sixes = 0
+repeat 60 times as i
+    remember roll = random 1 6
+    if roll is 1
+        remember ones = ones + 1
+    else
+        if roll is 2
+        remember twos = twos + 1
+    else
+        if roll is 3
+        remember threes = threes + 1
+    else
+        if roll is 4
+        remember fours = fours + 1
+    else
+        if roll is 5
+        remember fives = fives + 1
+    else
+        remember sixes = sixes + 1
+print "Dice roll distribution:"
+print "1:" ones "2:" twos "3:" threes
+
+

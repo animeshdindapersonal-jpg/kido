@@ -1,0 +1,19 @@
+# Magic 8-ball
+print "=== MAGIC 8-BALL ==="
+print ""
+list answers = "It is certain" "Reply hazy try again" "Don't count on it" "Yes definitely" "Ask again later" "Very doubtful" "Outlook good" "Cannot predict now"
+list questions = "Will I win the game?" "Is it going to rain?" "Should I take a nap?" "Will I be rich?"
+
+print "Ask the Magic 8-Ball a question..."
+print ""
+
+repeat length questions times as i
+    remember answer = random answers
+    print "Q: " questions i
+    print "A: " answer
+    print ""
+
+print "=== The 8-Ball has spoken! ==="
+
+
+

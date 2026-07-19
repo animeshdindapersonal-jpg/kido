@@ -1,0 +1,24 @@
+  # Name organizer - sort first names alphabetically
+  # Real-world use: class attendance list
+list names
+add names "Zara"
+add names "Mike"
+add names "Anna"
+add names "Tom"
+add names "Beth"
+add names "Chris"
+print "=== NAME ORGANIZER ==="
+print "Before sorting:"
+print names
+print ""
+sort names
+print "After sorting (A-Z):"
+print names
+print ""
+print "First in line:"
+print names at 1
+print "Last in line:"
+print names at 6
+
+
+

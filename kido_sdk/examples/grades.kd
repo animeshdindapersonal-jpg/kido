@@ -1,0 +1,37 @@
+# Student Grades Analyzer
+
+list names = "Alice" "Bob" "Charlie" "Diana" "Eve"
+list grades = 85 92 78 95 88
+
+print "=== CLASS GRADES ==="
+print ""
+
+repeat length names times as i
+    print names at i ":" grades at i
+
+print ""
+
+# Find highest
+remember highest = 0
+remember top_student = ""
+repeat length grades times as i
+    if grades at i bigger highest
+        remember highest = grades at i
+        remember top_student = names at i
+
+print "Top student:" top_student "with" highest "points!"
+
+# Average
+remember total = 0
+repeat length grades times as i
+    remember total = total + grades at i
+remember avg = total / length grades
+print "Class average:" avg
+
+# Count above 80
+remember passed = 0
+repeat length grades times as i
+    if grades at i bigger 80
+        remember passed = passed + 1
+
+print "Students above 80:" passed "out of" length grades

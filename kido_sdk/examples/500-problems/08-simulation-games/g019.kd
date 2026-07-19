@@ -1,0 +1,61 @@
+# Simple blackjack
+print "=== SIMPLE BLACKJACK ==="
+print ""
+list player
+list dealer
+
+remember card1 = random 2 11
+remember card2 = random 2 11
+add player card1
+add player card2
+
+remember dcard1 = random 2 11
+remember dcard2 = random 2 11
+add dealer dcard1
+add dealer dcard2
+
+remember pTotal = card1 + card2
+remember dTotal = dcard1 + dcard2
+
+print "Your cards: " player " (total: " pTotal ")"
+print "Dealer shows: " dcard1
+print ""
+
+remember wantHit = random 1 2
+if wantHit is 1 and pTotal smaller 21
+    remember hit = random 2 11
+    add player hit
+    remember pTotal = pTotal + hit
+    print "You hit and got " hit " (total: " pTotal ")"
+
+print ""
+print "Dealer's turn..."
+print "Dealer's cards: " dealer " (total: " dTotal ")"
+repeat forever
+    if dTotal smaller 17
+        remember hit = random 2 11
+        add dealer hit
+        remember dTotal = dTotal + hit
+        print "Dealer hits: " hit " (total: " dTotal ")"
+    else
+        stop
+
+print ""
+print "=== RESULT ==="
+print "Your hand: " pTotal " | Dealer hand: " dTotal
+if pTotal bigger 21
+    print "BUST! You lose!"
+else
+  if dTotal bigger 21
+    print "Dealer busts! YOU WIN!"
+else
+  if pTotal bigger dTotal
+    print "YOU WIN!"
+else
+  if pTotal is dTotal
+    print "Push!"
+else
+    print "Dealer wins!"
+
+
+

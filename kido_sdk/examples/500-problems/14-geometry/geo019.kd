@@ -1,0 +1,8 @@
+# Geometry: Volume of a cylinder
+remember r = 3
+remember h = 5
+const pi = 3.14159
+remember vol = pi * r * r * h
+print "Cylinder volume =" vol
+
+

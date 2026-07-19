@@ -1,0 +1,11 @@
+remember str = "Hello, world! How are you?"
+remember clean = str
+list marks = "," "." "!" "?" ";" ":"
+repeat length marks times as i
+  remember p = marks at i
+  remember clean = replace clean p ""
+print "Original: " str
+print "Clean: " clean
+
+
+

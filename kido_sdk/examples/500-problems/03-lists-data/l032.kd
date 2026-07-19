@@ -1,0 +1,32 @@
+  # Find differences between two lists
+  # Real-world use: compare inventory vs shopping list
+list listA
+add listA "red"
+add listA "blue"
+add listA "green"
+add listA "yellow"
+list listB
+add listB "blue"
+add listB "yellow"
+add listB "purple"
+list onlyA
+list onlyB
+print "=== DIFFERENCES ==="
+print "List A:"
+print listA
+print "List B:"
+print listB
+print ""
+repeat 4 times as i
+  if not has listB listA at i
+    add onlyA listA at i
+repeat 3 times as i
+  if not has listA listB at i
+    add onlyB listB at i
+print "Only in A:"
+print onlyA
+print "Only in B:"
+print onlyB
+
+
+

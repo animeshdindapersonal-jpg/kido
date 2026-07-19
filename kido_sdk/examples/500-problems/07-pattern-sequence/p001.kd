@@ -1,0 +1,6 @@
+# p001: Count from 1 to 10
+print "Numbers 1 to 10:"
+repeat 10 times as i
+    print i
+
+

@@ -1,0 +1,18 @@
+# Test score percentage: Calculate score as a percentage
+remember score = 42
+remember total = 50
+remember percent = score / total * 100
+print "You scored " score " out of " total
+print "That is " percent "%"
+if percent bigger or same 90
+  print "Amazing! You got an A!"
+else
+  if percent bigger or same 80
+  print "Great job! You got a B!"
+else
+  if percent bigger or same 70
+  print "Good work! You got a C!"
+else
+  print "Keep practicing!"
+
+

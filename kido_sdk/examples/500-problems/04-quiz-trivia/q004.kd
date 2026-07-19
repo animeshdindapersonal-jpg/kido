@@ -1,0 +1,36 @@
+# q004: Addition Quiz
+# Random addition problems for kids
+
+print "=== Addition Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+repeat total times
+    remember a = random 10 99
+    remember b = random 10 99
+    remember correct = a + b
+
+    print "What is " a " + " b "?"
+    ask "Your answer: " answer
+    remember numAns = as number answer
+
+    if numAns is correct
+        print "Right! " a " + " b " = " correct
+        remember score = score + 1
+    else
+        print "Not quite. " a " + " b " = " correct
+    print ""
+
+print "Score: " score "/" total
+
+if score is total
+    print "Addition champion!"
+else
+  if score bigger 3
+    print "Nice adding!"
+else
+    print "Keep practicing addition."
+
+
+

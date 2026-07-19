@@ -1,0 +1,28 @@
+  # Top 3 items from a sorted list
+  # Real-world use: show highest scores or best sellers
+list scores
+add scores 45
+add scores 78
+add scores 23
+add scores 92
+add scores 56
+add scores 67
+print "=== TOP 3 SCORES ==="
+print "All scores:"
+print scores
+print ""
+sort scores
+reverse scores
+print "Sorted (highest first):"
+print scores
+print ""
+print "TOP 3:"
+print "1st: "
+print scores at 1
+print "2nd: "
+print scores at 2
+print "3rd: "
+print scores at 3
+
+
+

@@ -1,0 +1,55 @@
+# 47. 0/1 Knapsack Problem (Greedy approximation)
+list item_names = "Laptop" "Phone" "Book" "Camera" "Watch"
+list item_values = 500 300 50 400 200
+list item_weights = 5 2 1 3 1
+remember capacity = 8
+
+fun value_per_weight idx
+    remember val = item_values at idx
+    remember wt = item_weights at idx
+    return val / wt
+
+print "=== Knapsack Problem ==="
+print "Capacity:" capacity "kg"
+print ""
+print "Items:"
+repeat length item_names times as i
+    remember vpw = value_per_weight i
+    print " " item_names at i ": Value=" item_values at i "Weight=" item_weights at i "kg V/W=" vpw
+
+print ""
+print "Greedy selection (by value/weight):"
+remember total_value = 0
+remember total_weight = 0
+list selected
+
+# Simple greedy: pick highest V/W that fits
+repeat length item_names times
+    remember best_idx = 0
+    remember best_vpw = 0
+    remember i = 1
+    repeat forever
+        if i bigger length item_names
+            stop
+        if not has selected i
+            remember vpw = value_per_weight i
+            remember wt = item_weights at i
+            remember new_weight = total_weight + wt
+            if vpw bigger best_vpw and new_weight smaller or same capacity
+                remember best_vpw = vpw
+                remember best_idx = i
+        remember i = i + 1
+    
+    if best_idx is 0
+        stop
+    
+    add selected best_idx
+    remember val = item_values at best_idx
+    remember wt = item_weights at best_idx
+    remember total_value = total_value + val
+    remember total_weight = total_weight + wt
+    print " Take:" item_names at best_idx "(+" val "value, +" wt "kg)"
+
+print ""
+print "Total value:" total_value
+print "Total weight:" total_weight "/" capacity "kg"

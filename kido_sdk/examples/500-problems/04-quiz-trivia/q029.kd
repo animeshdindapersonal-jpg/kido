@@ -1,0 +1,77 @@
+# q029: Math Speed Round
+# 5 quick math questions - try to answer fast!
+
+print "=== Math Speed Round ==="
+print "Answer these 5 questions as fast as you can!"
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: 15 + 27 = ?"
+ask "Answer: " answer
+
+remember num1 = as number answer
+if num1 is 42
+    print "Fast thinking! 15+27=42"
+    remember score = score + 1
+else
+    print "15 + 27 = 42"
+print ""
+
+print "Question 2: 100 - 37 = ?"
+ask "Answer: " answer2
+
+remember num2 = as number answer2
+if num2 is 63
+    print "Yes! 100-37=63"
+    remember score = score + 1
+else
+    print "100 - 37 = 63"
+print ""
+
+print "Question 3: 8 x 7 = ?"
+ask "Answer: " answer3
+
+remember num3 = as number answer3
+if num3 is 56
+    print "Correct! 8x7=56"
+    remember score = score + 1
+else
+    print "8 x 7 = 56"
+print ""
+
+print "Question 4: 144 / 12 = ?"
+ask "Answer: " answer4
+
+remember num4 = as number answer4
+if num4 is 12
+    print "Right! 144/12=12"
+    remember score = score + 1
+else
+    print "144 / 12 = 12"
+print ""
+
+print "Question 5: 25 + 36 + 14 = ?"
+ask "Answer: " answer5
+
+remember num5 = as number answer5
+if num5 is 75
+    print "Awesome! 25+36+14=75"
+    remember score = score + 1
+else
+    print "25 + 36 + 14 = 75"
+print ""
+
+print "Speed Round Complete!"
+print "Score: " score "/" total
+
+if score is total
+    print "Lightning fast and correct!"
+else
+  if score bigger 2
+    print "Pretty speedy!"
+else
+    print "Practice makes you faster!"
+
+
+

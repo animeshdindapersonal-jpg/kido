@@ -1,0 +1,10 @@
+remember str = "hello world"
+remember target = "l"
+remember count = 0
+repeat length str times as i
+  if (str at i) is target
+    remember count = count + 1
+print "Char '" target "' appears " count " times"
+
+
+

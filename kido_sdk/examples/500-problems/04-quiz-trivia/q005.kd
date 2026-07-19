@@ -1,0 +1,36 @@
+# q005: Subtraction Quiz
+# Random subtraction problems
+
+print "=== Subtraction Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+repeat total times
+    remember a = random 20 99
+    remember b = random 1 a
+    remember correct = a - b
+
+    print "What is " a " - " b "?"
+    ask "Your answer: " answer
+    remember numAns = as number answer
+
+    if numAns is correct
+        print "Correct! " a " - " b " = " correct
+        remember score = score + 1
+    else
+        print "The answer is " correct
+    print ""
+
+print "Final Score: " score "/" total
+
+if score is total
+    print "Subtraction star!"
+else
+  if score bigger 2
+    print "Good subtracting!"
+else
+    print "Practice makes perfect!"
+
+
+

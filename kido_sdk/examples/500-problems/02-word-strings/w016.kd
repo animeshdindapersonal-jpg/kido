@@ -1,0 +1,12 @@
+remember name = "John"
+remember len = length name
+remember rev = ""
+repeat len times as i
+  remember idx = len - i + 1
+  remember ch = name at idx
+  remember rev = rev + ch
+print "Name: " name
+print "Reversed: " rev
+
+
+

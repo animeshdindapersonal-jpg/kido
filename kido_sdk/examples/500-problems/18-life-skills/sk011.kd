@@ -1,0 +1,10 @@
+# Life: Party budget
+remember budget = 50
+remember cake = 15
+remember ballon = 5
+remember gifts = 25
+remember total = cake + ballon + gifts
+print "Party: $" total "of $" budget "budget"
+print "Left: $" budget - total
+
+

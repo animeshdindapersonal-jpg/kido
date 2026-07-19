@@ -1,0 +1,8 @@
+# Age in days: Calculate how many days you have lived
+remember years = 10
+remember days = years * 365
+print "If you are " years " years old..."
+print "You have lived about " days " days!"
+print "That is over " (days * 24) " hours!"
+
+

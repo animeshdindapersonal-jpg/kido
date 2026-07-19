@@ -1,0 +1,44 @@
+# 50. Monte Carlo Pi Estimation
+print "=== Monte Carlo Pi Estimation ==="
+print "Estimating Pi using random points in a unit square"
+print ""
+
+remember total_points = 1000
+remember inside_circle = 0
+
+repeat total_points times as i
+    # Generate random point (0-1000, scale to 0-1)
+    remember rx = random 1 1000
+    remember ry = random 1 1000
+    
+    # Check if inside unit circle (x² + y² <= 1000²)
+    remember dist_sq = rx * rx + ry * ry
+    if dist_sq smaller or same 1000000
+        remember inside_circle = inside_circle + 1
+
+# Pi ≈ 4 * (inside / total)
+remember pi_estimate = 4 * inside_circle / total_points
+
+print "Total points:" total_points
+print "Inside circle:" inside_circle
+print "Pi estimate:" pi_estimate
+print "Actual Pi:    3.14159..."
+print ""
+
+# Run multiple trials for better estimate
+list estimates
+repeat 5 times as trial
+    remember inside = 0
+    repeat 500 times
+        remember rx = random 1 1000
+        remember ry = random 1 1000
+        remember dist_sq = rx * rx + ry * ry
+        if dist_sq smaller or same 1000000
+            remember inside = inside + 1
+    remember est = 4 * inside / 500
+    add estimates est
+    print "Trial" trial ": Pi ≈" est
+
+print ""
+remember avg_pi = average estimates
+print "Average of 5 trials:" avg_pi

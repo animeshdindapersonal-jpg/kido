@@ -1,0 +1,30 @@
+# Treasure hunt
+print "=== TREASURE HUNT ==="
+print ""
+list rooms = "Kitchen" "Library" "Garden" "Cellar" "Tower" "Courtyard"
+list treasures = "Gold Coin" "Ruby Ring" "Ancient Vase" "Silver Crown" "Magic Scroll" "Emerald Necklace"
+list found
+remember moves = 4
+
+print "Search " moves " rooms for treasure!"
+print ""
+
+repeat moves times as i
+    remember room = random rooms
+    remember treasure = random treasures
+    print "Room " i ": " room
+    print "You search and find: " treasure
+    add found treasure
+    print ""
+
+print "=== TREASURES FOUND ==="
+remember idx = 1
+repeat length found times
+    print found idx
+    remember idx = idx + 1
+print ""
+print "Total items: " length found
+print "Great adventure!"
+
+
+

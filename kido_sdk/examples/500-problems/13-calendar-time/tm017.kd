@@ -1,0 +1,6 @@
+# Time: Minutes in a day
+remember mins = 24 * 60
+print "Day has" mins "minutes"
+print "Week has" mins * 7 "minutes"
+
+

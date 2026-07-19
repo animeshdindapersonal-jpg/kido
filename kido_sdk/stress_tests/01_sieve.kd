@@ -1,0 +1,32 @@
+# 1. Sieve of Eratosthenes
+remember limit = 50
+list is_prime
+repeat limit times as i
+    add is_prime yes
+replace is_prime at 1 with no
+replace is_prime at 2 with no
+
+remember p = 2
+repeat forever
+    remember p2 = p * p
+    if p2 bigger limit
+        stop
+    if is_prime at p is yes
+        remember mult = p * p
+        repeat forever
+            if mult bigger limit
+                stop
+            replace is_prime at mult with no
+            remember mult = mult + p
+    remember p = p + 1
+
+list primes
+repeat limit times as i
+    if is_prime at i is yes
+        add primes i
+
+print "=== Sieve of Eratosthenes ==="
+print "Primes up to" limit ":"
+print primes
+remember cnt = length primes
+print "Total:" cnt

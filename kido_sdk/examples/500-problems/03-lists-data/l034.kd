@@ -1,0 +1,27 @@
+  # List cycler - rotate items (first becomes last)
+  # Real-world use: round-robin scheduling
+list items
+add items "one"
+add items "two"
+add items "three"
+add items "four"
+add items "five"
+print "=== LIST CYCLER ==="
+print "Before rotation:"
+print items
+print ""
+remember first = items at 1
+remove items items at 1
+add items first
+print "After rotation (first became last):"
+print items
+print ""
+  # Rotate again
+remember first = items at 1
+remove items items at 1
+add items first
+print "After second rotation:"
+print items
+
+
+

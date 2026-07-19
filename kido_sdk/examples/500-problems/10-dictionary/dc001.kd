@@ -1,0 +1,32 @@
+# dc001: Student Grade Book
+# Store grades for a student and compute the average
+
+dict grades = {
+    "math": 95,
+    "science": 88,
+    "english": 92,
+    "history": 78,
+    "art": 100
+}
+
+print "=== STUDENT GRADE BOOK ==="
+print ""
+print "Math:" grades at "math"
+print "Science:" grades at "science"
+print "English:" grades at "english"
+print "History:" grades at "history"
+print "Art:" grades at "art"
+print ""
+
+remember sum = (grades at "math") + (grades at "science") + (grades at "english") + (grades at "history") + (grades at "art")
+remember avg = sum / 5
+print "Total:" sum
+print "Average:" avg
+
+if avg bigger 90
+    print "Excellent work!"
+else
+    print "Keep studying!"
+
+
+

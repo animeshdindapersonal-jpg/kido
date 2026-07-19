@@ -1,0 +1,10 @@
+# File I/O: Save and display high score
+remember score = 95
+write "High Score: " score to "scores.txt"
+remember saved = read "scores.txt"
+print "Game Over!"
+print "Your score:" score
+print ""
+print "Saved: " saved
+
+

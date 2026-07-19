@@ -1,0 +1,23 @@
+# s005: Mad Libs - Space Adventure
+# Fill in a planet, alien name, and vehicle
+
+print "=== MAD LIBS: SPACE ADVENTURE ==="
+print ""
+
+remember planet = "Zorbon"
+remember alienName = "Blip"
+remember vehicle = "rocket ship"
+
+print "Space Adventure!"
+print ""
+print "I boarded my " vehicle " and zoomed toward the planet " planet "."
+print "When I landed, a friendly alien named " alienName " waved at me."
+print alienName " had never seen a " vehicle " before."
+print "I showed " alienName " how my " vehicle " flies through space."
+print "Then " alienName " took me to see the caves of " planet "."
+print "We became best friends across the galaxy!"
+print ""
+print "THE END"
+
+
+

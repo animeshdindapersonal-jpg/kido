@@ -1,0 +1,40 @@
+# 44. Priority Queue (Min-Heap simulation)
+list pq_values
+list pq_priorities
+
+fun pq_enqueue value priority
+    add pq_values value
+    add pq_priorities priority
+
+fun pq_dequeue
+    if empty pq_values
+        return "EMPTY"
+    remember min_idx = 1
+    remember min_pri = pq_priorities at 1
+    remember pq_len = length pq_priorities
+    remember i = 2
+    repeat forever
+        if i bigger pq_len
+            stop
+        remember pri = pq_priorities at i
+        if pri smaller min_pri
+            remember min_pri = pri
+            remember min_idx = i
+        remember i = i + 1
+    remember val = pq_values at min_idx
+    remove pq_values at min_idx
+    remove pq_priorities at min_idx
+    return val
+
+print "=== Priority Queue ==="
+pq_enqueue "Low task" 3
+pq_enqueue "High task" 1
+pq_enqueue "Medium task" 2
+pq_enqueue "Critical task" 0
+pq_enqueue "Normal task" 2
+
+print "Enqueued 5 tasks with priorities"
+print "Dequeue order (lowest priority first):"
+repeat 5 times as i
+    remember task = pq_dequeue
+    print " " i "." task

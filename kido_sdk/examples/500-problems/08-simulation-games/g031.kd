@@ -1,0 +1,40 @@
+# ATM simulator
+print "=== ATM SIMULATOR ==="
+print ""
+remember pin = "1234"
+remember balance = 1000
+remember attempts = 3
+
+print "Welcome to KIDO Bank ATM"
+print "PIN required"
+print ""
+
+remember tryPin = "1234"
+if tryPin is pin
+    print "PIN accepted!"
+    print ""
+    repeat 4 times as i
+        print "--- Transaction " i " ---"
+        remember choice = random 1 3
+        if choice is 1
+            print "BALANCE: $" balance
+        else
+          if choice is 2
+            remember amount = random 50 200
+            if amount smaller or same balance
+                remember balance = balance - amount
+                print "WITHDRAW $" amount ". New balance: $" balance
+            else
+                print "Insufficient funds! Requested $" amount " but have $" balance
+        else
+            remember amount = random 50 300
+            remember balance = balance + amount
+            print "DEPOSIT $" amount ". New balance: $" balance
+        print ""
+    print "=== SESSION ENDED ==="
+    print "Final balance: $" balance
+else
+    print "Wrong PIN! Access denied."
+
+
+

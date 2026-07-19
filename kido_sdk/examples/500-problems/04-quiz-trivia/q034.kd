@@ -1,0 +1,67 @@
+# q034: Measurement Quiz
+# Questions about measurements
+
+print "=== Measurement Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: How many centimeters are in a meter?"
+ask "Your answer: " answer
+
+remember num1 = as number answer
+if num1 is 100
+    print "Correct! 1 meter = 100 centimeters."
+    remember score = score + 1
+else
+    print "1 meter = 100 centimeters."
+print ""
+
+print "Question 2: How many millimeters are in a centimeter?"
+ask "Your answer: " answer2
+
+remember num2 = as number answer2
+if num2 is 10
+    print "Correct! 1 centimeter = 10 millimeters."
+    remember score = score + 1
+else
+    print "1 centimeter = 10 millimeters."
+print ""
+
+print "Question 3: How many meters are in a kilometer?"
+ask "Your answer: " answer3
+
+remember num3 = as number answer3
+if num3 is 1000
+    print "Correct! 1 kilometer = 1000 meters."
+    remember score = score + 1
+else
+    print "1 kilometer = 1000 meters."
+print ""
+
+print "Question 4: How many ounces are in a cup?"
+ask "Your answer: " answer4
+
+remember num4 = as number answer4
+if num4 is 8
+    print "Correct! 1 cup = 8 ounces."
+    remember score = score + 1
+else
+    print "1 cup = 8 ounces."
+print ""
+
+print "Question 5: How many inches are in a foot?"
+ask "Your answer: " answer5
+
+remember num5 = as number answer5
+if num5 is 12
+    print "Correct! 1 foot = 12 inches."
+    remember score = score + 1
+else
+    print "1 foot = 12 inches."
+print ""
+
+print "Measurement Score: " score "/" total
+
+
+

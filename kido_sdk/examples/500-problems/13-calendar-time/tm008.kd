@@ -1,0 +1,9 @@
+# Calendar: After this month
+remember m = 7
+list months = "Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov" "Dec"
+if m smaller 12
+    print "After" months at m "comes" months at m + 1
+else
+    print "After December comes January"
+
+

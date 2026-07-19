@@ -1,0 +1,76 @@
+# q035: Mixed Topic Quiz Show
+# 5 questions from different topics
+
+print "=== Mixed Topic Quiz Show ==="
+print "Questions from different subjects!"
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1 (Science): What planet is closest to the Sun?"
+ask "Your answer: " answer
+
+if answer is "Mercury" or answer is "mercury"
+    print "Correct! Mercury is closest to the Sun."
+    remember score = score + 1
+else
+    print "Mercury is the closest planet to the Sun."
+print ""
+
+print "Question 2 (Math): What is 12 x 12?"
+ask "Your answer: " answer2
+
+remember num2 = as number answer2
+if num2 is 144
+    print "Correct! 12 x 12 = 144."
+    remember score = score + 1
+else
+    print "12 x 12 = 144."
+print ""
+
+print "Question 3 (Geography): What is the longest river in the world?"
+ask "Your answer: " answer3
+
+if answer3 is "Nile" or answer3 is "nile" or answer3 is "Amazon" or answer3 is "amazon"
+    print "Correct! The Nile River is the longest."
+    remember score = score + 1
+else
+    print "The Nile River is the longest in the world."
+print ""
+
+print "Question 4 (Animals): What is the fastest land animal?"
+ask "Your answer: " answer4
+
+if answer4 is "cheetah"
+    print "Correct! Cheetahs are the fastest land animals."
+    remember score = score + 1
+else
+    print "The cheetah is the fastest land animal."
+print ""
+
+print "Question 5 (History): Who was the first President of the United States?"
+ask "Your answer: " answer5
+
+if answer5 is "George Washington" or answer5 is "washington" or answer5 is "george washington"
+    print "Correct! George Washington was the first President."
+    remember score = score + 1
+else
+    print "George Washington was the first U.S. President."
+print ""
+
+print "=== Quiz Show Complete! ==="
+print "Final Score: " score "/" total
+
+if score is total
+    print "Perfect score! You're a quiz champion!"
+else
+  if score bigger 3
+    print "Great job across all topics!"
+else
+  if score bigger 1
+    print "Good effort! Keep learning!"
+else
+    print "Try again and learn some new facts!"
+
+
+

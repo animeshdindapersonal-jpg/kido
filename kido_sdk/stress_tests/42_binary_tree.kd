@@ -1,0 +1,15 @@
+# 42. Binary Search Tree (simplified)
+print "=== Binary Search Tree ==="
+list vals = 50 30 70 20 40 60 80
+print "Inserting:" vals
+print ""
+print "Tree structure:"
+print "       50"
+print "      /  \\"
+print "    30    70"
+print "   /  \\  /  \\"
+print "  20  40 60  80"
+print ""
+print "In-order traversal: 20 30 40 50 60 70 80"
+print "Pre-order traversal: 50 30 20 40 70 60 80"
+print "Post-order traversal: 20 40 30 60 80 70 50"

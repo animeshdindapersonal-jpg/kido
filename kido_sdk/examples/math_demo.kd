@@ -1,0 +1,40 @@
+# Math Functions Demo
+
+print "=== MATH DEMO ==="
+print ""
+
+print "Basic Math:"
+print "  5 + 3 =" 5 + 3
+print "  10 - 4 =" 10 - 4
+print "  6 * 7 =" 6 * 7
+print "  20 / 4 =" 20 / 4
+print "  2 to the power 10 =" 2 to the power 10
+print ""
+
+print "Math Functions:"
+print "  abs(-5) =" abs -5
+print "  round(3.7) =" round 3.7
+print "  floor(3.7) =" floor 3.7
+print "  ceil(3.7) =" ceil 3.7
+print "  sqrt(144) =" sqrt 144
+print ""
+
+list numbers = 5 12 8 23 7 15 3 19 11
+
+print "List:" numbers
+print "  min =" min numbers
+print "  max =" max numbers
+print "  sum =" sum numbers
+print "  average =" average numbers
+print ""
+
+remember pi_val = 3.14159
+remember e_val = 2.71828
+print "Constants:"
+print "  pi =" pi_val
+print "  e =" e_val
+print ""
+
+print "Random:"
+repeat 5 times as i
+    print "  Random 1-100:" random 1 100

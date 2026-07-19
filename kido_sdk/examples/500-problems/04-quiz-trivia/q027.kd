@@ -1,0 +1,62 @@
+# q027: Plant Quiz
+# Questions about plants and nature
+
+print "=== Plant Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: What do plants need to grow? (name 1 thing)"
+ask "Your answer: " answer
+
+if answer is "sunlight" or answer is "water" or answer is "soil" or answer is "air" or answer is "sun"
+    print "Correct! Plants need sunlight, water, soil, and air."
+    remember score = score + 1
+else
+    print "Plants need sunlight, water, soil, and air to grow."
+
+print ""
+print "Question 2: What is the green substance in leaves called?"
+ask "Your answer: " answer2
+
+if answer2 is "chlorophyll"
+    print "Correct! Chlorophyll makes leaves green."
+    remember score = score + 1
+else
+    print "Chlorophyll is the green substance in leaves."
+
+print ""
+print "Question 3: What part of the plant is underground?"
+ask "Your answer: " answer3
+
+if answer3 is "root" or answer3 is "roots"
+    print "Correct! Roots grow underground."
+    remember score = score + 1
+else
+    print "Roots are the underground part of plants."
+
+print ""
+print "Question 4: What do flowers become after they are pollinated?"
+ask "Your answer: " answer4
+
+if answer4 is "fruit" or answer4 is "seeds"
+    print "Correct! Flowers become fruits with seeds inside."
+    remember score = score + 1
+else
+    print "Flowers become fruits with seeds."
+
+print ""
+print "Question 5: What gas do plants give off?"
+ask "Your answer: " answer5
+
+if answer5 is "oxygen" or answer5 is "O2" or answer5 is "o2"
+    print "Correct! Plants give off oxygen."
+    remember score = score + 1
+else
+    print "Plants give off oxygen."
+
+print ""
+print "Plant Score: " score "/" total
+
+
+

@@ -1,0 +1,30 @@
+# dc011: Sports Team Stats
+# Track a sports team's wins, losses, and draws
+
+dict team = {
+    "name": "Tigers",
+    "wins": 12,
+    "losses": 5,
+    "draws": 3
+}
+
+print "=== TEAM STATS:" team at "name" "==="
+print ""
+print "Wins:" team at "wins"
+print "Losses:" team at "losses"
+print "Draws:" team at "draws"
+print ""
+
+remember total_games = (team at "wins") + (team at "losses") + (team at "draws")
+print "Total games played:" total_games
+
+remember win_pct = (team at "wins") * 100 / total_games
+print "Win percentage:" win_pct"%"
+
+if team at "wins" bigger team at "losses"
+    print team at "name" " have a winning record!"
+else
+    print team at "name" " need more practice"
+
+
+

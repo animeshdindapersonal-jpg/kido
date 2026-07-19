@@ -1,0 +1,22 @@
+  # Reverse a list and print
+  # Real-world use: view items in opposite order
+list items
+add items "first"
+add items "second"
+add items "third"
+add items "fourth"
+add items "fifth"
+print "=== REVERSE LIST ==="
+print "Original order:"
+print items
+print ""
+reverse items
+print "Reversed order:"
+print items
+print ""
+reverse items
+print "Back to original:"
+print items
+
+
+

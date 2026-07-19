@@ -1,0 +1,7 @@
+# Science: Body systems
+list sys = "Skeletal" "Muscular" "Circulatory" "Respiratory" "Digestive" "Nervous"
+print "Body Systems:"
+repeat length sys times as i
+    print i "." sys at i "system"
+
+

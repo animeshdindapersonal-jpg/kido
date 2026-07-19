@@ -1,0 +1,40 @@
+# d029: Plant Watering Decision
+# Soil dry AND it's morning
+
+fun should_water soil_moist time_of_day
+    if soil_moist is "dry" and time_of_day is "morning"
+        return yes
+    return no
+
+print "=== PLANT WATERING DECISION ==="
+print ""
+
+print "Soil: dry, Time: morning"
+if should_water "dry" "morning" is yes
+    print "  YES! Water the plants now."
+else
+    print "  DON'T water yet."
+print ""
+
+print "Soil: wet, Time: morning"
+if should_water "wet" "morning" is yes
+    print "  YES! Water the plants now."
+else
+    print "  DON'T water yet. Soil is still wet."
+print ""
+
+print "Soil: dry, Time: evening"
+if should_water "dry" "evening" is yes
+    print "  YES! Water the plants now."
+else
+    print "  DON'T water yet. Wait until morning to avoid mold."
+print ""
+
+print "Soil: dry, Time: noon"
+if should_water "dry" "noon" is yes
+    print "  YES! Water the plants now."
+else
+    print "  DON'T water yet. Wait until morning or evening."
+
+
+

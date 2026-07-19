@@ -1,0 +1,10 @@
+# Tip calculator: Figure out tip at a restaurant
+remember bill = 45
+remember tipPercent = 15
+remember tip = bill * tipPercent / 100
+remember total = bill + tip
+print "Restaurant bill: $" bill
+print "Tip (" tipPercent "%): $" tip
+print "Total to pay: $" total
+
+

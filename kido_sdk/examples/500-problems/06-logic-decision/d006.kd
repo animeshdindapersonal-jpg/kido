@@ -1,0 +1,31 @@
+# d006: Can You Ride the Roller Coaster?
+# Height bigger or same 120cm AND age bigger or same 8
+
+fun can_ride height age_param
+    if height bigger or same 120 and age_param bigger or same 8
+        return yes
+    return no
+
+print "=== ROLLER COASTER CHECK ==="
+
+list heights = 130 110 120 150 100
+list ages = 10 7 8 15 5
+
+repeat length heights times as i
+    remember h = heights at i
+    remember a = ages at i
+    print "Height:" h "cm, Age:" a
+
+    if can_ride h a is yes
+        print "  You can ride! Have fun!"
+    else
+        print "  Sorry, you cannot ride."
+        if h smaller 120
+            print "  You need to be at least 120cm tall."
+        if a smaller 8
+            print "  You need to be at least 8 years old."
+
+    print ""
+
+
+

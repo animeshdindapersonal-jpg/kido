@@ -1,0 +1,7 @@
+remember str = "hello world from kido"
+remember result = replace str " " ""
+print "Original: " str
+print "No spaces: " result
+
+
+

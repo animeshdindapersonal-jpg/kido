@@ -1,0 +1,66 @@
+print "f030: Function Library Demo"
+print ""
+
+remember a = 15
+remember b = 4
+
+remember sum = add a b
+print "add(15, 4) = "
+print sum
+
+remember diff = subtract a b
+print "subtract(15, 4) = "
+print diff
+
+remember prod = multiply a b
+print "multiply(15, 4) = "
+print prod
+
+remember quot = divide a b
+print "divide(15, 4) = "
+print quot
+
+remember mx = max a b
+print "max(15, 4) = "
+print mx
+
+remember mn = min a b
+print "min(15, 4) = "
+print mn
+
+remember ev = isEven a
+if ev is 1
+    print "15 is even"
+else
+    print "15 is odd"
+
+remember sq = square a
+print "square(15) = "
+print sq
+
+remember cb = cube b
+print "cube(4) = "
+print cb
+
+list nums = 5 12 8 3 10
+remember sl = sumList nums
+print "sum of [5 12 8 3 10] = "
+print sl
+
+remember av = averageList nums
+print "average = "
+print av
+
+remember cnt = countOccurrences nums 8
+print "8 appears "
+print cnt
+print " times"
+
+remember pal = isPalindrome "radar"
+if pal is 1
+    print "'radar' is a palindrome"
+else
+    print "'radar' is not a palindrome"
+
+
+

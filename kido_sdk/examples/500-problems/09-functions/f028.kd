@@ -1,0 +1,26 @@
+fun isPrime n
+    if n smaller 2
+        return 0
+    remember i = 2
+    repeat n - 2 times
+        if n - floor(n / i) * i is 0
+            return 0
+        i = i + 1
+    return 1
+
+remember num = 17
+remember p = isPrime num
+if p is 1
+    print "f028: 17 is prime"
+else
+    print "f028: 17 is not prime"
+
+remember num2 = 21
+remember p2 = isPrime num2
+if p2 is 1
+    print "f028: 21 is prime"
+else
+    print "f028: 21 is not prime"
+
+
+

@@ -1,0 +1,28 @@
+# Stats: Histogram
+list counts = 0 0 0 0 0 0 0 0 0 0
+repeat 100 times as i
+    remember num = random 1 10
+    if num is 1  counts at 1 = counts at 1 + 1
+    else
+        if num is 2  counts at 2 = counts at 2 + 1
+    else
+        if num is 3  counts at 3 = counts at 3 + 1
+    else
+        if num is 4  counts at 4 = counts at 4 + 1
+    else
+        if num is 5  counts at 5 = counts at 5 + 1
+    else
+        if num is 6  counts at 6 = counts at 6 + 1
+    else
+        if num is 7  counts at 7 = counts at 7 + 1
+    else
+        if num is 8  counts at 8 = counts at 8 + 1
+    else
+        if num is 9  counts at 9 = counts at 9 + 1
+    else
+        if num is 10  counts at 10 = counts at 10 + 1
+print "Histogram:"
+repeat 10 times as i
+    print i ":" counts at i
+
+

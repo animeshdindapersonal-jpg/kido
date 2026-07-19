@@ -1,0 +1,8 @@
+# Geometry: Diagonal of a rectangle
+remember w = 3
+remember h = 4
+remember diag_sq = w * w + h * h
+remember diag = sqrt diag_sq
+print "Rectangle diagonal =" diag
+
+

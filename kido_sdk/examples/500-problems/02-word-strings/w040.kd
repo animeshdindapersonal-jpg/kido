@@ -1,0 +1,10 @@
+remember abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+remember len = 12
+remember pwd = ""
+repeat len times
+  remember idx = random 1 (length abc)
+  remember pwd = pwd + (abc at idx)
+print "Random password: " pwd
+
+
+

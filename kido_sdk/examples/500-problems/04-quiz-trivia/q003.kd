@@ -1,0 +1,37 @@
+# q003: Multiplication Quiz
+# Generate random multiplication problems
+
+print "=== Multiplication Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+remember i = 1
+
+repeat total times as i
+    remember a = random 1 12
+    remember b = random 1 12
+    remember correct = a * b
+
+    print "Question " i ": What is " a " x " b "?"
+    ask "Your answer: " userAnswer
+    remember userNum = as number userAnswer
+
+    if userNum is correct
+        print "Correct! " a " x " b " = " correct
+        remember score = score + 1
+    else
+        print "Oops! " a " x " b " = " correct
+    print ""
+
+print "=== Done! Score: " score "/" total
+
+if score is total
+    print "Multiplication master!"
+else
+  if score bigger 3
+    print "Great work!"
+else
+    print "Keep practicing your times tables!"
+
+
+

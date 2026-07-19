@@ -1,0 +1,7 @@
+# Time: Minutes in an hour
+remember mins = 60
+print "1 hour =" mins "minutes"
+remember in_day = mins * 24
+print "1 day =" in_day "minutes"
+
+

@@ -1,0 +1,6 @@
+# School: Roman numerals
+print "Number 7 = VII"
+print "Number 9 = IX"
+print "Number 42 = XLII"
+
+

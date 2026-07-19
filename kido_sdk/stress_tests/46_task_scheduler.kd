@@ -1,0 +1,40 @@
+# 46. Task Scheduler with Dependencies
+list tasks = "Buy groceries" "Cook dinner" "Clean kitchen" "Wash dishes" "Relax"
+list deps = 0 1 2 3 4
+list completed
+
+fun can_do task_idx
+    remember dep = deps at task_idx
+    if dep is 0
+        return yes
+    if has completed dep
+        return yes
+    return no
+
+print "=== Task Scheduler ==="
+print "Tasks:"
+repeat length tasks times as i
+    print " " i "." tasks at i
+    remember dep = deps at i
+    if dep bigger 0
+        print "   (depends on:" tasks at dep ")"
+
+print ""
+print "Execution order:"
+remember done = 0
+remember total = length tasks
+repeat total times
+    remember i = 1
+    repeat forever
+        if i bigger total
+            stop
+        if not has completed i
+            if can_do i
+                add completed i
+                print " Done:" tasks at i
+                remember done = done + 1
+                stop
+        remember i = i + 1
+
+print ""
+print "All" done "tasks completed!"

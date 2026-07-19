@@ -1,0 +1,32 @@
+# dc015: Character Profile
+# Store a game character's stats
+
+dict character = {
+    "name": "Aria",
+    "class": "Mage",
+    "level": 10,
+    "hp": 100,
+    "mana": 200
+}
+
+print "=== CHARACTER PROFILE ==="
+print ""
+print "Name:" character at "name"
+print "Class:" character at "class"
+print "Level:" character at "level"
+print "HP:" character at "hp"
+print "Mana:" character at "mana"
+print ""
+
+if character at "level" bigger 5
+    print character at "name" " is an experienced " character at "class"
+else
+    print character at "name" " is a beginner " character at "class"
+
+if character at "mana" bigger character at "hp"
+    print "This character is magic-focused"
+else
+    print "This character is health-focused"
+
+
+

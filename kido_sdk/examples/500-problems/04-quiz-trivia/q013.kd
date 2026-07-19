@@ -1,0 +1,53 @@
+# q013: Word Association Quiz
+# Give a related word
+
+print "=== Word Association Quiz ==="
+print "I give you a word, you give me a related word!"
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: I say 'Dog'. What related word comes to mind?"
+ask "Your word: " answer
+
+print "Interesting! Dog is related to " answer "."
+print "Some related words: bone, bark, puppy, pet"
+remember score = score + 1
+print ""
+
+print "Question 2: I say 'Beach'. What related word?"
+ask "Your word: " answer2
+
+print answer2 " is a great association!"
+print "Related words: sand, ocean, sun, shell"
+remember score = score + 1
+print ""
+
+print "Question 3: I say 'School'. What related word?"
+ask "Your word: " answer3
+
+print "Nice! School and " answer3 " go together!"
+print "Related words: teacher, book, desk, learn"
+remember score = score + 1
+print ""
+
+print "Question 4: I say 'Rain'. What related word?"
+ask "Your word: " answer4
+
+print answer4 " - great thinking!"
+print "Related words: umbrella, puddle, cloud, wet"
+remember score = score + 1
+print ""
+
+print "Question 5: I say 'Pizza'. What related word?"
+ask "Your word: " answer5
+
+print "Mmm, pizza and " answer5 "!"
+print "Related words: cheese, pepperoni, crust, slice"
+remember score = score + 1
+print ""
+
+print "You answered all " total " questions! Score: " score "/" total
+
+
+

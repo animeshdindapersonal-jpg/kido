@@ -1,0 +1,27 @@
+# s009: Story - The Friendly Monster
+# A monster who wants to be friends
+
+print "=== THE FRIENDLY MONSTER ==="
+print ""
+
+remember monsterName = "Gloopy"
+remember kidName = "Tommy"
+
+print "Under the bed at number 42, lived a monster named " monsterName "."
+print monsterName " was tired of being alone."
+print "One night, " kidName " peeked under the bed."
+print ""
+print kidName " shouted, 'A monster!'"
+print monsterName " said softly, 'Please don't be scared."
+print "I just want a friend to play with.'"
+print kidName " looked at " monsterName " and smiled."
+print ""
+print "They played hide and seek until morning."
+print monsterName " was the best at hiding under beds!"
+print "From that night on, " kidName " and " monsterName " were best friends."
+print "And " monsterName " was never lonely again."
+print ""
+print "THE END"
+
+
+

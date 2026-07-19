@@ -1,0 +1,7 @@
+# Life: Savings goal
+remember goal = 100
+remember saved = 35
+print "Saved $" saved "of $" goal "goal"
+print goal - saved "more needed"
+
+

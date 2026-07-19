@@ -1,0 +1,29 @@
+# dc005: Word Definitions
+# Map words to their meanings
+
+dict definitions = {
+    "apple": "a fruit that grows on trees",
+    "book": "a set of written pages to read",
+    "code": "instructions for a computer",
+    "ocean": "a large body of salt water"
+}
+
+print "=== WORD DEFINITIONS ==="
+print ""
+print "apple:" definitions at "apple"
+print "book:" definitions at "book"
+print "code:" definitions at "code"
+print "ocean:" definitions at "ocean"
+print ""
+
+set definitions "garden" "a place to grow plants"
+print "Added: garden ->" definitions at "garden"
+print ""
+
+remember all_words = keys definitions
+print "Words in dictionary:"
+repeat length all_words times as i
+    print "  " all_words at i
+
+
+

@@ -1,0 +1,7 @@
+# Geometry: Area of a circle
+remember r = 5
+const pi = 3.14159
+remember area = pi * r * r
+print "Circle area =" area
+
+

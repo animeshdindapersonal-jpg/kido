@@ -1,0 +1,30 @@
+# dc026: Classroom Seating
+# Map students to their seat numbers
+
+dict seating = {
+    "Aarav": 1,
+    "Priya": 2,
+    "Ravi": 3,
+    "Neha": 4,
+    "Maya": 5
+}
+
+print "=== CLASSROOM SEATING ==="
+print ""
+print "Aarav: Seat" seating at "Aarav"
+print "Priya: Seat" seating at "Priya"
+print "Ravi: Seat" seating at "Ravi"
+print "Neha: Seat" seating at "Neha"
+print "Maya: Seat" seating at "Maya"
+print ""
+
+set seating "Kiran" 6
+print "Added Kiran: Seat" seating at "Kiran"
+print ""
+
+if seating has "Ravi"
+    remember ravi_seat = seating at "Ravi"
+    print "Ravi sits at seat number" ravi_seat
+
+
+

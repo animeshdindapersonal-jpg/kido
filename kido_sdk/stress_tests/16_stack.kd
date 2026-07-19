@@ -1,0 +1,39 @@
+# 16. Stack Implementation
+list stack
+
+fun push value
+    add stack value
+
+fun pop
+    if empty stack
+        return "EMPTY"
+    remember sz = length stack
+    remember top = stack at sz
+    remove stack at sz
+    return top
+
+fun peek
+    if empty stack
+        return "EMPTY"
+    remember sz = length stack
+    return stack at sz
+
+fun stack_size
+    return length stack
+
+print "=== Stack (LIFO) ==="
+push 10
+push 20
+push 30
+push 40
+push 50
+print "Stack:" stack
+remember sz = stack_size
+print "Size:" sz
+remember top = peek
+print "Peek:" top
+remember p1 = pop
+print "Pop:" p1
+remember p2 = pop
+print "Pop:" p2
+print "Stack:" stack

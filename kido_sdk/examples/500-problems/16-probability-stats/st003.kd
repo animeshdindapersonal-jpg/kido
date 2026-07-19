@@ -1,0 +1,9 @@
+# Stats: Average of 100 rolls
+remember sum = 0
+repeat 100 times as i
+    remember roll = random 1 6
+    remember sum = sum + roll
+remember avg = sum / 100
+print "Average of 100 dice rolls:" avg
+
+

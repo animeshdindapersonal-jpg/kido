@@ -1,0 +1,47 @@
+# 35. Expense Tracker
+list expense_amounts
+list expense_categories
+list expense_descriptions
+remember total_expenses = 0
+
+fun add_expense amount category description
+    add expense_amounts amount
+    add expense_categories category
+    add expense_descriptions description
+    remember total_expenses = total_expenses + amount
+
+fun category_total cat
+    remember total = 0
+    remember exp_len = length expense_amounts
+    remember i = 1
+    repeat forever
+        if i bigger exp_len
+            stop
+        if expense_categories at i is cat
+            remember amt = expense_amounts at i
+            remember total = total + amt
+        remember i = i + 1
+    return total
+
+print "=== Expense Tracker ==="
+add_expense 50 "Food" "Lunch"
+add_expense 30 "Transport" "Bus"
+add_expense 100 "Food" "Groceries"
+add_expense 20 "Transport" "Auto"
+add_expense 200 "Shopping" "Clothes"
+add_expense 40 "Food" "Dinner"
+add_expense 15 "Transport" "Metro"
+
+print "All Expenses:"
+remember exp_len = length expense_amounts
+repeat exp_len times as i
+    print " " expense_descriptions at i ": $" expense_amounts at i "(" expense_categories at i ")"
+
+print ""
+print "Total Expenses: $" total_expenses
+remember food_total = category_total "Food"
+remember transport_total = category_total "Transport"
+remember shopping_total = category_total "Shopping"
+print "Food: $" food_total
+print "Transport: $" transport_total
+print "Shopping: $" shopping_total

@@ -1,0 +1,60 @@
+# q002: Capital Cities Quiz
+# Ask the user about world capitals
+
+print "=== Capital Cities Quiz ==="
+print ""
+remember score = 0
+remember total = 4
+
+print "Question 1: What is the capital of France?"
+ask "Your answer: " answer
+
+if answer is "Paris" or answer is "paris"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "The capital of France is Paris."
+
+print ""
+print "Question 2: What is the capital of Japan?"
+ask "Your answer: " answer2
+
+if answer2 is "Tokyo" or answer2 is "tokyo"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "The capital of Japan is Tokyo."
+
+print ""
+print "Question 3: What is the capital of Australia?"
+ask "Your answer: " answer3
+
+if answer3 is "Canberra" or answer3 is "canberra"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "The capital of Australia is Canberra."
+
+print ""
+print "Question 4: What is the capital of Egypt?"
+ask "Your answer: " answer4
+
+if answer4 is "Cairo" or answer4 is "cairo"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "The capital of Egypt is Cairo."
+
+print ""
+print "Results: " score "/" total
+
+if score is total
+    print "Perfect score!"
+else
+  if score bigger 2
+    print "Great job!"
+else
+    print "Try again to improve!"
+
+
+

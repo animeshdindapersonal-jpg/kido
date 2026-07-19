@@ -1,0 +1,25 @@
+# 21. Palindrome Checker
+fun is_palindrome text
+    remember text_len = length text
+    remember i = 1
+    remember j = text_len
+    repeat forever
+        if i bigger or same j
+            stop
+        remember ch_i = text at i
+        remember ch_j = text at j
+        if not ch_i is ch_j
+            return no
+        remember i = i + 1
+        remember j = j - 1
+    return yes
+
+print "=== Palindrome Checker ==="
+list words = "racecar" "hello" "madam" "level" "world" "deed" "noon" "kayak"
+repeat length words times as i
+    remember w = words at i
+    remember is_pal = is_palindrome w
+    if is_pal is yes
+        print w "- YES"
+    else
+        print w "- NO"

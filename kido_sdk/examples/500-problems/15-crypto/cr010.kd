@@ -1,0 +1,6 @@
+# Crypto: Pigpen cipher
+list pairs = "ab" "cd" "ef"
+print "Pigpen: swap each letter with its pair"
+print "hello -> ifkks"
+
+

@@ -1,0 +1,51 @@
+# q001: Animal Sounds Quiz
+# Ask the user what sound a cow makes and check the answer
+
+print "=== Animal Sounds Quiz ==="
+print ""
+remember score = 0
+
+print "Question 1: What sound does a cow make?"
+ask "Your answer: " answer
+
+if answer is "moo"
+    print "Correct! Cows say moo."
+    remember score = score + 1
+else
+    print "Not quite! Cows say moo."
+
+print ""
+print "Question 2: What sound does a duck make?"
+ask "Your answer: " answer2
+
+if answer2 is "quack"
+    print "Correct! Ducks say quack."
+    remember score = score + 1
+else
+    print "Not quite! Ducks say quack."
+
+print ""
+print "Question 3: What sound does a cat make?"
+ask "Your answer: " answer3
+
+if answer3 is "meow"
+    print "Correct! Cats say meow."
+    remember score = score + 1
+else
+    print "Not quite! Cats say meow."
+
+print ""
+print "=== Quiz Complete! ==="
+print "Your score: " score
+print "out of 3"
+
+if score is 3
+    print "Perfect! You know animals well!"
+else
+  if score bigger 1
+    print "Good job!"
+else
+    print "Keep practicing!"
+
+
+

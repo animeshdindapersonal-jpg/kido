@@ -1,0 +1,20 @@
+  # Recipe ingredient list
+  # Real-world use: cooking and baking
+list ingredients
+add ingredients "flour"
+add ingredients "sugar"
+add ingredients "eggs"
+add ingredients "butter"
+add ingredients "vanilla"
+add ingredients "chocolate chips"
+print "=== RECIPE: CHOCOLATE COOKIES ==="
+print "Ingredients:"
+print ingredients
+print ""
+print "Number of ingredients:"
+print length ingredients
+print "First ingredient:"
+print ingredients at 1
+
+
+

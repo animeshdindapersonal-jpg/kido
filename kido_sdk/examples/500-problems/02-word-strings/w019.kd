@@ -1,0 +1,11 @@
+remember name = "John Doe"
+remember domain = "example.com"
+remember parts = split name " "
+remember first = parts at 1
+remember last = parts at 2
+remember email = (lowercase first) + "." + (lowercase last) + "@" + domain
+print "Name: " name
+print "Email: " email
+
+
+

@@ -1,0 +1,63 @@
+# q019: Food Quiz
+# Healthy eating knowledge
+
+print "=== Food Quiz ==="
+print "Answer which food is healthier!"
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: Which is healthier - apple or candy?"
+ask "Your answer: " answer
+
+if answer is "apple"
+    print "Correct! Apples are much healthier than candy."
+    remember score = score + 1
+else
+    print "Apples are healthier than candy."
+
+print ""
+print "Question 2: Which is healthier - carrot or chips?"
+ask "Your answer: " answer2
+
+if answer2 is "carrot"
+    print "Correct! Carrots are healthy vegetables."
+    remember score = score + 1
+else
+    print "Carrots are healthier than chips."
+
+print ""
+print "Question 3: Which is healthier - water or soda?"
+ask "Your answer: " answer3
+
+if answer3 is "water"
+    print "Correct! Water is the healthiest drink."
+    remember score = score + 1
+else
+    print "Water is healthier than soda."
+
+print ""
+print "Question 4: Which is healthier - fish or pizza?"
+ask "Your answer: " answer4
+
+if answer4 is "fish"
+    print "Correct! Fish is a healthy protein."
+    remember score = score + 1
+else
+    print "Fish is healthier than pizza."
+
+print ""
+print "Question 5: Which is healthier - broccoli or ice cream?"
+ask "Your answer: " answer5
+
+if answer5 is "broccoli"
+    print "Correct! Broccoli is full of vitamins."
+    remember score = score + 1
+else
+    print "Broccoli is healthier than ice cream."
+
+print ""
+print "Food Score: " score "/" total
+
+
+

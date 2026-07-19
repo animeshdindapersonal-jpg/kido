@@ -1,0 +1,9 @@
+remember str = "hello"
+remember letter = "h"
+if (str at 1) is letter
+  print str " starts with " letter
+else
+  print str " does NOT start with " letter
+
+
+

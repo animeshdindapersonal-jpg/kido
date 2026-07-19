@@ -1,0 +1,29 @@
+# 2. GCD and LCM Calculator
+fun modulo a b
+    remember result = a
+    repeat forever
+        if result smaller b
+            stop
+        remember result = result - b
+    return result
+
+fun gcd a b
+    if b is 0
+        return a
+    remember rem = modulo a b
+    return gcd b rem
+
+fun lcm a b
+    remember g = gcd a b
+    return (a * b) / g
+
+print "=== GCD and LCM Calculator ==="
+list test_a = 48 17 100 144 270
+list test_b = 18 13 75 60 48
+
+repeat length test_a times as i
+    remember a = test_a at i
+    remember b = test_b at i
+    remember g = gcd a b
+    remember l = lcm a b
+    print a "and" b ": GCD=" g "LCM=" l

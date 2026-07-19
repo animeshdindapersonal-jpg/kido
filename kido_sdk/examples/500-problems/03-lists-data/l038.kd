@@ -1,0 +1,22 @@
+  # Classroom supplies list
+  # Real-world use: inventory for school supplies
+list supplies
+add supplies "pencils"
+add supplies "notebooks"
+add supplies "erasers"
+add supplies "rulers"
+add supplies "crayons"
+add supplies "glue"
+add supplies "scissors"
+print "=== CLASSROOM SUPPLIES ==="
+print supplies
+print ""
+print "Total supplies:"
+print length supplies
+if has supplies "glue"
+  print "Glue is in stock"
+if not has supplies "markers"
+  print "Markers need to be ordered"
+
+
+

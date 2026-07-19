@@ -1,0 +1,25 @@
+  # Remove duplicates from a list
+  # Real-world use: clean up repeated entries in data
+list original
+add original "a"
+add original "b"
+add original "a"
+add original "c"
+add original "b"
+add original "d"
+add original "a"
+list unique
+print "=== REMOVE DUPLICATES ==="
+print "Original (with duplicates):"
+print original
+print ""
+repeat 7 times as i
+  if not has unique original at i
+    add unique original at i
+print "After removing duplicates:"
+print unique
+print "Distinct items:"
+print length unique
+
+
+

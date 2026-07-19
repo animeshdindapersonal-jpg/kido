@@ -1,0 +1,56 @@
+# d010: Rock Paper Scissors (vs computer)
+
+list choices = "rock" "paper" "scissors"
+
+fun get_winner p1 p2
+    if p1 is p2
+        return "tie"
+    else
+      if p1 is "rock" and p2 is "scissors"
+        return "player"
+    else
+      if p1 is "paper" and p2 is "rock"
+        return "player"
+    else
+      if p1 is "scissors" and p2 is "paper"
+        return "player"
+    else
+        return "computer"
+
+print "=== ROCK PAPER SCISSORS ==="
+print "Playing 3 rounds vs computer..."
+print ""
+
+list player_choices = "rock" "paper" "scissors"
+remember player_score = 0
+remember comp_score = 0
+
+repeat 3 times as rnd
+    remember player = player_choices at rnd
+    remember computer = random choices
+
+    print "Round" rnd ": You chose" player ", Computer chose" computer
+
+    remember result = get_winner player computer
+    if result is "tie"
+        print "  It's a tie!"
+    else
+      if result is "player"
+        print "  You win!"
+        remember player_score = player_score + 1
+    else
+        print "  Computer wins!"
+        remember comp_score = comp_score + 1
+    print ""
+
+print "Final Score: You" player_score "-" comp_score "Computer"
+if player_score bigger comp_score
+    print "YOU WIN THE GAME!"
+else
+  if comp_score bigger player_score
+    print "COMPUTER WINS THE GAME!"
+else
+    print "IT'S A TIE GAME!"
+
+
+

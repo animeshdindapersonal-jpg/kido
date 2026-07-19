@@ -1,0 +1,9 @@
+# File: Todo from file
+write "TODO:" to "todo.txt"
+append "1. Learn KIDO" to "todo.txt"
+append "2. Write programs" to "todo.txt"
+append "3. Have fun" to "todo.txt"
+remember t = read "todo.txt"
+print t
+
+

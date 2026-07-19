@@ -1,0 +1,62 @@
+# q026: Dinosaur Quiz
+# Questions about dinosaurs
+
+print "=== Dinosaur Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: Which dinosaur was a herbivore (plant-eater)?"
+ask "Your answer: " answer
+
+if answer is "Brachiosaurus" or answer is "brachiosaurus" or answer is "Triceratops" or answer is "triceratops" or answer is "Stegosaurus" or answer is "stegosaurus"
+    print "Correct! Many dinosaurs like Brachiosaurus ate plants."
+    remember score = score + 1
+else
+    print "Brachiosaurus, Triceratops, and Stegosaurus were herbivores."
+
+print ""
+print "Question 2: What does the name 'T-Rex' mean?"
+ask "Your answer: " answer2
+
+if answer2 is "Tyrannosaurus Rex" or answer2 is "tyrannosaurus rex" or answer2 is "tyrant lizard"
+    print "Correct! T-Rex means Tyrannosaurus Rex (Tyrant Lizard)."
+    remember score = score + 1
+else
+    print "T-Rex means Tyrannosaurus Rex."
+
+print ""
+print "Question 3: When did dinosaurs go extinct?"
+ask "Your answer: " answer3
+
+if answer3 is "65 million years ago" or answer3 is "66 million years ago" or answer3 is "66 million"
+    print "Correct! Dinosaurs went extinct about 66 million years ago."
+    remember score = score + 1
+else
+    print "Dinosaurs went extinct about 66 million years ago."
+
+print ""
+print "Question 4: What killed the dinosaurs?"
+ask "Your answer: " answer4
+
+if answer4 is "asteroid" or answer4 is "meteor" or answer4 is "volcano" or answer4 is "comet"
+    print "Correct! An asteroid impact is the leading theory."
+    remember score = score + 1
+else
+    print "An asteroid impact is believed to have killed the dinosaurs."
+
+print ""
+print "Question 5: Which dinosaur had three horns on its head?"
+ask "Your answer: " answer5
+
+if answer5 is "Triceratops" or answer5 is "triceratops"
+    print "Correct! Triceratops had three horns."
+    remember score = score + 1
+else
+    print "Triceratops had three horns on its head."
+
+print ""
+print "Dinosaur Score: " score "/" total
+
+
+

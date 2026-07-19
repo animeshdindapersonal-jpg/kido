@@ -1,0 +1,17 @@
+# Recursion: Binary search
+list items = 1 3 5 7 9 11 13 15 17 19
+fun bsearch arr t l r
+    if l bigger r
+        return 0
+    remember mid = (l + r) / 2
+    if arr at mid is t
+        return mid
+    else
+      if arr at mid bigger t
+        return bsearch(arr, t, l, mid - 1)
+    else
+        return bsearch(arr, t, mid + 1, r)
+print "Searching for 7:"
+print "Position:" bsearch(items, 7, 1, length items)
+
+

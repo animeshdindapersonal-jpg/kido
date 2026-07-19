@@ -1,0 +1,78 @@
+# q031: Multiple Choice Colors
+# Guess colors of things with options
+
+print "=== Multiple Choice Colors ==="
+print "Pick the correct color from the options!"
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: What color is a banana?"
+print "  a) red"
+print "  b) yellow"
+print "  c) blue"
+ask "Your answer (a/b/c): " answer
+
+if answer is "b"
+    print "Correct! Bananas are yellow."
+    remember score = score + 1
+else
+    print "Bananas are yellow (option b)."
+print ""
+
+print "Question 2: What color is a fire truck?"
+print "  a) purple"
+print "  b) green"
+print "  c) red"
+ask "Your answer (a/b/c): " answer2
+
+if answer2 is "c"
+    print "Correct! Fire trucks are red."
+    remember score = score + 1
+else
+    print "Fire trucks are red (option c)."
+print ""
+
+print "Question 3: What color is a polar bear?"
+print "  a) brown"
+print "  b) white"
+print "  c) black"
+ask "Your answer (a/b/c): " answer3
+
+if answer3 is "b"
+    print "Correct! Polar bears are white."
+    remember score = score + 1
+else
+    print "Polar bears are white (option b)."
+print ""
+
+print "Question 4: What color are most leaves?"
+print "  a) green"
+print "  b) orange"
+print "  c) pink"
+ask "Your answer (a/b/c): " answer4
+
+if answer4 is "a"
+    print "Correct! Most leaves are green."
+    remember score = score + 1
+else
+    print "Most leaves are green (option a)."
+print ""
+
+print "Question 5: What color is a school bus?"
+print "  a) blue"
+print "  b) yellow"
+print "  c) gray"
+ask "Your answer (a/b/c): " answer5
+
+if answer5 is "b"
+    print "Correct! School buses are yellow."
+    remember score = score + 1
+else
+    print "School buses are yellow (option b)."
+print ""
+
+print "Multiple Choice Score: " score "/" total
+
+
+

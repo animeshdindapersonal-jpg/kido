@@ -1,0 +1,14 @@
+# io002: Append multiple lines to a file, read all
+# Real-world use: build a log file by appending entries
+
+remember filename = "journal.txt"
+write "Day 1: Started learning KIDO!" to filename
+append "Day 2: Made my first program." to filename
+append "Day 3: File I/O is fun!" to filename
+
+remember allLines = read filename
+print "=== JOURNAL ENTRIES ==="
+print allLines
+
+
+

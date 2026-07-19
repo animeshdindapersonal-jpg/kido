@@ -1,0 +1,13 @@
+# p023: Hollow square pattern (stars on border only)
+print "5x5 Hollow square:"
+remember n = 5
+repeat n times as i
+    remember row = ""
+    repeat n times as j
+        if i is 1 or i is n or j is 1 or j is n
+            remember row = row + "*"
+        else
+            remember row = row + " "
+    print row
+
+

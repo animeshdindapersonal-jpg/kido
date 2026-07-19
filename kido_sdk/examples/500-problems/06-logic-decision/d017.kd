@@ -1,0 +1,21 @@
+# d017: Within Range Checker (is X between A and B)
+
+fun is_between value_param low high
+    if value_param bigger or same low and value_param smaller or same high
+        return yes
+    return no
+
+print "=== WITHIN RANGE CHECKER ==="
+print ""
+
+print "Is 5 between 1 and 10?" is_between 5 1 10
+print "Is 15 between 1 and 10?" is_between 15 1 10
+print "Is 1 between 1 and 10?" is_between 1 1 10
+print "Is 10 between 1 and 10?" is_between 10 1 10
+print "Is 0 between 1 and 10?" is_between 0 1 10
+print ""
+print "Is 7 between 5 and 8?" is_between 7 5 8
+print "Is 4 between 5 and 8?" is_between 4 5 8
+
+
+

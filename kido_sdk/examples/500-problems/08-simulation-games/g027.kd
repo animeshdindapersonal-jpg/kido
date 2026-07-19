@@ -1,0 +1,34 @@
+# Bubble gum blowing contest
+print "=== BUBBLE GUM BLOWING CONTEST ==="
+print ""
+list players = "Alex" "Bella" "Charlie" "Diana"
+remember rounds = 3
+
+print "Contestants:"
+remember idx = 1
+repeat length players times
+    print "  " players idx
+    remember idx = idx + 1
+print ""
+
+repeat rounds times as i
+    print "--- Round " i " ---"
+    remember j = 1
+    remember winner = ""
+    remember biggest = 0
+    repeat length players times
+        remember bubble = random 1 20
+        print players j " blew a " bubble " inch bubble!"
+        if bubble bigger biggest
+            remember biggest = bubble
+            remember winner = players j
+        remember j = j + 1
+    print "Round " i " winner: " winner " with " biggest " inches!"
+    print ""
+
+print "=== CONTEST OVER ==="
+print "The biggest bubble was " biggest " inches!"
+print "Congratulations " winner "!"
+
+
+

@@ -1,0 +1,50 @@
+# Shopping List Manager (non-interactive demo)
+
+list shopping
+
+print "=== SHOPPING LIST DEMO ==="
+print ""
+
+# Add items
+add shopping "milk"
+add shopping "bread"
+add shopping "eggs"
+add shopping "butter"
+add shopping "cheese"
+
+print "Added 5 items to shopping list"
+print ""
+
+# Display list
+print "--- Shopping List ---"
+repeat length shopping times as i
+    print i "." shopping at i
+print "---"
+remember total_items = length shopping
+print "Total items:" total_items
+print ""
+
+# Check if item exists
+if shopping has "milk"
+    print "We have milk on the list!"
+
+if not shopping has "juice"
+    print "We need to add juice!"
+    add shopping "juice"
+
+print ""
+
+# Remove an item
+remove shopping "butter"
+print "Removed butter"
+print ""
+
+# Sort the list
+sort shopping
+print "Sorted list:"
+repeat length shopping times as i
+    print i "." shopping at i
+
+print ""
+remember final_count = length shopping
+print "Final count:" final_count "items"

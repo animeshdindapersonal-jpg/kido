@@ -1,0 +1,6 @@
+# Measurement: Liters to cups
+remember liters = 2
+remember cups = liters * 4.22675
+print liters "liters =" cups "cups"
+
+

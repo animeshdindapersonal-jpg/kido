@@ -1,0 +1,22 @@
+fun fibonacci n
+    if n is 1
+        return 0
+    if n is 2
+        return 1
+    remember a = 0
+    remember b = 1
+    remember i = 3
+    repeat n - 2 times
+        remember c = a + b
+        a = b
+        b = c
+        i = i + 1
+    return b
+
+remember x = 10
+remember fib = fibonacci x
+print "f027: fibonacci(10) = "
+print fib
+
+
+

@@ -1,0 +1,32 @@
+# Vending machine
+print "=== VENDING MACHINE ==="
+print ""
+list items = "Chips" "Candy Bar" "Soda" "Cookies" "Gum" "Chocolate"
+list prices = 150 200 175 250 100 225
+remember money = random 100 500
+remember purchases = 3
+
+print "You have $" money
+print "Items available:"
+remember idx = 1
+repeat length items times
+    print "  " idx ". " items idx " - $" prices idx
+    remember idx = idx + 1
+print ""
+
+repeat purchases times as i
+    remember pick = random 1 6
+    remember price = prices pick
+    if money bigger or same price
+        print "Purchased " items pick " for $" price
+        remember money = money - price
+        print "Remaining: $" money
+    else
+        print "Not enough money for " items pick " ($" price ")"
+    print ""
+
+print "=== END OF DAY ==="
+print "Money left: $" money
+
+
+

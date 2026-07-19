@@ -1,0 +1,31 @@
+# dc023: Color Codes
+# Map color names to their hex values
+
+dict colors = {
+    "red": "#FF0000",
+    "green": "#00FF00",
+    "blue": "#0000FF",
+    "yellow": "#FFFF00",
+    "black": "#000000"
+}
+
+print "=== COLOR CODES ==="
+print ""
+print "Red:" colors at "red"
+print "Green:" colors at "green"
+print "Blue:" colors at "blue"
+print "Yellow:" colors at "yellow"
+print "Black:" colors at "black"
+print ""
+
+set colors "white" "#FFFFFF"
+print "Added white:" colors at "white"
+print ""
+
+remember all_colors = keys colors
+print "Available colors:"
+repeat length all_colors times as i
+    print "  " all_colors at i "->" colors at (all_colors at i)
+
+
+

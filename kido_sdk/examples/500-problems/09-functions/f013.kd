@@ -1,0 +1,15 @@
+fun reverseString s
+    remember r = ""
+    remember i = length s
+    repeat length s times
+        r = r + s[i]
+        i = i - 1
+    return r
+
+remember text = "kido"
+remember rev = reverseString text
+print "f013: reverse('kido') = "
+print rev
+
+
+

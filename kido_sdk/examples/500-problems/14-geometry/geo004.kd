@@ -1,0 +1,7 @@
+# Geometry: Circumference of a circle
+remember r = 7
+const pi = 3.14159
+remember c = 2 * pi * r
+print "Circumference =" c
+
+

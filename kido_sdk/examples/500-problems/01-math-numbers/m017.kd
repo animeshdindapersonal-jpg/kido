@@ -1,0 +1,7 @@
+# Celsius to Fahrenheit: Check temperature outside
+remember celsius = 30
+remember fahrenheit = celsius * 9 / 5 + 32
+print "It is " celsius " degrees Celsius outside."
+print "That is " fahrenheit " degrees Fahrenheit!"
+
+

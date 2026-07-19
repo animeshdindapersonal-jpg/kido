@@ -1,0 +1,14 @@
+# Calendar: Birth season finder
+remember month = 7
+if month bigger or same 3 and month smaller or same 5
+    print "Born in Spring!"
+else
+  if month bigger or same 6 and month smaller or same 8
+    print "Born in Summer!"
+else
+  if month bigger or same 9 and month smaller or same 11
+    print "Born in Fall!"
+else
+    print "Born in Winter!"
+
+

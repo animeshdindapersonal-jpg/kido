@@ -1,0 +1,7 @@
+remember str = "I like cats"
+remember result = replace str "cats" "dogs"
+print "Before: " str
+print "After: " result
+
+
+

@@ -1,0 +1,21 @@
+fun countVowels s
+    remember vowels = "aeiouAEIOU"
+    remember c = 0
+    remember i = 1
+    repeat length s times
+        remember ch = s[i]
+        remember j = 1
+        repeat length vowels times
+            if ch is vowels[j]
+                c = c + 1
+            j = j + 1
+        i = i + 1
+    return c
+
+remember word = "education"
+remember v = countVowels word
+print "f014: vowels in 'education' = "
+print v
+
+
+

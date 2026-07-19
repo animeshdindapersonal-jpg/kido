@@ -1,0 +1,19 @@
+# Number guessing game: Guess a number between 1 and 100
+remember secret = random 1 100
+remember guess = 0
+remember tries = 0
+print "I'm thinking of a number between 1 and 100!"
+print "Can you guess it?"
+ask "Enter your guess: " guess
+tries = tries + 1
+while guess not secret
+  if guess bigger secret
+    print "Too high! Try again."
+  else
+    print "Too low! Try again."
+  ask "Enter your guess: " guess
+  tries = tries + 1
+print "Correct! The number was " secret
+print "It took you " tries " tries!"
+
+

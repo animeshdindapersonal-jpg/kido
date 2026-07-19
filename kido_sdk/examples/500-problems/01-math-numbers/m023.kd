@@ -1,0 +1,9 @@
+# Multiplication table: Learn times tables
+remember num = 7
+remember i = 1
+print "Multiplication table for " num ":"
+repeat 10 times as i
+  remember product = num * i
+  print num " x " i " = " product
+
+

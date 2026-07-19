@@ -1,0 +1,7 @@
+# Calendar: Months with 31 days
+list months31 = "Jan" "Mar" "May" "Jul" "Aug" "Oct" "Dec"
+print "Months with 31 days:"
+repeat length months31 times as i
+    print months31 at i
+
+

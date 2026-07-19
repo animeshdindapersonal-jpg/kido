@@ -1,0 +1,40 @@
+# Space invaders simple
+print "=== SPACE INVADERS ==="
+print ""
+remember aliens = 5
+remember lives = 3
+remember score = 0
+remember wave = 1
+
+print "Aliens approaching! You have " lives " lives."
+print ""
+
+repeat 3 waves times
+    print "=== WAVE " wave " ==="
+    print aliens " aliens incoming!"
+    repeat aliens times as i
+        if lives is 0
+            print "GAME OVER!"
+            stop
+        print "Alien " i " attacking!"
+        remember hit = random 1 2
+        if hit is 1
+            print "  DIRECT HIT! Alien destroyed!"
+            remember score = score + 100
+        else
+            print "  You got hit!"
+            remember lives = lives - 1
+            print "  Lives remaining: " lives
+            if lives is 0
+                print "Your ship is destroyed!"
+    print "Wave " wave " complete! Score: " score
+    print ""
+    remember aliens = aliens + 2
+    remember wave = wave + 1
+
+print "=== MISSION COMPLETE ==="
+print "Final score: " score
+print "Lives remaining: " lives
+
+
+

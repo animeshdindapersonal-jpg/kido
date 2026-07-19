@@ -1,0 +1,17 @@
+  # Birthday reminder list
+  # Real-world use: remember important birthdays
+list birthdays
+add birthdays "Mom - Jan 15"
+add birthdays "Dad - Mar 22"
+add birthdays "Sara - Jun 8"
+add birthdays "Tom - Sep 12"
+add birthdays "Amy - Nov 3"
+print "=== BIRTHDAY REMINDERS ==="
+print birthdays
+print ""
+print "Next birthday:"
+print birthdays at 1
+print "Don't forget to buy gifts!"
+
+
+

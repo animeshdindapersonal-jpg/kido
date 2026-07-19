@@ -1,0 +1,9 @@
+# School: Quiz score analyzer
+list scores = 95 87 78 92 88
+sort scores
+remember total = 0
+repeat length scores times as i
+    remember total = total + scores at i
+print "High:" scores at length scores "Low:" scores at 1 "Avg:" total / length scores
+
+

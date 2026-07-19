@@ -1,0 +1,29 @@
+# s022: Story with Moral
+# Aesop-style fable generator
+
+print "=== STORY WITH MORAL ==="
+print ""
+
+list heroes = "a speedy rabbit" "a strong elephant" "a busy ant" "a clever fox" "a kind mouse"
+list problems = "bragged about being the fastest" "thought size was everything" "worked all day without rest" "played tricks on everyone" "felt too small to help"
+list solutions = "learned that slow and steady wins the race" "discovered that small friends can save the day" "found out that play time is important too" "realized that honesty is the best policy" "showed that even the smallest can make a big difference"
+list morals = "Slow and steady wins the race." "Big things come in small packages." "All work and no play makes life dull." "Honesty is the best policy." "No act of kindness is ever wasted."
+
+remember idx = random 1 length heroes
+remember h = heroes at idx
+remember p = problems at idx
+remember s = solutions at idx
+remember m = morals at idx
+
+print "The Fable of " h
+print ""
+print "Once there was " h " who " p "."
+print "Everyone warned " h " but it did not listen."
+print "Then one day, " h " " s "."
+print "From that day on, " h " changed and was wiser."
+print ""
+print "Moral of the story:"
+print ">>> " m " <<<"
+
+
+

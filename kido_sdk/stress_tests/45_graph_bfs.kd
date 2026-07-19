@@ -1,0 +1,58 @@
+# 45. Graph BFS (Breadth-First Search)
+# Graph represented as adjacency list using parallel arrays
+# Nodes: 1=A, 2=B, 3=C, 4=D, 5=E
+list adj_1 = 2 3
+list adj_2 = 1 4
+list adj_3 = 1 4 5
+list adj_4 = 2 3 5
+list adj_5 = 3 4
+
+fun get_adj node
+    if node is 1
+        return adj_1
+    if node is 2
+        return adj_2
+    if node is 3
+        return adj_3
+    if node is 4
+        return adj_4
+    if node is 5
+        return adj_5
+    list empty_list
+    return empty_list
+
+fun bfs start
+    list visited
+    list queue
+    list order
+    add visited start
+    add queue start
+    
+    repeat forever
+        if empty queue
+            stop
+        remember current = queue at 1
+        remove queue at 1
+        add order current
+        
+        remember neighbors = get_adj current
+        remember n_len = length neighbors
+        remember i = 1
+        repeat forever
+            if i bigger n_len
+                stop
+            remember neighbor = neighbors at i
+            if not has visited neighbor
+                add visited neighbor
+                add queue neighbor
+            remember i = i + 1
+    
+    return order
+
+print "=== Graph BFS ==="
+print "Graph: A-B, A-C, B-D, C-D, C-E, D-E"
+print ""
+remember order1 = bfs 1
+print "BFS from A:" order1
+remember order3 = bfs 3
+print "BFS from C:" order3

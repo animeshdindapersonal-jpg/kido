@@ -1,0 +1,59 @@
+# 36. Student Database (CRUD Operations)
+list student_names = "Alice" "Bob" "Charlie"
+list student_grades = 85 92 78
+
+fun add_student name grade
+    add student_names name
+    add student_grades grade
+    print "Added:" name "Grade:" grade
+
+fun find_student name
+    remember names_len = length student_names
+    remember i = 1
+    repeat forever
+        if i bigger names_len
+            stop
+        if student_names at i is name
+            return i
+        remember i = i + 1
+    return 0
+
+fun update_grade name new_grade
+    remember idx = find_student name
+    if idx is 0
+        print "Student not found!"
+        stop
+    replace student_grades at idx with new_grade
+    print "Updated" name "to grade" new_grade
+
+fun delete_student name
+    remember idx = find_student name
+    if idx is 0
+        print "Student not found!"
+        stop
+    remove student_names at idx
+    remove student_grades at idx
+    print "Deleted:" name
+
+fun show_all
+    remember names_len = length student_names
+    remember i = 1
+    repeat forever
+        if i bigger names_len
+            stop
+        print " " student_names at i ":" student_grades at i
+        remember i = i + 1
+
+print "=== Student Database ==="
+print "Initial:"
+show_all
+print ""
+add_student "Diana" 95
+add_student "Eve" 88
+print ""
+update_grade "Bob" 98
+print ""
+delete_student "Charlie"
+print ""
+print "Final:"
+show_all

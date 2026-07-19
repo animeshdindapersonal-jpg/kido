@@ -1,0 +1,7 @@
+# Music: Rhythm pattern
+list pattern = "beat" "rest" "beat" "beat" "rest"
+print "Clap along:"
+repeat length pattern times as i
+    print i "." pattern at i
+
+

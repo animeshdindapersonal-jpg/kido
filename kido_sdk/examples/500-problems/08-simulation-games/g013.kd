@@ -1,0 +1,44 @@
+# Bank account simulator
+print "=== BANK ACCOUNT SIMULATOR ==="
+print ""
+remember balance = 100
+remember name = "Alex"
+
+print "Welcome " name "! Your balance: $" balance
+print ""
+
+remember actions = 5
+repeat actions times as i
+    print "--- Transaction " i " ---"
+    remember choice = random 1 3
+    if choice is 1
+        remember amount = random 10 50
+        remember balance = balance + amount
+        print "DEPOSIT: +$" amount " (New balance: $" balance ")"
+    else
+      if choice is 2
+        if balance bigger 0
+            remember amount = random 5 30
+            if amount bigger balance
+                remember amount = balance
+            remember balance = balance - amount
+            print "WITHDRAW: -$" amount " (New balance: $" balance ")"
+        else
+            print "Can't withdraw! Balance is $0"
+    else
+        print "BALANCE CHECK: Your balance is $" balance
+    print ""
+
+print "=== FINAL STATEMENT ==="
+print "Account holder: " name
+print "Final balance: $" balance
+if balance bigger 150
+    print "Great savings!"
+else
+  if balance bigger 50
+    print "Doing okay."
+else
+    print "Time to save more!"
+
+
+

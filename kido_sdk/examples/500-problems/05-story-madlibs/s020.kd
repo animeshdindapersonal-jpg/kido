@@ -1,0 +1,24 @@
+# s020: Haiku Poem Generator
+# 5-7-5 syllable pattern using word lists
+
+print "=== HAIKU POEM GENERATOR ==="
+print ""
+
+list line1_five = "Autumn leaves falling" "The old silent pond" "An old silent lake" "Soft morning sunlight" "Gentle spring rain falls"
+list line2_seven = "A frog jumps into the water" "Birds sing sweetly in the treetops" "Cherry blossoms dance in the breeze" "Children laugh and play outside" "Wind whispers through the tall grass"
+list line3_five = "Peace fills my whole heart" "Quiet as the night" "The world is at rest" "All worries fade" "The day says goodbye"
+
+shuffle line1_five
+shuffle line2_seven
+shuffle line3_five
+
+print "Here is your haiku:"
+print ""
+print line1_five at 1
+print line2_seven at 1
+print line3_five at 1
+print ""
+print "--- A poem by KIDO ---"
+
+
+

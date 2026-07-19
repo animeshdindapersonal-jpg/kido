@@ -1,0 +1,39 @@
+# Plant growth simulator
+print "=== PLANT GROWTH SIMULATOR ==="
+print ""
+remember plant = "Sunflower"
+remember height = 0
+remember water = 0
+remember sun = 0
+remember days = 7
+
+print "Growing a " plant "!"
+print ""
+
+repeat days times as i
+    print "--- Day " i " ---"
+    remember water = random 0 2
+    remember sun = random 0 2
+    print "Water given: " water " | Sunlight: " sun
+    if water bigger 0 and sun bigger 0
+        remember grow = random 1 3
+        remember height = height + grow
+        print plant " grows " grow " inches!"
+    else
+      if water is 0 and sun is 0
+        print "No water AND no sun! " plant " is sad."
+    else
+        print "Only one of water or sun. " plant " grows a little."
+        remember height = height + 1
+    print "Current height: " height " inches"
+    print ""
+
+print "=== AFTER " days " DAYS ==="
+print plant " is " height " inches tall!"
+if height bigger 10
+    print "It's a big healthy plant!"
+else
+    print "It needs more care to grow bigger."
+
+
+

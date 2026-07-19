@@ -1,0 +1,29 @@
+# dc014: Store Inventory
+# Map items to their prices
+
+dict inventory = {
+    "apple": 1,
+    "banana": 2,
+    "milk": 3,
+    "bread": 2,
+    "eggs": 4
+}
+
+print "=== STORE INVENTORY ==="
+print ""
+print "Apple: $" inventory at "apple"
+print "Banana: $" inventory at "banana"
+print "Milk: $" inventory at "milk"
+print "Bread: $" inventory at "bread"
+print "Eggs: $" inventory at "eggs"
+print ""
+
+set inventory "cheese" 5
+print "Added cheese: $" inventory at "cheese"
+print ""
+
+remember total = (inventory at "apple") + (inventory at "banana") + (inventory at "milk") + (inventory at "bread") + (inventory at "eggs") + (inventory at "cheese")
+print "Cost to buy everything: $" total
+
+
+

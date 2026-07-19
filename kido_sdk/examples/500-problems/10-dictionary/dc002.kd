@@ -1,0 +1,26 @@
+# dc002: Pet Dictionary
+# Store and display information about a pet
+
+dict pet = {
+    "name": "Buddy",
+    "age": 3,
+    "breed": "Golden Retriever",
+    "color": "golden"
+}
+
+print "=== MY PET ==="
+print ""
+print "Name:" pet at "name"
+print "Age:" pet at "age"
+print "Breed:" pet at "breed"
+print "Color:" pet at "color"
+print ""
+
+remember pet_age = pet at "age"
+if pet_age smaller 5
+    print pet at "name" " is a young " pet at "breed"
+else
+    print pet at "name" " is a mature " pet at "breed"
+
+
+

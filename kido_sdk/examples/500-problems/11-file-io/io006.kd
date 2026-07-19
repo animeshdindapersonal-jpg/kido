@@ -1,0 +1,10 @@
+# File I/O: Simple diary entry with date
+remember date = "July 18, 2026"
+remember entry = "Today I learned how to write files in KIDO!"
+write "Date: " date to "diary.txt"
+append "Entry: " entry to "diary.txt"
+remember diary = read "diary.txt"
+print "My Diary:"
+print diary
+
+

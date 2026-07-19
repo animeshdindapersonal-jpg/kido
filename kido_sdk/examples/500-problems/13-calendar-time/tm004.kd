@@ -1,0 +1,10 @@
+# Calendar: Birthday countdown
+remember bday = 25
+remember today = 18
+remember left = bday - today
+if left bigger 0
+    print left "days until your birthday!"
+else
+    print "Happy Birthday!"
+
+

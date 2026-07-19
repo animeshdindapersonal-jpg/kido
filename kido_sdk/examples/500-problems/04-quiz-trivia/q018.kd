@@ -1,0 +1,65 @@
+# q018: Body Parts Quiz
+# Questions about the human body
+
+print "=== Body Parts Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: How many fingers are on one hand?"
+ask "Your answer: " answer
+
+remember num1 = as number answer
+if num1 is 5
+    print "Correct! There are 5 fingers on one hand."
+    remember score = score + 1
+else
+    print "There are 5 fingers on one hand."
+
+print ""
+print "Question 2: What organ pumps blood in your body?"
+ask "Your answer: " answer2
+
+if answer2 is "heart"
+    print "Correct! The heart pumps blood."
+    remember score = score + 1
+else
+    print "The heart pumps blood."
+
+print ""
+print "Question 3: How many bones are in the human body? (approximate)"
+ask "Your answer: " answer3
+
+remember num3 = as number answer3
+if num3 bigger 190 and num3 smaller 220
+    print "Close enough! An adult has about 206 bones."
+    remember score = score + 1
+else
+    print "An adult has about 206 bones."
+
+print ""
+print "Question 4: What do you use to taste food?"
+ask "Your answer: " answer4
+
+if answer4 is "tongue" or answer4 is "taste buds"
+    print "Correct! You use your tongue to taste."
+    remember score = score + 1
+else
+    print "You use your tongue to taste."
+
+print ""
+print "Question 5: How many teeth does an adult usually have?"
+ask "Your answer: " answer5
+
+remember num5 = as number answer5
+if num5 is 32
+    print "Correct! An adult has 32 teeth."
+    remember score = score + 1
+else
+    print "An adult usually has 32 teeth."
+
+print ""
+print "Body Parts Score: " score "/" total
+
+
+

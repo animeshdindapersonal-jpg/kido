@@ -1,0 +1,16 @@
+list dict = "hello" "world" "kido" "program" "fun" "code" "learn"
+remember word = "helo"
+remember found = no
+repeat length dict times as i
+  if word is (dict at i)
+    remember found = yes
+if found is yes
+  print word " is spelled correctly"
+else
+  print word " is NOT in dictionary"
+  print "Suggestions:"
+  repeat length dict times as j
+    print dict at j
+
+
+

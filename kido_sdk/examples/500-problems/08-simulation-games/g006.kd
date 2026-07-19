@@ -1,0 +1,33 @@
+# Lottery number picker
+print "=== LOTTO 6/49 NUMBER PICKER ==="
+print ""
+remember tickets = 3
+print "Generating " tickets " lottery tickets..."
+print ""
+
+repeat tickets times as i
+    list nums
+    remember count = 0
+    repeat 6 times
+        remember pick = random 1 49
+        remember unique = yes
+        remember j = 1
+        repeat count times
+            if nums j is pick
+                remember unique = no
+            remember j = j + 1
+        if unique is yes
+            add nums pick
+            remember count = count + 1
+        else
+            remember pick = random 1 49
+            add nums pick
+            remember count = count + 1
+    sort nums
+    print "Ticket " i ": " nums
+
+print ""
+print "Good luck!"
+
+
+

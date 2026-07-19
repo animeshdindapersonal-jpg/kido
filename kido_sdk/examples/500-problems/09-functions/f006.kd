@@ -1,0 +1,13 @@
+fun min a b
+    if a smaller b
+        return a
+    return b
+
+remember x = 3
+remember y = 12
+remember m = min x y
+print "f006: min(3, 12) = "
+print m
+
+
+

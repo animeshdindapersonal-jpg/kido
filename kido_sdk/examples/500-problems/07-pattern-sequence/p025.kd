@@ -1,0 +1,10 @@
+# p025: Inverted triangle of stars
+print "Inverted triangle:"
+repeat 5 times as i
+    remember row = ""
+    remember count = 6 - i
+    repeat count times as j
+        remember row = row + "*"
+    print row
+
+

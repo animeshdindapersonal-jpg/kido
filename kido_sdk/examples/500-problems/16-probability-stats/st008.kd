@@ -1,0 +1,10 @@
+# Stats: Guess probability
+remember correct = 0
+repeat 100 times as i
+    remember g = random 1 10
+    remember t = random 1 10
+    if g is t
+        remember correct = correct + 1
+print "Correct guesses in 100:" correct "%"
+
+

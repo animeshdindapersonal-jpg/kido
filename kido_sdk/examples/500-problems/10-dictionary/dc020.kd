@@ -1,0 +1,30 @@
+# dc020: Music Album
+# Store album info with a list of songs
+
+dict album = {
+    "title": "Thriller",
+    "artist": "Michael Jackson",
+    "year": 1982
+}
+
+list songs
+add songs "Thriller"
+add songs "Billie Jean"
+add songs "Beat It"
+add songs "Wanna Be Startin Somethin"
+add songs "Human Nature"
+
+print "=== MUSIC ALBUM ==="
+print ""
+print "Title:" album at "title"
+print "Artist:" album at "artist"
+print "Year:" album at "year"
+print "Songs:"
+repeat length songs times as i
+    remember num = i + 1
+    print "  " num ". " songs at i
+print ""
+print "Total tracks:" length songs
+
+
+

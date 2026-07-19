@@ -1,0 +1,8 @@
+# Life: Weekly activities
+list days = "Mon" "Tue" "Wed" "Thu" "Fri" "Sat" "Sun"
+list acts = "soccer" "piano" "swim" "art" "read" "play" "family"
+print "My Week:"
+repeat 7 times as i
+    print days at i ":" acts at i
+
+

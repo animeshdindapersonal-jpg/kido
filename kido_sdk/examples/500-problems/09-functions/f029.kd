@@ -1,0 +1,16 @@
+fun sumDigits n
+    remember total = 0
+    repeat 10 times
+        if n is 0
+            return total
+        total = total + (n - floor(n / 10) * 10)
+        n = n / 10
+    return total
+
+remember x = 12345
+remember sd = sumDigits x
+print "f029: sum of digits of 12345 = "
+print sd
+
+
+

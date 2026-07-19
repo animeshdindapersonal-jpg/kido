@@ -1,0 +1,8 @@
+# Square root finder: Find square root of a number
+remember num = 144
+remember root = sqrt num
+print "The square root of " num " is: " root
+if root is floor root
+  print "Perfect square! " root " x " root " = " num
+
+

@@ -1,0 +1,7 @@
+# Life: Pet care
+list tasks = "feed" "water" "walk" "play" "brush"
+print "Pet care:"
+repeat length tasks times as i
+    print i "." tasks at i
+
+

@@ -1,0 +1,25 @@
+# d025: Side of Road to Walk On
+# If no sidewalk, walk facing traffic
+
+fun walking_advice has_sidewalk is_dark
+    if has_sidewalk is yes
+        if is_dark is yes
+            return "Use the sidewalk. Wear reflective clothing!"
+        else
+            return "Use the sidewalk. Stay safe!"
+    else
+        if is_dark is yes
+            return "No sidewalk! Walk FACING traffic. Carry a flashlight!"
+        else
+            return "No sidewalk! Walk FACING traffic so you can see cars coming."
+
+print "=== SIDE OF ROAD ADVICE ==="
+print ""
+
+print "Sidewalk? yes, Dark? no ->" walking_advice yes no
+print "Sidewalk? yes, Dark? yes ->" walking_advice yes yes
+print "Sidewalk? no, Dark? no ->" walking_advice no no
+print "Sidewalk? no, Dark? yes ->" walking_advice no yes
+
+
+

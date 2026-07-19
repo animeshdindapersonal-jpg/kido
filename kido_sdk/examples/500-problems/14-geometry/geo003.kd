@@ -1,0 +1,7 @@
+# Geometry: Perimeter of a rectangle
+remember w = 5
+remember h = 3
+remember p = 2 * (w + h)
+print "Perimeter =" p
+
+

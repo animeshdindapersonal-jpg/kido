@@ -1,0 +1,17 @@
+fun absVal n
+    if n smaller 0
+        return 0 - n
+    return n
+
+remember x = -15
+remember a = absVal x
+print "f024: abs(-15) = "
+print a
+
+remember y = 8
+remember a2 = absVal y
+print "f024: abs(8) = "
+print a2
+
+
+

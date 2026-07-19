@@ -1,0 +1,10 @@
+# School: Count vowels
+remember word = "education"
+list vowels = "a" "e" "i" "o" "u"
+remember count = 0
+repeat length word times as i
+    if has vowels word at i
+        remember count = count + 1
+print "Vowels in" word ":" count
+
+

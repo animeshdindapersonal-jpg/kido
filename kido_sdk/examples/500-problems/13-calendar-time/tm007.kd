@@ -1,0 +1,7 @@
+# Time: Hours to days
+remember total = 50
+remember d = total / 24
+remember h = total - d * 24
+print total "hours =" d "days" h "hours"
+
+

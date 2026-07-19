@@ -1,0 +1,12 @@
+# 4. Factorial Calculator
+fun factorial n
+    if n smaller or same 1
+        return 1
+    remember prev = factorial n - 1
+    return n * prev
+
+print "=== Factorials ==="
+repeat 12 times as i
+    remember n = i - 1
+    remember f = factorial n
+    print n "! =" f

@@ -1,0 +1,21 @@
+# Traffic light simulator
+print "=== TRAFFIC LIGHT SIMULATOR ==="
+print ""
+remember cycles = 3
+
+print "Traffic light cycling " cycles " times:"
+print ""
+
+repeat cycles times as i
+    print "Cycle " i ":"
+    print "  RED    - STOP! Cars wait."
+    print "  GREEN  - GO! Cars drive through."
+    print "  YELLOW - SLOW DOWN! Cars prepare to stop."
+    print "  RED    - STOP! Cycle complete."
+    print ""
+
+print "Traffic light simulation done!"
+print "Remember: RED means stop, GREEN means go!"
+
+
+

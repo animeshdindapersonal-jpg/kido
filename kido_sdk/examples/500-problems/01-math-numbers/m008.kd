@@ -1,0 +1,13 @@
+# Fibonacci sequence: Show first N terms
+remember n = 10
+remember a = 1
+remember b = 1
+remember i = 1
+print "First " n " Fibonacci numbers:"
+repeat n times as i
+  print a
+  remember temp = a + b
+  a = b
+  b = temp
+
+

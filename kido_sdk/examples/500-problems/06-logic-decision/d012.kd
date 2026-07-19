@@ -1,0 +1,41 @@
+# d012: What Pet Should You Get? (quiz with recommendations)
+
+fun recommend_pet has_space has_time has_allergy has_yard
+    if has_allergy is yes
+        return "Fish or a Turtle (no fur!)"
+    else
+      if has_space is yes and has_yard is yes and has_time is yes
+        return "A Dog! They need space and attention."
+    else
+      if has_space is no and has_time is yes
+        return "A Cat! They are independent and love small spaces."
+    else
+      if has_space is no and has_time is no
+        return "A Hamster! Easy to care for."
+    else
+      if has_yard is yes and has_time is no
+        return "Rabbits or Guinea Pigs!"
+    else
+        return "A Bird! Fun and doesn't need much space."
+
+print "=== WHAT PET SHOULD YOU GET? ==="
+print ""
+
+# Demo scenarios
+print "Scenario 1: Has space? yes | Has time? yes | Allergies? no | Has yard? yes"
+print "Recommendation:" recommend_pet yes yes no yes
+print ""
+
+print "Scenario 2: Has space? no | Has time? yes | Allergies? no | Has yard? no"
+print "Recommendation:" recommend_pet no yes no no
+print ""
+
+print "Scenario 3: Has space? no | Has time? no | Allergies? no | Has yard? no"
+print "Recommendation:" recommend_pet no no no no
+print ""
+
+print "Scenario 4: Has space? yes | Has time? yes | Allergies? yes | Has yard? yes"
+print "Recommendation:" recommend_pet yes yes yes yes
+
+
+

@@ -1,0 +1,88 @@
+name: Release KIDO SDK
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build SDK Bundle
+        run: |
+          python -m pip install pyinstaller
+          cd kido_sdk
+          python scripts/release.py --token ${{ secrets.GITHUB_TOKEN }} --version ${{ github.ref_name }}
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-bundle
+          path: kido_sdk/_dist/
+
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build SDK Bundle
+        run: |
+          cd kido_sdk
+          python scripts/release.py --token ${{ secrets.GITHUB_TOKEN }} --version ${{ github.ref_name }}
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-bundle
+          path: kido_sdk/_dist/
+
+  build-macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build SDK Bundle
+        run: |
+          cd kido_sdk
+          python scripts/release.py --token ${{ secrets.GITHUB_TOKEN }} --version ${{ github.ref_name }}
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-bundle
+          path: kido_sdk/_dist/
+
+  create-release:
+    needs: [build-windows, build-linux, build-macos]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download All Artifacts
+        uses: actions/download-artifact@v4
+      - name: Prepare Assets
+        run: |
+          mkdir -p release-assets
+          cp windows-bundle/*.zip release-assets/ 2>/dev/null || true
+          cp linux-bundle/*.tar.gz release-assets/ 2>/dev/null || true
+          cp macos-bundle/*.tar.gz release-assets/ 2>/dev/null || true
+          cp windows-bundle/*.sha256 release-assets/ 2>/dev/null || true
+          cp linux-bundle/*.sha256 release-assets/ 2>/dev/null || true
+          cp macos-bundle/*.sha256 release-assets/ 2>/dev/null || true
+      - name: Create Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd kido_sdk
+          python scripts/release.py --token $GH_TOKEN --version ${{ github.ref_name }}

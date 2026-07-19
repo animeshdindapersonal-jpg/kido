@@ -1,0 +1,24 @@
+# s017: Superhero Name Generator
+# Random adjective + animal
+
+print "=== SUPERHERO NAME GENERATOR ==="
+print ""
+
+list adjectives = "Amazing" "Mighty" "Incredible" "Fearless" "Cosmic" "Shadow" "Thunder" "Starlight" "Iron" "Golden"
+list animals = "Tiger" "Falcon" "Wolf" "Panda" "Eagle" "Shark" "Phoenix" "Viper" "Bear" "Fox"
+
+shuffle adjectives
+shuffle animals
+
+remember adj = adjectives at 1
+remember animal = animals at 1
+
+print "Your superhero name is:"
+print ""
+print "=== " adj " " animal " ==="
+print ""
+print "Powers include super strength, flight, and bravery!"
+print "Go save the world, " adj " " animal "!"
+
+
+

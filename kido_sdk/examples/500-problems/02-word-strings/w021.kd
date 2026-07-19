@@ -1,0 +1,16 @@
+remember word = "kido"
+remember guessed = "i"
+remember result = ""
+repeat length word times as i
+  remember ch = word at i
+  if has guessed ch
+    remember result = result + ch + " "
+  else
+    remember result = result + "_ "
+print "Hangman - word: " result
+print "Guessed: " guessed
+if has word guessed
+  print "Letter '" guessed "' is in the word!"
+
+
+

@@ -1,0 +1,14 @@
+# Stats: Heads streak
+remember streak = 0
+remember best = 0
+repeat 1000 times as i
+    remember flip = random 1 2
+    if flip is 1
+        remember streak = streak + 1
+        if streak bigger best
+            remember best = streak
+    else
+        remember streak = 0
+print "Longest heads streak:" best
+
+

@@ -1,0 +1,17 @@
+fun countOccurrences items val
+    remember c = 0
+    remember i = 1
+    repeat length items times
+        if items[i] is val
+            c = c + 1
+        i = i + 1
+    return c
+
+list numbers = 3 7 3 9 3 2 3
+remember occ = countOccurrences numbers 3
+print "f021: 3 appears "
+print occ
+print " times in the list"
+
+
+

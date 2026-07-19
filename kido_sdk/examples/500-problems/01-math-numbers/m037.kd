@@ -1,0 +1,8 @@
+# Fahrenheit to Celsius: Convert baking temperature
+remember fahrenheit = 350
+remember celsius = (fahrenheit - 32) * 5 / 9
+celsius = round celsius
+print fahrenheit " degrees Fahrenheit is " celsius " degrees Celsius."
+print "Perfect for baking cookies!"
+
+

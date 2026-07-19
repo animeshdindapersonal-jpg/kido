@@ -1,0 +1,62 @@
+# q028: Weather Quiz
+# Questions about weather
+
+print "=== Weather Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: What is a tornado?"
+ask "Your answer: " answer
+
+if answer is "a spinning column of air" or answer is "a funnel" or answer is "a storm" or answer is "a spinning wind"
+    print "Correct! A tornado is a spinning column of air."
+    remember score = score + 1
+else
+    print "A tornado is a violently spinning column of air."
+
+print ""
+print "Question 2: What is the center of a hurricane called?"
+ask "Your answer: " answer2
+
+if answer2 is "eye"
+    print "Correct! The center is called the eye."
+    remember score = score + 1
+else
+    print "The center of a hurricane is called the eye."
+
+print ""
+print "Question 3: What is frozen rain called?"
+ask "Your answer: " answer3
+
+if answer3 is "hail" or answer3 is "sleet"
+    print "Correct! Hail is frozen rain."
+    remember score = score + 1
+else
+    print "Hail is frozen rain."
+
+print ""
+print "Question 4: What instrument measures temperature?"
+ask "Your answer: " answer4
+
+if answer4 is "thermometer"
+    print "Correct! A thermometer measures temperature."
+    remember score = score + 1
+else
+    print "A thermometer measures temperature."
+
+print ""
+print "Question 5: What causes thunder?"
+ask "Your answer: " answer5
+
+if answer5 is "lightning" or answer5 is "thunder" or answer5 is "sound of lightning"
+    print "Correct! Thunder is the sound of lightning."
+    remember score = score + 1
+else
+    print "Thunder is caused by lightning heating the air."
+
+print ""
+print "Weather Score: " score "/" total
+
+
+

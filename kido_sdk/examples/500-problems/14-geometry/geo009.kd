@@ -1,0 +1,8 @@
+# Geometry: Volume of a box
+remember l = 5
+remember w = 3
+remember h = 4
+remember vol = l * w * h
+print "Box volume =" vol
+
+

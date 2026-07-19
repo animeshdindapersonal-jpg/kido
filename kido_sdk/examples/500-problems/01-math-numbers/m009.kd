@@ -1,0 +1,12 @@
+# Greatest common divisor: Find GCD of two numbers
+remember x = 48
+remember y = 18
+remember a = x
+remember b = y
+while b not 0
+  remember temp = b
+  b = a - floor(a / b) * b
+  a = temp
+print "The GCD of " x " and " y " is: " a
+
+

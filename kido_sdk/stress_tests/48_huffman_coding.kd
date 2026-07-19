@@ -1,0 +1,35 @@
+# 48. Frequency Analysis (Huffman coding prep)
+fun count_char text ch
+    remember count = 0
+    remember text_len = length text
+    remember i = 1
+    repeat forever
+        if i bigger text_len
+            stop
+        if text at i is ch
+            remember count = count + 1
+        remember i = i + 1
+    return count
+
+print "=== Character Frequency Analysis ==="
+remember text = "HELLO WORLD KIDO PROGRAMMING"
+print "Text:" text
+print ""
+
+list alphabet = "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"
+list frequencies
+
+repeat 26 times as i
+    remember letter = alphabet at i
+    remember count = count_char text letter
+    if count bigger 0
+        print " " letter ":" count
+        add frequencies count
+
+print ""
+remember total_chars = length text
+print "Total characters:" total_chars
+remember max_freq = max frequencies
+remember min_freq = min frequencies
+print "Most frequent count:" max_freq
+print "Least frequent count:" min_freq

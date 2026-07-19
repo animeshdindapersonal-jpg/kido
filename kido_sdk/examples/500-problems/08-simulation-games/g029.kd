@@ -1,0 +1,48 @@
+# Elevator simulator
+print "=== ELEVATOR SIMULATOR ==="
+print ""
+remember floors = 10
+remember current = 1
+remember trips = 5
+
+print "Elevator starts on floor " current
+print ""
+
+repeat trips times as i
+    print "--- Trip " i " ---"
+    remember target = random 1 floors
+    print "Someone calls elevator to floor " target
+    if target bigger current
+        print "Going UP..."
+        repeat target - current times
+            remember current = current + 1
+            print "  Floor " current
+    else
+      if target smaller current
+        print "Going DOWN..."
+        repeat current - target times
+            remember current = current - 1
+            print "  Floor " current
+    else
+        print "Already on this floor!"
+    print "Ding! Arrived at floor " current
+    remember nextFloor = random 1 floors
+    print "Passenger goes to floor " nextFloor
+    if nextFloor bigger current
+        print "Going UP..."
+        repeat nextFloor - current times
+            remember current = current + 1
+            print "  Floor " current
+    else
+        print "Going DOWN..."
+        repeat current - nextFloor times
+            remember current = current - 1
+            print "  Floor " current
+    print "Ding! Trip complete. Floor " current
+    print ""
+
+print "=== SHIFT OVER ==="
+print "Final position: Floor " current
+
+
+

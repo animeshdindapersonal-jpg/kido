@@ -1,0 +1,23 @@
+# s013: Knock-Knock Joke Generator
+# Random knock-knock jokes
+
+print "=== KNOCK-KNOCK JOKE GENERATOR ==="
+print ""
+
+list names = "Lettuce" "Boo" "Tank" "Lemon" "Carrie"
+list replies = "Lettuce in, it is cold outside!" "Boo who? Do not cry, it is just a joke!" "You are welcome!" "Lemon me tell you a funny story!" "Carrie me to the next joke!"
+
+remember idx = random 1 length names
+remember name = names at idx
+remember reply = replies at idx
+
+print "Knock, knock!"
+print "Who is there?"
+print name "."
+print name " who?"
+print reply
+print ""
+print "Get it? Haha!"
+
+
+

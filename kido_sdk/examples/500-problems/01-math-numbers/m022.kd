@@ -1,0 +1,7 @@
+# Sum of first N natural numbers: Gauss's trick
+remember n = 100
+remember sum = n * (n + 1) / 2
+print "The sum of numbers from 1 to " n " is: " sum
+print "Gauss figured this out in seconds!"
+
+

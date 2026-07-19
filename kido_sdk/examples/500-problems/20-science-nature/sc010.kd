@@ -1,0 +1,7 @@
+# Science: Moon phases
+list phases = "New" "Waxing Crescent" "First Quarter" "Waxing Gibbous" "Full" "Waning Gibbous" "Third Quarter" "Waning Crescent"
+print "Moon Phases:"
+repeat length phases times as i
+    print i "." phases at i
+
+

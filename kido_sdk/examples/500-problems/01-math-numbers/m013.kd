@@ -1,0 +1,8 @@
+# Area of a rectangle: Calculate room size
+remember length = 12
+remember width = 8
+remember area = length * width
+print "Your room is " length " feet long and " width " feet wide."
+print "The area of your room is " area " square feet!"
+
+

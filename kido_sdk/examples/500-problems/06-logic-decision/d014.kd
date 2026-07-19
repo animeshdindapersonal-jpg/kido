@@ -1,0 +1,23 @@
+# d014: Water State
+# Temp below 0 = ice, 0-100 = water, above = steam
+
+fun water_state temp
+    if temp smaller 0
+        return "ICE (solid)"
+    else
+      if temp smaller 100
+        return "WATER (liquid)"
+    else
+        return "STEAM (gas)"
+
+print "=== WATER STATE CHECKER ==="
+print ""
+
+list temps = -10 0 25 99 100 150
+
+repeat length temps times as i
+    remember t = temps at i
+    print t "C ->" water_state t
+
+
+

@@ -1,0 +1,13 @@
+# Dice roller: Simulate rolling a 6-sided die
+remember roll = random 1 6
+print "You rolled a die and got..."
+print "  " roll "  "
+if roll is 6
+  print "JACKPOT! You rolled a 6!"
+else
+  if roll is 1
+  print "Snake eyes! Better luck next time."
+else
+  print "Not bad!"
+
+

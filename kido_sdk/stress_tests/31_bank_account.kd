@@ -1,0 +1,33 @@
+# 31. Bank Account System
+remember balance = 1000
+list transactions
+
+fun deposit amount
+    remember balance = balance + amount
+    remember msg = "Deposit: +" + as string amount
+    add transactions msg
+    print msg
+
+fun withdraw amount
+    if amount bigger balance
+        print "Insufficient funds!"
+        stop
+    remember balance = balance - amount
+    remember msg = "Withdraw: -" + as string amount
+    add transactions msg
+    print msg
+
+fun show_balance
+    print "Balance: $" balance
+
+print "=== Bank Account ==="
+show_balance
+deposit 500
+deposit 200
+withdraw 300
+withdraw 1000
+show_balance
+print ""
+print "Transaction History:"
+repeat length transactions times as i
+    print " " transactions at i

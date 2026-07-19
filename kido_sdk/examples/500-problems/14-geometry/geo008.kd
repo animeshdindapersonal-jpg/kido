@@ -1,0 +1,6 @@
+# Geometry: Area of a square
+remember side = 5
+remember area = side * side
+print "Square area =" area
+
+

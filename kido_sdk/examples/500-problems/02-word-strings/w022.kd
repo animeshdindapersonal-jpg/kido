@@ -1,0 +1,14 @@
+remember str = "hello"
+list work
+repeat length str times as i
+  add work (str at i)
+remember scrambled = ""
+repeat length str times as i
+  remember pick = random work
+  remember scrambled = scrambled + pick
+  remove work pick
+print "Original: " str
+print "Scrambled: " scrambled
+
+
+

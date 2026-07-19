@@ -1,0 +1,31 @@
+# dc004: Simple Phone Book
+# Map names to phone numbers
+
+dict phonebook = {
+    "Mom": "555-1234",
+    "Dad": "555-5678",
+    "Alice": "555-9012",
+    "Bob": "555-3456"
+}
+
+print "=== PHONE BOOK ==="
+print ""
+print "Mom:" phonebook at "Mom"
+print "Dad:" phonebook at "Dad"
+print "Alice:" phonebook at "Alice"
+print "Bob:" phonebook at "Bob"
+print ""
+
+set phonebook "Charlie" "555-7890"
+print "Added Charlie:" phonebook at "Charlie"
+print ""
+
+if phonebook has "Alice"
+    print "Alice is in the phone book"
+
+print "Total contacts:"
+remember names = keys phonebook
+print length names
+
+
+

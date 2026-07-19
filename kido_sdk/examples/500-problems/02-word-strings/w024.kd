@@ -1,0 +1,13 @@
+remember a = "cake"
+remember b = "lake"
+remember la = length a
+remember lb = length b
+remember endA = (a at (la - 1)) + (a at la)
+remember endB = (b at (lb - 1)) + (b at lb)
+if endA is endB
+  print a " and " b " rhyme!"
+else
+  print a " and " b " do not rhyme"
+
+
+

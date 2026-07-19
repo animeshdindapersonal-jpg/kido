@@ -1,0 +1,9 @@
+# Crypto: Reverse cipher
+remember text = "kido"
+print "Original:" text
+print "Reversed:"
+remember n = length text
+repeat n times as i
+    print text at (n - i + 1)
+
+

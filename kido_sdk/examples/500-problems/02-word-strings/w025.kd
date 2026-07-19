@@ -1,0 +1,6 @@
+list list = "You are awesome!" "You are smart!" "You rock!" "You are creative!" "Keep going!" "You are amazing!" "You are funny!" "You are kind!"
+remember pick = random list
+print "Compliment: " pick
+
+
+

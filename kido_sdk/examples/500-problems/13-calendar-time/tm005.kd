@@ -1,0 +1,7 @@
+# Time: Minutes to hours
+remember total = 130
+remember h = total / 60
+remember m = total - h * 60
+print total "minutes =" h "hours" m "minutes"
+
+

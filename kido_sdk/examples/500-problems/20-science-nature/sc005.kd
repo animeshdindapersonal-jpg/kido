@@ -1,0 +1,9 @@
+# Science: Water cycle
+print "Water Cycle:"
+print "1. Evaporation"
+print "2. Condensation"
+print "3. Precipitation"
+print "4. Collection"
+print "The cycle never stops!"
+
+

@@ -1,0 +1,41 @@
+# Board game spinner
+print "=== BOARD GAME SPINNER ==="
+print ""
+list players = "Player 1" "Player 2" "Player 3"
+list positions = 0 0 0
+remember win = 20
+remember turn = 1
+
+print "Spin the spinner! First to " win " wins!"
+print ""
+
+repeat forever
+    remember pIdx = 1
+    repeat length players times
+        if turn is 1 or turn is 1
+            print "--- Turn " turn " ---"
+        remember spin = random 1 6
+        remember positions pIdx = positions pIdx + spin
+        print players pIdx " spun " spin "! (Position: " positions pIdx ")"
+        if positions pIdx bigger or same win
+            print ""
+            print players pIdx " WINS THE GAME!"
+            stop
+        remember pIdx = pIdx + 1
+    print ""
+    remember turn = turn + 1
+    if turn bigger 20
+        print "Game time limit reached!"
+        remember lead = 0
+        remember leader = ""
+        remember k = 1
+        repeat length players times
+            if positions k bigger lead
+                remember lead = positions k
+                remember leader = players k
+            remember k = k + 1
+        print leader " is winning at position " lead
+        stop
+
+
+

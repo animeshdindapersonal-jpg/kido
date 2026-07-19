@@ -1,0 +1,63 @@
+# q024: Space Quiz
+# Questions about space
+
+print "=== Space Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: What is the closest star to Earth?"
+ask "Your answer: " answer
+
+if answer is "Sun" or answer is "sun" or answer is "The Sun" or answer is "the sun"
+    print "Correct! The Sun is the closest star."
+    remember score = score + 1
+else
+    print "The Sun is the closest star to Earth."
+
+print ""
+print "Question 2: How many moons does Earth have?"
+ask "Your answer: " answer2
+
+remember num2 = as number answer2
+if num2 is 1
+    print "Correct! Earth has 1 moon."
+    remember score = score + 1
+else
+    print "Earth has 1 moon."
+
+print ""
+print "Question 3: What planet is known for its rings?"
+ask "Your answer: " answer3
+
+if answer3 is "Saturn" or answer3 is "saturn"
+    print "Correct! Saturn has beautiful rings."
+    remember score = score + 1
+else
+    print "Saturn is known for its rings."
+
+print ""
+print "Question 4: What is the largest planet in our solar system?"
+ask "Your answer: " answer4
+
+if answer4 is "Jupiter" or answer4 is "jupiter"
+    print "Correct! Jupiter is the largest planet."
+    remember score = score + 1
+else
+    print "Jupiter is the largest planet."
+
+print ""
+print "Question 5: What do we a person who travels to space?"
+ask "Your answer: " answer5
+
+if answer5 is "astronaut"
+    print "Correct! An astronaut travels to space."
+    remember score = score + 1
+else
+    print "An astronaut travels to space."
+
+print ""
+print "Space Score: " score "/" total
+
+
+

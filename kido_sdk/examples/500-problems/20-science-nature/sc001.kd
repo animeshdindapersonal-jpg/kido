@@ -1,0 +1,12 @@
+# Science: Solar system
+dict planets = {"mercury": "smallest planet"}
+set planets "venus" "hottest planet"
+set planets "earth" "our home"
+set planets "mars" "red planet"
+set planets "jupiter" "largest planet"
+list names = keys planets
+print "Solar System:"
+repeat length names times as i
+    print names at i ":" planets at names at i
+
+

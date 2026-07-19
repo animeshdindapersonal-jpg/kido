@@ -1,0 +1,12 @@
+remember str = "hello world, this is kido"
+remember first = uppercase (str at 1)
+remember rest = ""
+repeat length str times as i
+  if i bigger 1
+    remember rest = rest + (str at i)
+remember result = first + rest
+print "Before: " str
+print "After: " result
+
+
+

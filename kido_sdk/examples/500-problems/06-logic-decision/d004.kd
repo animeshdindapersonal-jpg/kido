@@ -1,0 +1,23 @@
+# d004: Leap Year Checker
+# Divisible by 400 or by 4 but not 100
+
+fun is_leap year
+    if year / 400 * 400 is year
+        return yes
+    if year / 4 * 4 is year and year / 100 * 100 not year
+        return yes
+    return no
+
+print "=== LEAP YEAR CHECKER ==="
+
+list years = 2000 2024 1900 2023 2025 2400 2100
+
+repeat length years times as i
+    remember y = years at i
+    if is_leap y is yes
+        print y "is a leap year"
+    else
+        print y "is NOT a leap year"
+
+
+

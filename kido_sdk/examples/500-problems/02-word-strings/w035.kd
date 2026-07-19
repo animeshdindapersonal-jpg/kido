@@ -1,0 +1,12 @@
+remember a = "apple"
+remember b = "banana"
+if a is b
+  print a " equals " b
+else
+  if a bigger b
+  print a " comes after " b
+else
+  print a " comes before " b
+
+
+

@@ -1,0 +1,24 @@
+# d023: Screen Time Limit Checker
+
+fun check_screen_time hours_used max_allowed
+    if hours_used bigger max_allowed
+        return "OVER LIMIT! Time to stop and play outside."
+    else
+      if hours_used bigger max_allowed - 1
+        return "Almost at your limit! One more hour then stop."
+    else
+        return "You have" max_allowed - hours_used "hours left. Enjoy responsibly!"
+
+print "=== SCREEN TIME LIMIT CHECKER ==="
+print ""
+
+print "Used: 2 hours, Limit: 4 hours ->" check_screen_time 2 4
+print "Used: 3 hours, Limit: 4 hours ->" check_screen_time 3 4
+print "Used: 4 hours, Limit: 4 hours ->" check_screen_time 4 4
+print "Used: 5 hours, Limit: 4 hours ->" check_screen_time 5 4
+print ""
+print "Used: 1 hour, Limit: 2 hours ->" check_screen_time 1 2
+print "Used: 2 hours, Limit: 2 hours ->" check_screen_time 2 2
+
+
+

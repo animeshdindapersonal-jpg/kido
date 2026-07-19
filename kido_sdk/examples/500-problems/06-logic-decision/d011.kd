@@ -1,0 +1,47 @@
+# d011: Guess Who? (ask questions to identify animal)
+
+fun identify_animal has_fur lives_water has_legs is_big
+    if has_fur is no and lives_water is yes and has_legs is no
+        return "Fish"
+    else
+      if has_fur is no and lives_water is yes and has_legs is no and is_big is yes
+        return "Whale"
+    else
+      if has_fur is yes and lives_water is no and has_legs is yes and is_big is yes
+        return "Bear"
+    else
+      if has_fur is yes and lives_water is no and has_legs is yes and is_big is no
+        return "Cat"
+    else
+      if has_fur is no and lives_water is no and has_legs is yes and is_big is no
+        return "Snake"
+    else
+      if has_fur is yes and lives_water is no and has_legs is yes and is_big is no
+        return "Dog"
+    else
+        return "Unknown"
+
+print "=== GUESS THE ANIMAL ==="
+print ""
+
+# Demo 1: big, furry, land animal with legs
+print "Example 1: Has fur? yes | Lives in water? no | Has legs? yes | Is big? yes"
+print "Animal:" identify_animal yes no yes yes
+print ""
+
+# Demo 2: lives in water, no fur, no legs
+print "Example 2: Has fur? no | Lives in water? yes | Has legs? no | Is big? no"
+print "Animal:" identify_animal no yes no no
+print ""
+
+# Demo 3: small pet with fur
+print "Example 3: Has fur? yes | Lives in water? no | Has legs? yes | Is big? no"
+print "Animal:" identify_animal yes no yes no
+print ""
+
+# Demo 4: no legs, lives on land
+print "Example 4: Has fur? no | Lives in water? no | Has legs? no | Is big? no"
+print "Animal:" identify_animal no no no no
+
+
+

@@ -1,0 +1,6 @@
+# Measurement: Kilometers to miles
+remember km = 10
+remember miles = km * 0.621371
+print km "km =" miles "miles"
+
+

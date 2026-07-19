@@ -1,0 +1,10 @@
+fun greet name
+    print "Hello, "
+    print name
+    print "!"
+    return 1
+
+greet "Alice"
+
+
+

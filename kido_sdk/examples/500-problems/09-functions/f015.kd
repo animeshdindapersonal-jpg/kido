@@ -1,0 +1,26 @@
+fun isPalindrome s
+    remember i = 1
+    remember j = length s
+    repeat length s / 2 times
+        if s[i] not s[j]
+            return 0
+        i = i + 1
+        j = j - 1
+    return 1
+
+remember word1 = "racecar"
+remember p1 = isPalindrome word1
+if p1 is 1
+    print "f015: 'racecar' is a palindrome"
+else
+    print "f015: 'racecar' is not a palindrome"
+
+remember word2 = "hello"
+remember p2 = isPalindrome word2
+if p2 is 1
+    print "f015: 'hello' is a palindrome"
+else
+    print "f015: 'hello' is not a palindrome"
+
+
+

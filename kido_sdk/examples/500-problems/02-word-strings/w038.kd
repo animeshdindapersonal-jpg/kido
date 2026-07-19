@@ -1,0 +1,13 @@
+remember str = "banana"
+remember seen = ""
+remember result = ""
+repeat length str times as i
+  remember ch = str at i
+  if not (has seen ch)
+    remember seen = seen + ch
+    remember result = result + ch
+print "Original: " str
+print "No duplicates: " result
+
+
+

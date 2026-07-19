@@ -1,0 +1,33 @@
+# 20. Run-Length Encoding
+fun rle_encode text
+    remember text_len = length text
+    if text_len is 0
+        return ""
+    remember result = ""
+    remember count = 1
+    remember current = text at 1
+    remember i = 2
+    repeat forever
+        if i bigger text_len
+            stop
+        remember ch = text at i
+        if ch is current
+            remember count = count + 1
+        else
+            remember count_str = as string count
+            remember result = result + current + count_str
+            remember current = ch
+            remember count = 1
+        remember i = i + 1
+    remember count_str = as string count
+    remember result = result + current + count_str
+    return result
+
+print "=== Run-Length Encoding ==="
+list tests = "AAABBBCCC" "AABCCCDEEEE" "XXXXXXXXXX"
+repeat length tests times as i
+    remember original = tests at i
+    remember encoded = rle_encode original
+    remember orig_len = length original
+    remember enc_len = length encoded
+    print original "(" orig_len ")" "->" encoded "(" enc_len ")"

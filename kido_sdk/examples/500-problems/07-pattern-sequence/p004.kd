@@ -1,0 +1,7 @@
+# p004: Multiplication table of 5
+print "5 Times Table:"
+repeat 10 times as i
+    remember result = 5 * i
+    print "5 x" i "=" result
+
+

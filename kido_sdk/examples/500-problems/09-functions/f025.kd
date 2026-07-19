@@ -1,0 +1,15 @@
+fun randomBetween a b
+    return random a b
+
+remember lo = 1
+remember hi = 100
+remember r = randomBetween lo hi
+print "f025: random(1, 100) = "
+print r
+
+remember r2 = randomBetween lo hi
+print "f025: random(1, 100) = "
+print r2
+
+
+

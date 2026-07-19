@@ -1,0 +1,27 @@
+# d007: What to Wear Based on Temperature
+
+fun what_to_wear temp
+    if temp bigger 35
+        return "Wear light cotton clothes and a hat"
+    else
+      if temp bigger 25
+        return "Wear a t-shirt and shorts"
+    else
+      if temp bigger 15
+        return "Wear a light jacket"
+    else
+      if temp bigger 5
+        return "Wear a sweater and jacket"
+    else
+        return "Wear a heavy coat, scarf, and gloves"
+
+print "=== WHAT TO WEAR ==="
+
+list temps = 40 30 20 10 0 -5
+
+repeat length temps times as i
+    remember t = temps at i
+    print "Temperature:" t "C ->" what_to_wear t
+
+
+

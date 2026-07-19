@@ -1,0 +1,38 @@
+# s016: Alliteration Generator
+# Words starting with the same letter
+
+print "=== ALLITERATION GENERATOR ==="
+print ""
+
+list letters = "B" "C" "D" "F" "G" "H" "J" "K" "L" "M" "N" "P" "R" "S" "T" "W"
+
+list b_words = "big" "blue" "bouncy" "bear"
+list c_words = "cute" "curly" "crazy" "cat"
+list s_words = "silly" "small" "sparkly" "snake"
+list t_words = "tiny" "tall" "tricky" "turtle"
+
+remember idx = random 1 length letters
+remember letter = letters at idx
+
+print "Alliteration with the letter '" letter "':"
+print ""
+
+if letter is "B"
+    print "Big blue bouncy bear."
+else
+  if letter is "C"
+    print "Cute curly crazy cat."
+else
+  if letter is "S"
+    print "Silly small sparkly snake."
+else
+  if letter is "T"
+    print "Tiny tall tricky turtle."
+else
+    print letter "right " letter "abbits " letter "un " letter "ast!"
+
+print ""
+print "Can you make your own with '" letter "'?"
+
+
+

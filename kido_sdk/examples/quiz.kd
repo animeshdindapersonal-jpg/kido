@@ -1,0 +1,30 @@
+# Quiz Game
+
+list questions = "What is 5 + 3?" "What color is the sky?" "How many days in a week?" "What is 10 * 2?" "What is 2 + 2?"
+list answers = "8" "blue" "7" "20" "4"
+
+remember score = 0
+remember total = length questions
+
+print "=== QUIZ TIME ==="
+print "Answer" total "questions!"
+print ""
+
+repeat total times as i
+    print "Question" i ":" questions at i
+    ask "Your answer:" guess
+    
+    if lowercase guess is lowercase answers at i
+        print "Correct!"
+        remember score = score + 1
+    else
+        print "Wrong! Answer:" answers at i
+    print ""
+
+print "Your score:" score "/" total
+if score is total
+    print "PERFECT SCORE!"
+else if score bigger total / 2
+    print "Good job!"
+else
+    print "Keep practicing!"

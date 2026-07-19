@@ -1,0 +1,27 @@
+# 13. Insertion Sort
+fun insertion_sort arr
+    remember n = length arr
+    remember i = 2
+    repeat forever
+        if i bigger n
+            stop
+        remember key = arr at i
+        remember j = i - 1
+        repeat forever
+            if j smaller 1
+                stop
+            remember val_j = arr at j
+            if val_j smaller or same key
+                stop
+            remember j1 = j + 1
+            replace arr at j1 with val_j
+            remember j = j - 1
+        remember j1 = j + 1
+        replace arr at j1 with key
+        remember i = i + 1
+
+print "=== Insertion Sort ==="
+list arr = 12 11 13 5 6
+print "Before:" arr
+insertion_sort arr
+print "After:" arr

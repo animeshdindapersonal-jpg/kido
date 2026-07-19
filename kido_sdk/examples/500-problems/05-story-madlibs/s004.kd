@@ -1,0 +1,24 @@
+# s004: Mad Libs - Pizza Party
+# Fill in a topping, number, and person
+
+print "=== MAD LIBS: PIZZA PARTY ==="
+print ""
+
+remember topping = "pineapple"
+remember numCount = 12
+remember personName = "Grandma"
+
+print "Pizza Party!"
+print ""
+print personName " invited me to a pizza party with " numCount " friends."
+print "Each of us got to pick our favorite topping."
+print "I chose " topping " on my pizza."
+print personName " said, '" topping " pizza is the best kind!'"
+print "We ate " numCount " slices each and laughed all night."
+print "By the end, we had ordered " numCount " pizzas!"
+print personName " said we should do it again next week."
+print ""
+print "THE END"
+
+
+

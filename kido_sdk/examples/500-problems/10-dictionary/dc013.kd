@@ -1,0 +1,29 @@
+# dc013: School Subjects
+# Map each subject to its teacher's name
+
+dict subjects = {
+    "Math": "Ms. Sharma",
+    "Science": "Mr. Patel",
+    "English": "Mrs. Gupta",
+    "History": "Mr. Singh",
+    "Art": "Ms. Kapoor"
+}
+
+print "=== SCHOOL SUBJECTS & TEACHERS ==="
+print ""
+print "Math:" subjects at "Math"
+print "Science:" subjects at "Science"
+print "English:" subjects at "English"
+print "History:" subjects at "History"
+print "Art:" subjects at "Art"
+print ""
+
+set subjects "Music" "Mr. Verma"
+print "Added Music:" subjects at "Music"
+print ""
+
+if subjects has "Science"
+    print "Science teacher:" subjects at "Science"
+
+
+

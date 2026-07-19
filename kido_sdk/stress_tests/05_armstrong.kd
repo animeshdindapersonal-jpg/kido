@@ -1,0 +1,30 @@
+# 5. Armstrong Numbers (up to 500 only)
+fun modulo a b
+    remember result = a
+    repeat forever
+        if result smaller b
+            stop
+        remember result = result - b
+    return result
+
+fun is_armstrong_3digit num
+    remember d1 = num / 100
+    remember temp = num - d1 * 100
+    remember d2 = temp / 10
+    remember d3 = temp - d2 * 10
+    remember sum = d1 * d1 * d1 + d2 * d2 * d2 + d3 * d3 * d3
+    return sum is num
+
+print "=== 3-Digit Armstrong Numbers ==="
+list results
+remember num = 100
+repeat forever
+    if num bigger 999
+        stop
+    if is_armstrong_3digit num
+        add results num
+    remember num = num + 1
+
+print results
+remember cnt = length results
+print "Total:" cnt

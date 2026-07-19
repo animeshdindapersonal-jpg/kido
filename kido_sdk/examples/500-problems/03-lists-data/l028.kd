@@ -1,0 +1,23 @@
+  # Color picker - pick a random color from list
+  # Real-world use: randomly choose a color for design
+list colors
+add colors "red"
+add colors "blue"
+add colors "green"
+add colors "yellow"
+add colors "purple"
+add colors "orange"
+print "=== COLOR PICKER ==="
+print "Available colors:"
+print colors
+print ""
+remember pick = random colors
+print "Randomly chosen color:"
+print pick
+print ""
+print "Shuffled palette:"
+shuffle colors
+print colors
+
+
+

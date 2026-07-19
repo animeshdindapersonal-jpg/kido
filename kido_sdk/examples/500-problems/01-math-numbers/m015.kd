@@ -1,0 +1,8 @@
+# Perimeter of a rectangle: Distance around a garden
+remember length = 15
+remember width = 10
+remember perimeter = (length + width) * 2
+print "Your garden is " length " ft long and " width " ft wide."
+print "The fence needed around it: " perimeter " feet"
+
+

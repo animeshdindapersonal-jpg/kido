@@ -1,0 +1,43 @@
+# 33. Inventory Management System
+list items = "Apple" "Banana" "Orange"
+list quantities = 50 30 45
+list prices = 2 1 3
+
+fun find_item name
+    remember items_len = length items
+    remember i = 1
+    repeat forever
+        if i bigger items_len
+            stop
+        if items at i is name
+            return i
+        remember i = i + 1
+    return 0
+
+fun sell_item name amount
+    remember idx = find_item name
+    if idx is 0
+        print "Item not found!"
+        stop
+    remember current = quantities at idx
+    if amount bigger current
+        print "Not enough stock!"
+        stop
+    remember new_qty = current - amount
+    replace quantities at idx with new_qty
+    remember price = prices at idx
+    remember revenue = amount * price
+    print "Sold" amount name "for $" revenue
+
+print "=== Inventory System ==="
+print "Initial Stock:"
+repeat length items times as i
+    print " " items at i ": Qty=" quantities at i
+
+sell_item "Apple" 10
+sell_item "Banana" 5
+
+print ""
+print "Updated Stock:"
+repeat length items times as i
+    print " " items at i ": Qty=" quantities at i

@@ -1,0 +1,8 @@
+# Science: Food chain
+list chain = "Sun" "Grass" "Rabbit" "Fox"
+print "Food Chain:"
+repeat length chain times as i
+    if i bigger 1
+        print chain at i "eats" chain at i - 1
+
+

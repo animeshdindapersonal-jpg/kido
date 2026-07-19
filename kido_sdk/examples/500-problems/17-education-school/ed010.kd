@@ -1,0 +1,7 @@
+# School: Reading speed
+remember words = 200
+remember mins = 4
+remember speed = words / mins
+print "Reading:" speed "words/min"
+
+

@@ -1,0 +1,24 @@
+# s010: Story Generator
+# Randomly combine characters, settings, and actions from lists
+
+print "=== STORY GENERATOR ==="
+print ""
+
+list characters = "a brave astronaut" "a sneaky cat" "a dancing robot" "a friendly giant" "a curious penguin"
+list settings = "on a distant planet" "in a haunted house" "at the bottom of the ocean" "inside a volcano" "on top of a rainbow"
+list actions = "found a treasure map" "learned to fly" "made a new friend" "solved a mystery" "baked a giant cake"
+
+remember c = random characters
+remember s = random settings
+remember a = random actions
+
+print "Once upon a time, " c " " s "."
+print "One day, " c " " a "."
+print "It was the most amazing adventure ever!"
+print "Everyone who heard the story wanted to join."
+print "And so, " c " lived happily ever after."
+print ""
+print "THE END"
+
+
+

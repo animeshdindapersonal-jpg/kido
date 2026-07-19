@@ -1,0 +1,71 @@
+# q032: Count the Shapes Quiz
+# Count shapes in a description
+
+print "=== Count the Shapes Quiz ==="
+print "Read the description and count the shapes!"
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: A picture has 3 triangles and 2 squares."
+print "How many shapes are in the picture total?"
+ask "Your answer: " answer
+
+remember num1 = as number answer
+if num1 is 5
+    print "Correct! 3 triangles + 2 squares = 5 shapes."
+    remember score = score + 1
+else
+    print "3 + 2 = 5 shapes total."
+print ""
+
+print "Question 2: A drawing has 2 circles, 4 triangles, and 1 rectangle."
+print "How many shapes total?"
+ask "Your answer: " answer2
+
+remember num2 = as number answer2
+if num2 is 7
+    print "Correct! 2+4+1 = 7 shapes."
+    remember score = score + 1
+else
+    print "2 + 4 + 1 = 7 shapes."
+print ""
+
+print "Question 3: There are 6 triangles in a picture."
+print "If you remove 2 triangles, how many are left?"
+ask "Your answer: " answer3
+
+remember num3 = as number answer3
+if num3 is 4
+    print "Correct! 6 - 2 = 4 triangles."
+    remember score = score + 1
+else
+    print "6 - 2 = 4 triangles."
+print ""
+
+print "Question 4: A shape has 4 sides. Two sides are 5cm and two sides are 3cm."
+print "What shape is it?"
+ask "Your answer: " answer4
+
+if answer4 is "rectangle" or answer4 is "square"
+    print "Correct! That describes a rectangle."
+    remember score = score + 1
+else
+    print "That describes a rectangle (4 sides, opposite sides equal)."
+print ""
+
+print "Question 5: How many corners does a cube have?"
+ask "Your answer: " answer5
+
+remember num5 = as number answer5
+if num5 is 8
+    print "Correct! A cube has 8 corners."
+    remember score = score + 1
+else
+    print "A cube has 8 corners."
+print ""
+
+print "Shapes Counting Score: " score "/" total
+
+
+

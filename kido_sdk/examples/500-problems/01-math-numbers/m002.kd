@@ -1,0 +1,8 @@
+# Change from a purchase: Subtract to find remaining money
+remember money = 50
+remember cost = 27
+remember change = money - cost
+print "You had $" money " and bought a toy for $" cost
+print "You get $" change " in change!"
+
+

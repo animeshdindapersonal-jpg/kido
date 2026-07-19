@@ -1,0 +1,7 @@
+# Geometry: Area of a triangle
+remember base = 6
+remember height = 4
+remember area = base * height / 2
+print "Triangle area =" area
+
+

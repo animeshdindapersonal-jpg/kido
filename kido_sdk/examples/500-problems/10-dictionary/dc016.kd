@@ -1,0 +1,27 @@
+# dc016: Planet Facts
+# Store information about a planet
+
+dict planet = {
+    "name": "Mars",
+    "color": "red",
+    "size": "medium",
+    "moons": 2
+}
+
+print "=== PLANET:" planet at "name" "==="
+print ""
+print "Color:" planet at "color"
+print "Size:" planet at "size"
+print "Moons:" planet at "moons"
+print ""
+
+if planet at "moons" bigger 0
+    print planet at "name" " has" planet at "moons" "moon(s)"
+else
+    print planet at "name" " has no moons"
+
+if planet at "name" is "Mars"
+    print "Mars is called the Red Planet"
+
+
+

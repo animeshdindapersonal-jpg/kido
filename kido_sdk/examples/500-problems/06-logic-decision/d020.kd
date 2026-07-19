@@ -1,0 +1,29 @@
+# d020: Meal Time Decision
+# Morning = breakfast, Noon = lunch, Evening = dinner
+
+fun get_meal time_str
+    if time_str is "morning"
+        return "Breakfast - eat healthy like eggs and toast!"
+    else
+      if time_str is "noon"
+        return "Lunch - enjoy a good meal!"
+    else
+      if time_str is "evening"
+        return "Dinner - light meal before bed"
+    else
+      if time_str is "night"
+        return "Snack time - something small"
+    else
+        return "Just a regular time - have a snack!"
+
+print "=== MEAL TIME DECISION ==="
+print ""
+
+list times = "morning" "noon" "evening" "night" "midnight"
+
+repeat length times times as i
+    remember t = times at i
+    print "Time:" t "->" get_meal t
+
+
+

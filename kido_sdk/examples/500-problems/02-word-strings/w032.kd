@@ -1,0 +1,16 @@
+remember str = "kido"
+remember width = 20
+remember len = length str
+remember pad = width - len
+remember left = pad / 2
+remember right = pad - left
+remember result = ""
+repeat left times
+  remember result = result + " "
+remember result = result + str
+repeat right times
+  remember result = result + " "
+print "Centered (" width "): '" result "'"
+
+
+

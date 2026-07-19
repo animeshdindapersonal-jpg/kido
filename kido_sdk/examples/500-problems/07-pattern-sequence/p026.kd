@@ -1,0 +1,9 @@
+# p026: Column pattern (1, 22, 333, 4444, 55555)
+print "Column number pattern:"
+repeat 7 times as i
+    remember row = ""
+    repeat i times as j
+        remember row = row + i
+    print row
+
+

@@ -1,0 +1,8 @@
+# p017: Repeating 123 pattern
+print "Repeating 123 pattern:"
+remember pattern = ""
+repeat 4 times as i
+    remember pattern = pattern + "123"
+print pattern
+
+

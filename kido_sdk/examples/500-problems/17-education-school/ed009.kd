@@ -1,0 +1,8 @@
+# School: Class schedule
+list days = "Mon" "Tue" "Wed" "Thu" "Fri"
+list subs = "Math" "English" "Science" "History" "Art"
+print "Schedule:"
+repeat 5 times as i
+    print days at i ":" subs at i
+
+

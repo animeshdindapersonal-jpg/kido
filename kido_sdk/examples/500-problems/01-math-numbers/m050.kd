@@ -1,0 +1,19 @@
+# Guess the operation: Given two numbers and result, find the operation
+remember x = 8
+remember y = 4
+remember sumResult = x + y
+remember diffResult = x - y
+remember prodResult = x * y
+remember divResult = x / y
+print "Guess the Operation!"
+print "Number 1: " x
+print "Number 2: " y
+print ""
+print "If the result is " sumResult ", the operation is +"
+print "If the result is " diffResult ", the operation is -"
+print "If the result is " prodResult ", the operation is *"
+print "If the result is " divResult ", the operation is /"
+print ""
+print "Can you guess which operation gives each result?"
+
+

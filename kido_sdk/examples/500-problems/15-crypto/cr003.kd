@@ -1,0 +1,6 @@
+# Crypto: Number substitution
+remember word = "abc"
+print "Word:" word
+print "Numbers: 1 2 3 (a=1, b=2, c=3)"
+
+

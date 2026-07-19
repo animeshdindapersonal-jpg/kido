@@ -1,0 +1,37 @@
+# Hot potato game
+print "=== HOT POTATO ==="
+print ""
+list players = "Alice" "Bob" "Charlie" "Diana" "Eve"
+remember holder = 1
+remember passes = 20
+
+print length players " players playing Hot Potato!"
+print ""
+
+repeat passes times as i
+    print "Pass " i ": " players holder " has the potato"
+    remember holder = holder + 1
+    if holder bigger length players
+        remember holder = 1
+    remember stop = random 1 20
+    if stop is 10
+        print ""
+        print "BOOM! Hot potato exploded!"
+        print players holder " is OUT!"
+        remove players holder
+        if length players is 1
+            print ""
+            print players 1 " is the WINNER!"
+            stop
+        if holder bigger length players
+            remember holder = 1
+        print length players " players remaining"
+        print ""
+
+if length players bigger 1
+    print ""
+    print "Game ended early."
+    print "Remaining players: " players
+
+
+

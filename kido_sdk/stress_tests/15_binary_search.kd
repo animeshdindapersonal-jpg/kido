@@ -1,0 +1,33 @@
+# 15. Binary Search
+fun binary_search arr target
+    remember low = 1
+    remember high = length arr
+    remember steps = 0
+    repeat forever
+        if low bigger high
+            stop
+        remember mid = (low + high) / 2
+        remember val_mid = arr at mid
+        remember steps = steps + 1
+        if val_mid is target
+            return mid
+        if val_mid smaller target
+            remember mid1 = mid + 1
+            remember low = mid1
+        else
+            remember mid1 = mid - 1
+            remember high = mid1
+    return 0
+
+print "=== Binary Search ==="
+list arr
+repeat 20 times as i
+    remember val = i * 5
+    add arr val
+
+print "Array:" arr
+list targets = 10 50 75 100 25
+repeat length targets times as i
+    remember t = targets at i
+    remember pos = binary_search arr t
+    print "Search" t ": position" pos

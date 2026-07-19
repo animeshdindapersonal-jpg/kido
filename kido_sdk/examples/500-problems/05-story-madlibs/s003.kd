@@ -1,0 +1,23 @@
+# s003: Mad Libs - The Magic School
+# Fill in a teacher, subject, and number
+
+print "=== MAD LIBS: THE MAGIC SCHOOL ==="
+print ""
+
+remember teacher = "Ms. Fizzle"
+remember subject = "baking"
+remember num = 7
+
+print "Welcome to the Magic School!"
+print ""
+print "Our teacher " teacher " is the best " subject " teacher ever."
+print "Today we learned " num " amazing facts about " subject "."
+print teacher " said, 'If you mix " num " ingredients, magic happens!'"
+print "So we all grabbed " num " spoons and started " subject "."
+print "Suddenly, our " subject " project floated in the air!"
+print teacher " smiled. 'That's the magic of " subject "!'"
+print ""
+print "THE END"
+
+
+

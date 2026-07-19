@@ -1,0 +1,14 @@
+# Calendar: Season by month
+remember m = 7
+if m is 12 or m is 1 or m is 2
+    print "Winter"
+else
+  if m is 3 or m is 4 or m is 5
+    print "Spring"
+else
+  if m is 6 or m is 7 or m is 8
+    print "Summer"
+else
+    print "Fall"
+
+

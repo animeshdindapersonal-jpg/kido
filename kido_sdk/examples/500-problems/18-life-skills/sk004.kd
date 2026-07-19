@@ -1,0 +1,7 @@
+# Life: Reading log
+remember books = 5
+remember pages = 340
+print "Read" books "books, " pages "pages"
+print "Avg:" pages / books "pages/book"
+
+

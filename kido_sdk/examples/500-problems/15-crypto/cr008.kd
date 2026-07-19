@@ -1,0 +1,5 @@
+# Crypto: Morse code
+print "SOS in Morse:"
+print "... --- ..."
+
+

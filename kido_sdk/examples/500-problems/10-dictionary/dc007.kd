@@ -1,0 +1,25 @@
+# dc007: Country Information
+# Store details about a country
+
+dict country = {
+    "capital": "New Delhi",
+    "population": 1400000000,
+    "language": "Hindi"
+}
+
+print "=== COUNTRY INFO: INDIA ==="
+print ""
+print "Capital:" country at "capital"
+print "Population:" country at "population"
+print "Language:" country at "language"
+print ""
+
+set country "currency" "Rupee"
+print "Currency:" country at "currency"
+print ""
+
+if country has "language"
+    print "Official language:" country at "language"
+
+
+

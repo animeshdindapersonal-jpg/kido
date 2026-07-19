@@ -1,0 +1,10 @@
+# Life: Screen time
+remember time = 45
+remember limit = 60
+print "Screen:" time "min (limit:" limit ")"
+if time bigger limit
+    print "Over limit! Break time!"
+else
+    print limit - time "min remaining"
+
+

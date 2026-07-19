@@ -1,0 +1,22 @@
+# d001: Traffic Light Decision
+# Red = stop, Yellow = wait, Green = go
+
+list lights = "red" "green" "yellow"
+
+repeat length lights times as i
+    remember light = lights at i
+    print "Traffic light is" light "->"
+
+    if light is "red"
+        print "  STOP! Wait for green."
+    else
+      if light is "yellow"
+        print "  SLOW DOWN! Get ready to stop."
+    else
+      if light is "green"
+        print "  GO! Drive safely."
+
+    print ""
+
+
+

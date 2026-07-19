@@ -1,0 +1,18 @@
+  # Shopping list - add items and display everything
+  # Real-world use: keep track of items to buy at the store
+list shopping
+add shopping "milk"
+add shopping "bread"
+add shopping "eggs"
+add shopping "cheese"
+add shopping "butter"
+print "=== SHOPPING LIST ==="
+print "Items:"
+print shopping
+print "Total:"
+print length shopping
+print "As CSV:"
+print join shopping ", "
+
+
+

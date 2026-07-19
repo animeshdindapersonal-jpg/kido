@@ -1,0 +1,10 @@
+# Life: Water tracker
+remember goal = 8
+remember drank = 6
+print "Water: " drank "/" goal "glasses"
+if drank bigger or same goal
+    print "Goal met!"
+else
+    print goal - drank "more needed"
+
+

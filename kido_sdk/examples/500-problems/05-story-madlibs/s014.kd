@@ -1,0 +1,21 @@
+# s014: Riddle Generator
+# Ask a riddle and check the answer
+
+print "=== RIDDLE GENERATOR ==="
+print ""
+
+list riddles = "I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?" "The more you take, the more you leave behind. What am I?" "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?" "What has hands but cannot clap?" "What gets wetter the more it dries?"
+list riddleAnswers = "echo" "footsteps" "map" "clock" "towel"
+
+remember idx = random 1 length riddles
+remember myAnswer = riddleAnswers at idx
+
+print "Riddle:"
+print riddles at idx
+print ""
+print "Answer:" myAnswer
+print ""
+print "Did you get it right?"
+
+
+

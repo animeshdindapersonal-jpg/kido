@@ -1,0 +1,24 @@
+# io004: Count number of lines in a file
+# Real-world use: measure file size in lines of code
+
+remember filename = "poem.txt"
+write "Roses are red" to filename
+append "Violets are blue" to filename
+append "KIDO is awesome" to filename
+append "And so are you!" to filename
+
+remember content = read filename
+remember lineCount = 0
+
+repeat length content times as i
+    remember ch = content at i
+    if ch is newline
+        lineCount = lineCount + 1
+
+lineCount = lineCount + 1
+
+print "File: " filename
+print "Lines: " lineCount
+
+
+

@@ -1,0 +1,19 @@
+# s023: Daily Affirmation Generator
+# Positive messages
+
+print "=== DAILY AFFIRMATION GENERATOR ==="
+print ""
+
+list affirmations = "I am brave and can do hard things." "I am kind to myself and others." "Every day I grow smarter and stronger." "I believe in myself and my abilities." "I am a good friend and a good person." "My imagination is powerful and amazing." "I can learn anything when I try my best." "I am proud of who I am." "I spread joy wherever I go." "Today is going to be a great day!"
+
+shuffle affirmations
+
+print "Your affirmation for today:"
+print ""
+print "*** " affirmations at 1 " ***"
+print ""
+print "Say it out loud with a smile!"
+print "You are awesome!"
+
+
+

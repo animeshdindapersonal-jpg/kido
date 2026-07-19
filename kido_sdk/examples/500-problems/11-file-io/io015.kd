@@ -1,0 +1,9 @@
+# File: Coding journal
+write "Day 1: Started KIDO" to "journal.txt"
+append "Day 2: Made a game" to "journal.txt"
+append "Day 3: Learned files" to "journal.txt"
+remember j = read "journal.txt"
+print "Journal:"
+print j
+
+

@@ -1,0 +1,19 @@
+remember str = "hello world from kido"
+remember words = split str " "
+remember result = ""
+repeat length words times as i
+  remember w = words at i
+  remember word = ""
+  repeat length w times as j
+    if j is 1
+      remember word = word + (uppercase (w at j))
+    else
+      remember word = word + (lowercase (w at j))
+  if i bigger 1
+    remember result = result + " "
+  remember result = result + word
+print "Original: " str
+print "Title case: " result
+
+
+

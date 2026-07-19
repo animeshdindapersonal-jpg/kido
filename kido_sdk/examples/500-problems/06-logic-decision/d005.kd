@@ -1,0 +1,26 @@
+# d005: Age Category
+# Toddler 0-3, Child 4-12, Teen 13-19, Adult 20+
+
+fun get_category age_param
+    if age_param smaller or same 3
+        return "Toddler"
+    else
+      if age_param smaller or same 12
+        return "Child"
+    else
+      if age_param smaller or same 19
+        return "Teen"
+    else
+        return "Adult"
+
+print "=== AGE CATEGORY ==="
+
+list ages = 2 7 15 25 0 13 19 20 4
+
+repeat length ages times as i
+    remember a = ages at i
+    remember cat = get_category a
+    print "Age:" a "->" cat
+
+
+

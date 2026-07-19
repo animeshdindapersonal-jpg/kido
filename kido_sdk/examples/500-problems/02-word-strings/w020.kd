@@ -1,0 +1,37 @@
+remember pwd = "Pass1234"
+remember len = length pwd
+remember hasUpper = no
+remember hasLower = no
+remember hasNumber = no
+remember up = uppercase pwd
+remember low = lowercase pwd
+remember nums = "0123456789"
+repeat len times as i
+  remember ch = pwd at i
+  if ch is (up at i) and ch is not (low at i)
+    remember hasUpper = yes
+  if ch is not (up at i) and ch is (low at i)
+    remember hasLower = yes
+  if has nums ch
+    remember hasNumber = yes
+remember score = 0
+if len bigger or same 8
+  remember score = score + 1
+if hasUpper is yes
+  remember score = score + 1
+if hasLower is yes
+  remember score = score + 1
+if hasNumber is yes
+  remember score = score + 1
+print "Password: " pwd
+print "Strength: " score "/4"
+if score is 4
+  print "Strong"
+else
+  if score bigger or same 3
+  print "Medium"
+else
+  print "Weak"
+
+
+

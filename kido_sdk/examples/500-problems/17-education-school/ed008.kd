@@ -1,0 +1,7 @@
+# School: Homework planner
+remember subjects = 4
+remember mins = 30
+remember total = subjects * mins
+print "Homework time:" total "minutes"
+
+

@@ -1,0 +1,26 @@
+  # Vacation planning - places to visit
+  # Real-world use: travel bucket list
+list places
+add places "Paris"
+add places "Tokyo"
+add places "London"
+add places "New York"
+add places "Sydney"
+add places "Rome"
+print "=== VACATION PLANNING ==="
+print "Places to visit:"
+print places
+print ""
+print "Number of destinations:"
+print length places
+print ""
+remember pick = random places
+print "Next trip destination:"
+print pick
+print ""
+sort places
+print "Alphabetical order:"
+print places
+
+
+

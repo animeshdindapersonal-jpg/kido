@@ -1,0 +1,44 @@
+# d015: Compare Three Numbers (find largest)
+
+fun find_largest a b c
+    remember biggest = a
+    if b bigger biggest
+        remember biggest = b
+    if c bigger biggest
+        remember biggest = c
+    return biggest
+
+fun find_smallest a b c
+    remember smallest = a
+    if b smaller smallest
+        remember smallest = b
+    if c smaller smallest
+        remember smallest = c
+    return smallest
+
+print "=== FIND LARGEST OF THREE ==="
+print ""
+
+list sets = 5 12 8  "100" 25 50  7 7 7  -5 0 10
+
+print "Set 1: 5, 12, 8"
+print "  Largest:" find_largest 5 12 8
+print "  Smallest:" find_smallest 5 12 8
+print ""
+
+print "Set 2: 100, 25, 50"
+print "  Largest:" find_largest 100 25 50
+print "  Smallest:" find_smallest 100 25 50
+print ""
+
+print "Set 3: 7, 7, 7"
+print "  Largest:" find_largest 7 7 7
+print "  Smallest:" find_smallest 7 7 7
+print ""
+
+print "Set 4: -5, 0, 10"
+print "  Largest:" find_largest -5 0 10
+print "  Smallest:" find_smallest -5 0 10
+
+
+

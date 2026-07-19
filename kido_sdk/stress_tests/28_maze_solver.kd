@@ -1,0 +1,25 @@
+# 28. Simple Maze Path Counter (using formula instead of 2D array)
+# Paths in an NxM grid = C(N+M-2, N-1) = (N+M-2)! / ((N-1)! * (M-1)!)
+fun factorial n
+    if n smaller or same 1
+        return 1
+    remember prev = factorial n - 1
+    return n * prev
+
+fun count_paths rows cols
+    remember total = rows + cols - 2
+    remember r1 = rows - 1
+    remember c1 = cols - 1
+    remember num = factorial total
+    remember den1 = factorial r1
+    remember den2 = factorial c1
+    remember den = den1 * den2
+    return num / den
+
+print "=== Maze Path Counter ==="
+remember p1 = count_paths 3 3
+remember p2 = count_paths 4 4
+remember p3 = count_paths 5 5
+print "3x3 grid:" p1 "paths"
+print "4x4 grid:" p2 "paths"
+print "5x5 grid:" p3 "paths"

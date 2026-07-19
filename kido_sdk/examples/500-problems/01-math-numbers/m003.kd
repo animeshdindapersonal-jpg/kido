@@ -1,0 +1,8 @@
+# Total cost of multiple items: Multiply to find total
+remember price = 8
+remember count = 5
+remember totalCost = price * count
+print "Each candy costs $" price " and you buy " count " pieces."
+print "Total cost: $" totalCost
+
+

@@ -1,0 +1,8 @@
+# Share pizza equally: Divide slices among friends
+remember slices = 12
+remember friends = 4
+remember eachGets = slices / friends
+print "You have " slices " pizza slices and " friends " friends."
+print "Each friend gets " eachGets " slices. Yum!"
+
+

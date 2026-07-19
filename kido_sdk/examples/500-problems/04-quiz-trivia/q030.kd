@@ -1,0 +1,105 @@
+# q030: True/False General Knowledge
+# 10 true/false questions
+
+print "=== True/False General Knowledge ==="
+print "Answer each with yes or no"
+print ""
+remember score = 0
+remember total = 10
+
+print "1) The Earth is round."
+ask "yes or no: " answer
+if answer is "yes"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "Yes, the Earth is round."
+
+print "2) Fish can fly."
+ask "yes or no: " answer2
+if answer2 is "no"
+    print "Correct! Fish cannot fly."
+    remember score = score + 1
+else
+    print "No, fish cannot fly."
+
+print "3) The sun rises in the east."
+ask "yes or no: " answer3
+if answer3 is "yes"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "Yes, the sun rises in the east."
+
+print "4) Elephants are the largest land animals."
+ask "yes or no: " answer4
+if answer4 is "yes"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "Yes, elephants are the largest land animals."
+
+print "5) Water freezes at 100 degrees Celsius."
+ask "yes or no: " answer5
+if answer5 is "no"
+    print "Correct! Water freezes at 0 degrees."
+    remember score = score + 1
+else
+    print "No, water freezes at 0 degrees Celsius."
+
+print "6) Bats are birds."
+ask "yes or no: " answer6
+if answer6 is "no"
+    print "Correct! Bats are mammals."
+    remember score = score + 1
+else
+    print "No, bats are mammals, not birds."
+
+print "7) There are 7 continents."
+ask "yes or no: " answer7
+if answer7 is "yes"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "Yes, there are 7 continents."
+
+print "8) Strawberries grow on trees."
+ask "yes or no: " answer8
+if answer8 is "no"
+    print "Correct! Strawberries grow on the ground."
+    remember score = score + 1
+else
+    print "No, strawberries grow on low plants."
+
+print "9) A square has 4 sides."
+ask "yes or no: " answer9
+if answer9 is "yes"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "Yes, a square has 4 sides."
+
+print "10) Humans have 5 senses."
+ask "yes or no: " answer10
+if answer10 is "yes"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "Yes, humans have 5 senses (sight, hearing, touch, taste, smell)."
+
+print ""
+print "Final Score: " score "/" total
+
+if score is total
+    print "Perfect! You know everything!"
+else
+  if score bigger 7
+    print "Great knowledge!"
+else
+  if score bigger 4
+    print "Not bad!"
+else
+    print "Keep learning!"
+
+
+

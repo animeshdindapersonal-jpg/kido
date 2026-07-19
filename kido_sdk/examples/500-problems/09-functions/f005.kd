@@ -1,0 +1,13 @@
+fun max a b
+    if a bigger b
+        return a
+    return b
+
+remember x = 15
+remember y = 8
+remember m = max x y
+print "f005: max(15, 8) = "
+print m
+
+
+

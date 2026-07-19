@@ -1,0 +1,32 @@
+# Coin collection game
+print "=== COIN COLLECTION GAME ==="
+print ""
+remember coins = 0
+remember turns = 10
+list bag
+
+print "Collect coins in " turns " turns!"
+print ""
+
+repeat turns times as i
+    remember found = random 1 5
+    print "Turn " i ": You found " found " coins!"
+    remember coins = coins + found
+    add bag found
+    print "Total: " coins
+    print ""
+
+print "=== COLLECTION COMPLETE ==="
+print "Coins collected: " coins
+sort bag
+print "Coin hauls: " bag
+if coins bigger 30
+    print "You're rich!"
+else
+  if coins bigger 20
+    print "Nice collection!"
+else
+    print "Keep hunting for more coins!"
+
+
+

@@ -1,0 +1,64 @@
+# q020: Sports Quiz
+# Questions about sports
+
+print "=== Sports Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: How many players on a soccer team on the field?"
+ask "Your answer: " answer
+
+remember num1 = as number answer
+if num1 is 11
+    print "Correct! A soccer team has 11 players."
+    remember score = score + 1
+else
+    print "A soccer team has 11 players on the field."
+
+print ""
+print "Question 2: Which sport uses a bat and ball?"
+ask "Your answer: " answer2
+
+if answer2 is "baseball" or answer2 is "cricket" or answer2 is "softball"
+    print "Correct! Baseball (and cricket) use a bat and ball."
+    remember score = score + 1
+else
+    print "Baseball uses a bat and ball."
+
+print ""
+print "Question 3: How many points is a basketball worth?"
+ask "Your answer: " answer3
+
+if answer3 is "2" or answer3 is "two" or answer3 is "3" or answer3 is "three"
+    print "Correct! A regular basket is 2 points (3 from far)."
+    remember score = score + 1
+else
+    print "A regular basket is worth 2 points."
+
+print ""
+print "Question 4: Which sport is played on ice with skates?"
+ask "Your answer: " answer4
+
+if answer4 is "hockey" or answer4 is "ice hockey"
+    print "Correct! Ice hockey is played on ice."
+    remember score = score + 1
+else
+    print "Ice hockey is played on ice with skates."
+
+print ""
+print "Question 5: How many players on a basketball team on court?"
+ask "Your answer: " answer5
+
+remember num5 = as number answer5
+if num5 is 5
+    print "Correct! 5 players per team on the basketball court."
+    remember score = score + 1
+else
+    print "A basketball team has 5 players on the court."
+
+print ""
+print "Sports Score: " score "/" total
+
+
+

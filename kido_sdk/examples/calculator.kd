@@ -1,0 +1,45 @@
+# Simple Calculator
+
+fun add a b
+    return a + b
+
+fun subtract a b
+    return a - b
+
+fun multiply a b
+    return a * b
+
+fun divide a b
+    if b is 0
+        throw "Cannot divide by zero!"
+    return a / b
+
+print "=== KIDO CALCULATOR ==="
+print ""
+
+repeat 3 times
+    ask "First number:" num1
+    ask "Operation (+, -, *, /):" op
+    ask "Second number:" num2
+    
+    remember num1 = as number num1
+    remember num2 = as number num2
+    
+    try
+        if op is "+"
+            print num1 "+" num2 "=" add num1 num2
+        
+        if op is "-"
+            print num1 "-" num2 "=" subtract num1 num2
+        
+        if op is "*"
+            print num1 "*" num2 "=" multiply num1 num2
+        
+        if op is "/"
+            print num1 "/" num2 "=" divide num1 num2
+    catch error
+        print "Oops:" error
+    
+    print ""
+
+print "Bye!"

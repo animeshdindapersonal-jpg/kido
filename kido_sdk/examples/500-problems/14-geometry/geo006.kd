@@ -1,0 +1,8 @@
+# Geometry: Surface area of a box
+remember l = 4
+remember w = 3
+remember h = 2
+remember sa = 2 * (l * w + l * h + w * h)
+print "Surface area =" sa
+
+

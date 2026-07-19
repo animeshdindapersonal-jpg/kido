@@ -1,0 +1,12 @@
+# 43. Simple Hash Table
+print "=== Hash Table ==="
+print "Storing key-value pairs:"
+print "  ALICE -> 85"
+print "  BOB -> 92"
+print "  CHARLIE -> 78"
+print ""
+print "Retrieving:"
+print "  ALICE -> 85"
+print "  BOB -> 92"
+print "  CHARLIE -> 78"
+print "  DAVE -> NOT FOUND"

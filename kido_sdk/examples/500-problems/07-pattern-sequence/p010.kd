@@ -1,0 +1,9 @@
+# p010: Square pattern of stars (4x4)
+print "4x4 Square of stars:"
+repeat 4 times as i
+    remember row = ""
+    repeat 4 times as j
+        remember row = row + "*"
+    print row
+
+

@@ -1,0 +1,73 @@
+# q011: Math True/False Quiz
+# Determine if math statements are true or false
+
+print "=== Math True/False Quiz ==="
+print "Answer each with yes or no"
+print ""
+remember score = 0
+remember total = 6
+
+print "1) 5 + 3 = 8"
+ask "yes or no: " answer
+
+if answer is "yes"
+    print "Correct! 5+3 is 8."
+    remember score = score + 1
+else
+    print "Actually yes, 5+3=8 is true."
+
+print ""
+print "2) 10 - 4 = 5"
+ask "yes or no: " answer2
+
+if answer2 is "no"
+    print "Correct! 10-4=6, not 5."
+    remember score = score + 1
+else
+    print "Actually no, 10-4=6."
+
+print ""
+print "3) 7 x 2 = 14"
+ask "yes or no: " answer3
+
+if answer3 is "yes"
+    print "Correct! 7x2=14 is true."
+    remember score = score + 1
+else
+    print "Actually yes, 7x2=14."
+
+print ""
+print "4) 20 / 4 = 4"
+ask "yes or no: " answer4
+
+if answer4 is "no"
+    print "Correct! 20/4=5, not 4."
+    remember score = score + 1
+else
+    print "Actually no, 20/4=5."
+
+print ""
+print "5) 100 is bigger than 99"
+ask "yes or no: " answer5
+
+if answer5 is "yes"
+    print "Correct! 100 is bigger than 99."
+    remember score = score + 1
+else
+    print "Actually yes, 100 is bigger than 99."
+
+print ""
+print "6) 3 + 4 x 2 = 14"
+ask "yes or no: " answer6
+
+if answer6 is "no"
+    print "Correct! 3+4x2=11 (multiply first)."
+    remember score = score + 1
+else
+    print "Actually no, 3+4x2=11, not 14."
+
+print ""
+print "True/False Score: " score "/" total
+
+
+

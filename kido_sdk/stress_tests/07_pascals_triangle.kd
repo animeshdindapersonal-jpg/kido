@@ -1,0 +1,21 @@
+# 7. Pascal's Triangle
+print "=== Pascal's Triangle ==="
+list prev_row = 1
+print prev_row
+
+repeat 10 times as row_num
+    list curr_row = 1
+    remember prev_len = length prev_row
+    remember k = 1
+    repeat forever
+        if k bigger or same prev_len
+            stop
+        remember left = prev_row at k
+        remember k1 = k + 1
+        remember right = prev_row at k1
+        remember val = left + right
+        add curr_row val
+        remember k = k + 1
+    add curr_row 1
+    print curr_row
+    remember prev_row = curr_row

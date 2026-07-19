@@ -1,0 +1,12 @@
+# Round a decimal: Round to nearest whole number
+remember decimal = 3.7
+remember rounded = round decimal
+remember decimal2 = 4.2
+remember rounded2 = round decimal2
+print "Rounding numbers:"
+print decimal " rounds to " rounded
+print decimal2 " rounds to " rounded2
+print "Also try: floor and ceil!"
+print floor decimal " (floor) " ceil decimal " (ceil)"
+
+

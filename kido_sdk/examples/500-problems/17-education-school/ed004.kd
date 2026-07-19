@@ -1,0 +1,7 @@
+# School: Fraction to decimal
+remember num = 3
+remember den = 4
+remember decimal = num / den
+print num "/" den "=" decimal
+
+

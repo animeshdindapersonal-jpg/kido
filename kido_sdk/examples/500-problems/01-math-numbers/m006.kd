@@ -1,0 +1,15 @@
+# Prime number checker: See if a number is prime
+remember num = 29
+remember isPrime = yes
+if num smaller 2
+  isPrime = no
+remember i = 2
+repeat num - 2 times as i
+  if num - floor(num / i) * i is 0
+    isPrime = no
+if isPrime is yes
+  print num " is a PRIME number!"
+else
+  print num " is NOT a prime number."
+
+

@@ -1,0 +1,21 @@
+  # Packing list for a trip
+  # Real-world use: ensure nothing is forgotten before travel
+list packing
+add packing "passport"
+add packing "tickets"
+add packing "clothes"
+add packing "toothbrush"
+add packing "charger"
+add packing "sunglasses"
+add packing "camera"
+print "=== PACKING LIST ==="
+print "Items to bring:"
+print packing
+print ""
+print "Total items:"
+print length packing
+if length packing bigger 5
+  print "Don't forget the suitcase!"
+
+
+

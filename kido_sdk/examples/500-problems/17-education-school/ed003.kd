@@ -1,0 +1,9 @@
+# School: Calculator
+remember a = 15
+remember b = 4
+print "Calculator:"
+print a "+" b "=" a + b
+print a "-" b "=" a - b
+print a "*" b "=" a * b
+
+

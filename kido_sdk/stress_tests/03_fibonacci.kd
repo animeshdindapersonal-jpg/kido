@@ -1,0 +1,35 @@
+# 3. Fibonacci Sequence
+fun fib_iter n
+    if n is 0
+        return 0
+    if n is 1
+        return 1
+    remember prev = 0
+    remember curr = 1
+    remember i = 2
+    repeat forever
+        if i bigger n
+            stop
+        remember temp = curr
+        remember curr = prev + curr
+        remember prev = temp
+        remember i = i + 1
+    return curr
+
+print "=== Fibonacci Sequence ==="
+list fibs
+repeat 20 times as i
+    remember n = i - 1
+    remember val = fib_iter n
+    add fibs val
+
+print "First 20 Fibonacci numbers:"
+print fibs
+remember s = sum fibs
+print "Sum:" s
+
+# Golden ratio
+remember f19 = fibs at 20
+remember f18 = fibs at 19
+remember ratio = f19 / f18
+print "Golden ratio approx:" ratio

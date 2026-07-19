@@ -1,0 +1,10 @@
+# School: Spelling practice
+remember word = "butterfly"
+print "Spell: " word
+list chars = "b" "u" "t" "t" "e" "r" "f" "l" "y"
+shuffle chars
+print "Scrambled:"
+join chars " "
+print join chars " "
+
+

@@ -1,0 +1,17 @@
+# p022: Checkerboard pattern (X O X O...)
+print "4x4 Checkerboard:"
+repeat 4 times as i
+    remember row = ""
+    if i is 1 or i is 3
+        remember char = "X"
+    else
+        remember char = "O"
+    repeat 4 times as j
+        remember row = row + char + " "
+        if char is "X"
+            remember char = "O"
+        else
+            remember char = "X"
+    print row
+
+

@@ -1,0 +1,29 @@
+# 25. Power Set (All Subsets)
+print "=== Power Set of {1,2,3} ==="
+list my_set = 1 2 3
+remember n = length my_set
+remember total = 2 to the power n
+print "Total subsets:" total
+
+remember mask = 0
+repeat forever
+    if mask bigger or same total
+        stop
+    list subset
+    remember i = 0
+    repeat forever
+        if i bigger or same n
+            stop
+        remember bit_val = 2 to the power i
+        remember temp = mask / bit_val
+        remember mod_val = temp
+        repeat forever
+            if mod_val smaller 2
+                stop
+            remember mod_val = mod_val - 2
+        if mod_val is 1
+            remember i1 = i + 1
+            add subset my_set at i1
+        remember i = i + 1
+    print subset
+    remember mask = mask + 1

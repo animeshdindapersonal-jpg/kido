@@ -1,0 +1,20 @@
+  # To-do list manager - add, remove, and show tasks
+  # Real-world use: daily task management
+list todos
+add todos "buy groceries"
+add todos "finish homework"
+add todos "mom"
+add todos "clean room"
+add todos "walk dog"
+print "=== MY TO-DO LIST ==="
+print todos
+print ""
+print "Completing: finish homework"
+remove todos "finish homework"
+print "Updated list:"
+print todos
+print "Remaining tasks:"
+print length todos
+
+
+

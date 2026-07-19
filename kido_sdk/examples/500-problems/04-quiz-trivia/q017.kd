@@ -1,0 +1,65 @@
+# q017: Shape Quiz
+# Questions about shapes
+
+print "=== Shape Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: How many sides does a square have?"
+ask "Your answer: " answer
+
+remember num1 = as number answer
+if num1 is 4
+    print "Correct! A square has 4 sides."
+    remember score = score + 1
+else
+    print "A square has 4 sides."
+
+print ""
+print "Question 2: How many sides does a triangle have?"
+ask "Your answer: " answer2
+
+remember num2 = as number answer2
+if num2 is 3
+    print "Correct! A triangle has 3 sides."
+    remember score = score + 1
+else
+    print "A triangle has 3 sides."
+
+print ""
+print "Question 3: What shape has no sides and no corners?"
+ask "Your answer: " answer3
+
+if answer3 is "circle"
+    print "Correct! A circle has no sides."
+    remember score = score + 1
+else
+    print "A circle has no sides and no corners."
+
+print ""
+print "Question 4: How many sides does a pentagon have?"
+ask "Your answer: " answer4
+
+remember num4 = as number answer4
+if num4 is 5
+    print "Correct! A pentagon has 5 sides."
+    remember score = score + 1
+else
+    print "A pentagon has 5 sides."
+
+print ""
+print "Question 5: What shape is like a stretched circle?"
+ask "Your answer: " answer5
+
+if answer5 is "oval"
+    print "Correct! An oval is like a stretched circle."
+    remember score = score + 1
+else
+    print "An oval is like a stretched circle."
+
+print ""
+print "Shape Score: " score "/" total
+
+
+

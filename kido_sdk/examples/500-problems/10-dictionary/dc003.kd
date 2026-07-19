@@ -1,0 +1,26 @@
+# dc003: Favorite Things
+# Store favorite things in a dictionary
+
+dict favorites = {
+    "food": "pizza",
+    "color": "blue",
+    "animal": "dolphin",
+    "subject": "science"
+}
+
+print "=== FAVORITE THINGS ==="
+print ""
+print "Favorite food:" favorites at "food"
+print "Favorite color:" favorites at "color"
+print "Favorite animal:" favorites at "animal"
+print "Favorite subject:" favorites at "subject"
+print ""
+
+remember all_keys = keys favorites
+print "Categories:"
+repeat length all_keys times as i
+    remember key = all_keys at i
+    print "  " key "->" favorites at key
+
+
+

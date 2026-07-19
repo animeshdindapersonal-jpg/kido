@@ -1,0 +1,8 @@
+# Music: Musical scale notes
+list notes = "Do" "Re" "Mi" "Fa" "So" "La" "Ti" "Do"
+print "Major Scale:"
+repeat length notes times as i
+    print notes at i
+print "Do Re Mi Fa So La Ti Do!"
+
+

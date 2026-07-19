@@ -1,0 +1,9 @@
+# School: Grade tracker
+remember math = 92
+remember eng = 88
+remember sci = 95
+remember total = math + eng + sci
+remember avg = total / 3
+print "Average grade:" avg
+
+

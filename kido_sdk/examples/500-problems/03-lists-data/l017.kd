@@ -1,0 +1,25 @@
+  # Leaderboard - sort scores in descending order
+  # Real-world use: rank players from highest to lowest
+list scores
+add scores 85
+add scores 92
+add scores 78
+add scores 95
+add scores 88
+print "=== LEADERBOARD ==="
+print "Original scores:"
+print scores
+sort scores
+reverse scores
+print "Rankings (high to low):"
+print scores
+print ""
+print "Gold medal:"
+print scores at 1
+print "Silver medal:"
+print scores at 2
+print "Bronze medal:"
+print scores at 3
+
+
+

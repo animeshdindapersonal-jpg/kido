@@ -1,0 +1,8 @@
+# School: Points reward
+remember pts = 0
+remember pts = pts + 10
+print "Homework done! +10. Total:" pts
+remember pts = pts + 5
+print "Helped friend! +5. Total:" pts
+
+

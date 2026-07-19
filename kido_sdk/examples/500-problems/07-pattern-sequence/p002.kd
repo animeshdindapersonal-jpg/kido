@@ -1,0 +1,7 @@
+# p002: Even numbers from 2 to 20
+print "Even numbers 2 to 20:"
+repeat 10 times as i
+    remember even = i * 2
+    print even
+
+

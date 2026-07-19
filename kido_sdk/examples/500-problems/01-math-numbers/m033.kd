@@ -1,0 +1,12 @@
+# Discount calculator: Calculate sale price
+remember price = 80
+remember discount = 25
+remember saved = price * discount / 100
+remember finalPrice = price - saved
+print "Original price: $" price
+print "Discount: " discount "%"
+print "You save: $" saved
+print "Final price: $" finalPrice
+print "What a deal!"
+
+

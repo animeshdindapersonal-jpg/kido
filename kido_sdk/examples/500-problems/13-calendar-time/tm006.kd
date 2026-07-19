@@ -1,0 +1,7 @@
+# Time: Seconds to minutes
+remember total = 200
+remember m = total / 60
+remember s = total - m * 60
+print total "seconds =" m "minutes" s "seconds"
+
+

@@ -1,0 +1,10 @@
+# Power calculator: Compute base to exponent
+remember base = 3
+remember exp = 5
+remember result = 1
+remember i = 1
+repeat exp times as i
+  result = result * base
+print base " to the power " exp " = " result
+
+

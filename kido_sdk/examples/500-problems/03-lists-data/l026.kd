@@ -1,0 +1,23 @@
+  # Alphabetical sorter
+  # Real-world use: organize words alphabetically
+list words
+add words "banana"
+add words "apple"
+add words "date"
+add words "cherry"
+add words "elderberry"
+print "=== ALPHABETICAL SORTER ==="
+print "Before sorting:"
+print words
+print ""
+sort words
+print "After sorting (A-Z):"
+print words
+print ""
+print "First alphabetically:"
+print words at 1
+print "Last alphabetically:"
+print words at 5
+
+
+

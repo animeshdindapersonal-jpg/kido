@@ -1,0 +1,8 @@
+# p028: Doubling multiples pattern (2, 4, 8, 16, 32...)
+print "Doubling pattern:"
+remember val = 2
+repeat 10 times as i
+    print val
+    remember val = val * 2
+
+

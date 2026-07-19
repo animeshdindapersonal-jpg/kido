@@ -1,0 +1,8 @@
+# Volume of a box: How much can a box hold
+remember l = 10
+remember w = 5
+remember h = 3
+remember volume = l * w * h
+print "A box " l " x " w " x " h " inches has volume: " volume " cubic inches"
+
+

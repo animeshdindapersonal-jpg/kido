@@ -1,0 +1,27 @@
+  # Count occurrences of an item in a list
+  # Real-world use: tally survey responses
+list colors
+add colors "red"
+add colors "blue"
+add colors "red"
+add colors "green"
+add colors "red"
+add colors "blue"
+add colors "green"
+add colors "red"
+print "=== COUNT OCCURRENCES ==="
+print "All colors:"
+print colors
+print ""
+remember target = "red"
+remember count = 0
+repeat 8 times as i
+  if colors at i is target
+    remember count = count + 1
+print target
+print "appears"
+print count
+print "times"
+
+
+

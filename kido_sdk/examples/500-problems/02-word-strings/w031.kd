@@ -1,0 +1,9 @@
+remember str = "ha"
+remember n = 5
+remember result = ""
+repeat n times
+  remember result = result + str
+print str " repeated " n " times: " result
+
+
+

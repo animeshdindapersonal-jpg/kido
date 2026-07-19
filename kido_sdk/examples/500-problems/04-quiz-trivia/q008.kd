@@ -1,0 +1,62 @@
+# q008: Color Recognition Quiz
+# Questions about colors of things
+
+print "=== Color Recognition Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: What color is the sky on a clear day?"
+ask "Your answer: " answer
+
+if answer is "blue"
+    print "Correct! The sky is blue."
+    remember score = score + 1
+else
+    print "The sky is blue on a clear day."
+
+print ""
+print "Question 2: What color are bananas?"
+ask "Your answer: " answer2
+
+if answer2 is "yellow"
+    print "Correct! Bananas are yellow."
+    remember score = score + 1
+else
+    print "Bananas are yellow."
+
+print ""
+print "Question 3: What color is grass?"
+ask "Your answer: " answer3
+
+if answer3 is "green"
+    print "Correct! Grass is green."
+    remember score = score + 1
+else
+    print "Grass is green."
+
+print ""
+print "Question 4: What color is snow?"
+ask "Your answer: " answer4
+
+if answer4 is "white"
+    print "Correct! Snow is white."
+    remember score = score + 1
+else
+    print "Snow is white."
+
+print ""
+print "Question 5: What color is a stop sign?"
+ask "Your answer: " answer5
+
+if answer5 is "red"
+    print "Correct! Stop signs are red."
+    remember score = score + 1
+else
+    print "Stop signs are red."
+
+print ""
+print "Color Score: " score "/" total
+
+
+

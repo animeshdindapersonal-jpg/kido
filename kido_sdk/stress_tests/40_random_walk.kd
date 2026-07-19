@@ -1,0 +1,24 @@
+# 40. Random Walk Simulation
+print "=== Random Walk (100 steps) ==="
+remember x = 0
+remember y = 0
+remember max_dist = 0
+
+repeat 100 times as step
+    remember dir = random 1 4
+    if dir is 1
+        remember x = x + 1
+    if dir is 2
+        remember x = x - 1
+    if dir is 3
+        remember y = y + 1
+    if dir is 4
+        remember y = y - 1
+    
+    remember dist = abs x + abs y
+    if dist bigger max_dist
+        remember max_dist = dist
+
+print "Final position: (" x "," y ")"
+print "Max distance from origin:" max_dist
+print "Distance from origin:" abs x + abs y

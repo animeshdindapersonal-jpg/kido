@@ -1,0 +1,12 @@
+remember str = "hello"
+remember len = length str
+remember rev = ""
+repeat len times as i
+  remember idx = len - i + 1
+  remember ch = str at idx
+  remember rev = rev + ch
+print "Original: " str
+print "Reversed: " rev
+
+
+

@@ -1,0 +1,37 @@
+# Functions Demo
+
+fun say_hello name
+    print "Hello," name "!"
+
+fun add_nums a b
+    return a + b
+
+fun bigger_num a b
+    if a bigger b
+        return a
+    return b
+
+fun do_factorial n
+    if n smaller or same 1
+        return 1
+    remember prev = do_factorial(n - 1)
+    return n * prev
+
+print "=== FUNCTIONS DEMO ==="
+print ""
+
+say_hello "Aarav"
+say_hello "Priya"
+say_hello "Rahul"
+print ""
+
+remember result = add_nums 10 20
+print "10 + 20 =" result
+print ""
+
+remember bigger = bigger_num 15 8
+print "Max of 15 and 8 is" bigger
+print ""
+
+remember fact = do_factorial(5)
+print "5! =" fact

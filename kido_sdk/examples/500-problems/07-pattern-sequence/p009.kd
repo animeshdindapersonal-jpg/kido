@@ -1,0 +1,9 @@
+# p009: Right triangle pattern of stars
+print "Right triangle:"
+repeat 5 times as i
+    remember row = ""
+    repeat i times as j
+        remember row = row + "*"
+    print row
+
+

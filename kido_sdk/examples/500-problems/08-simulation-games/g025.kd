@@ -1,0 +1,33 @@
+# Fishing game
+print "=== FISHING GAME ==="
+print ""
+list catches = "Small Fish" "Big Fish" "Boot" "Crab" "Goldfish" "Shark" "Seaweed" "Treasure Chest"
+list bucket
+remember casts = 5
+
+print "Cast your line " casts " times!"
+print ""
+
+repeat casts times as i
+    print "Cast " i ": You cast your line..."
+    remember catch = random catches
+    remember size = random 1 10
+    print "You caught: " catch " (size " size ")"
+    add bucket catch
+    print ""
+
+print "=== FISHING TRIP OVER ==="
+print "You caught " length bucket " items:"
+remember idx = 1
+repeat length bucket times
+    print "  " idx ". " bucket idx
+    remember idx = idx + 1
+print ""
+if has bucket "Treasure Chest"
+    print "You found a TREASURE CHEST! Amazing!"
+if has bucket "Shark"
+    print "Watch out! You caught a SHARK!"
+print "Great day of fishing!"
+
+
+

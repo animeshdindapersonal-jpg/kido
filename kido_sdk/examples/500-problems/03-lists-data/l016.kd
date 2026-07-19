@@ -1,0 +1,22 @@
+  # Score tracker - game scores list
+  # Real-world use: track player scores across rounds
+list scores
+add scores 85
+add scores 92
+add scores 78
+add scores 95
+add scores 88
+add scores 76
+print "=== GAME SCORES ==="
+print scores
+print ""
+print "Number of games:"
+print length scores
+remember total = 0
+repeat 6 times as i
+  remember total = total + scores at i
+print "Total score:"
+print total
+
+
+

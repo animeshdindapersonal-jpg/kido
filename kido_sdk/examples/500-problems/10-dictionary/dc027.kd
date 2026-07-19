@@ -1,0 +1,32 @@
+# dc027: Lunch Menu
+# Map days of the week to meal items
+
+dict menu = {
+    "Monday": "Pasta",
+    "Tuesday": "Pizza",
+    "Wednesday": "Rice and Curry",
+    "Thursday": "Sandwich",
+    "Friday": "Burgers"
+}
+
+print "=== LUNCH MENU ==="
+print ""
+print "Monday:" menu at "Monday"
+print "Tuesday:" menu at "Tuesday"
+print "Wednesday:" menu at "Wednesday"
+print "Thursday:" menu at "Thursday"
+print "Friday:" menu at "Friday"
+print ""
+
+set menu "Saturday" "Pancakes"
+set menu "Sunday" "Ice Cream"
+print "Weekend special:"
+print "Saturday:" menu at "Saturday"
+print "Sunday:" menu at "Sunday"
+print ""
+
+remember days = keys menu
+print "Menu items for" length days "days"
+
+
+

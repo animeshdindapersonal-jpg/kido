@@ -1,0 +1,22 @@
+# 9. Roman Numerals
+fun to_roman num
+    list vals = 1000 500 100 50 10 5 1
+    list symbols = "M" "D" "C" "L" "X" "V" "I"
+    remember result = ""
+    remember n = num
+    repeat length vals times as i
+        remember val = vals at i
+        remember sym = symbols at i
+        repeat forever
+            if n smaller val
+                stop
+            remember result = result + sym
+            remember n = n - val
+    return result
+
+print "=== Roman Numerals ==="
+list nums = 1 5 10 50 100 500 1000
+repeat length nums times as i
+    remember n = nums at i
+    remember r = to_roman n
+    print n "->" r

@@ -1,0 +1,29 @@
+# dc008: Book Information
+# Store details about a book
+
+dict book = {
+    "title": "The Secret Garden",
+    "author": "Frances Hodgson Burnett",
+    "year": 1911,
+    "pages": 331
+}
+
+print "=== BOOK INFO ==="
+print ""
+print "Title:" book at "title"
+print "Author:" book at "author"
+print "Year:" book at "year"
+print "Pages:" book at "pages"
+print ""
+
+remember b_year = book at "year"
+remember age = 2025 - b_year
+print "This book is" age "years old"
+
+if book at "pages" bigger 300
+    print "It is a long book"
+else
+    print "It is a short book"
+
+
+

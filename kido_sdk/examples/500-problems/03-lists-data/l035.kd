@@ -1,0 +1,23 @@
+  # Update item in list using add/remove pattern
+  # Real-world use: replace an outdated item
+list items
+add items "cat"
+add items "dog"
+add items "bird"
+add items "fish"
+add items "hamster"
+print "=== UPDATE ITEM ==="
+print "Before:"
+print items
+print ""
+print "Replacing bird with rabbit"
+remove items "bird"
+add items "rabbit"
+print "After:"
+print items
+print ""
+print "Updated count:"
+print length items
+
+
+

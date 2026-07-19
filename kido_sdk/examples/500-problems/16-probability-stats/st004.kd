@@ -1,0 +1,10 @@
+# Stats: Double sixes probability
+remember double_six = 0
+repeat 1000 times as i
+    remember d1 = random 1 6
+    remember d2 = random 1 6
+    if d1 is 6 and d2 is 6
+        remember double_six = double_six + 1
+print "Double sixes in 1000 rolls:" double_six
+
+

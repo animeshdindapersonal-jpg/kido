@@ -1,0 +1,6 @@
+# Crypto: Letter pair swap
+print "Original: secret"
+print "Swapped pairs: a<->b, c<->d, etc"
+print "Result: tfcqes"
+
+

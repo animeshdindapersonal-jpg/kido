@@ -1,0 +1,23 @@
+  # Grocery list with quantities - two parallel lists
+  # Real-world use: shopping with amounts
+list groceries
+list quantities
+add groceries "apples"
+add quantities 5
+add groceries "bananas"
+add quantities 3
+add groceries "milk"
+add quantities 2
+add groceries "bread"
+add quantities 1
+add groceries "eggs"
+add quantities 12
+print "=== GROCERY LIST ==="
+print "Item - Quantity:"
+repeat 5 times as i
+  print groceries at i
+  print " - "
+  print quantities at i
+
+
+

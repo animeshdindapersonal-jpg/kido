@@ -1,0 +1,19 @@
+# BMI calculator: Check if you are at a healthy weight
+remember weight = 55
+remember height = 1.65
+remember bmi = weight / (height * height)
+bmi = round bmi
+print "Weight: " weight " kg, Height: " height " m"
+print "Your BMI is: " bmi
+if bmi smaller 18.5
+  print "You are underweight. Eat well!"
+else
+  if bmi smaller 25
+  print "You are at a healthy weight!"
+else
+  if bmi smaller 30
+  print "You are overweight. Stay active!"
+else
+  print "Please consult a doctor."
+
+

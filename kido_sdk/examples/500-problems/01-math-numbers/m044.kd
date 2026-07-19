@@ -1,0 +1,15 @@
+# Perfect number checker: Sum of factors equals the number
+remember num = 28
+remember sum = 0
+remember i = 1
+repeat num - 1 times as i
+  if num - floor(num / i) * i is 0
+    sum = sum + i
+if sum is num
+  print num " is a PERFECT number!"
+  print "Its factors add up to " num
+else
+  print num " is NOT a perfect number."
+  print "Sum of its factors is " sum
+
+

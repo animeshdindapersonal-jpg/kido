@@ -1,0 +1,32 @@
+# d008: Recommend an Activity Based on Weather
+
+fun recommend_activity weather
+    if weather is "sunny"
+        return "Go swimming or play at the park"
+    else
+      if weather is "rainy"
+        return "Read a book or build a fort indoors"
+    else
+      if weather is "snowy"
+        return "Build a snowman or go sledding"
+    else
+      if weather is "cloudy"
+        return "Go for a bike ride or walk"
+    else
+      if weather is "windy"
+        return "Fly a kite!"
+    else
+        return "Stay home and play board games"
+
+print "=== ACTIVITY RECOMMENDER ==="
+
+list weathers = "sunny" "rainy" "snowy" "cloudy" "windy" "stormy"
+
+repeat length weathers times as i
+    remember w = weathers at i
+    print "Weather:" w
+    print "  ->" recommend_activity w
+    print ""
+
+
+

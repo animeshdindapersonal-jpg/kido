@@ -1,0 +1,44 @@
+# d022: Allowance Calculator
+# Chores done = get allowance, else = no allowance
+
+fun calc_allowance made_bed washed_dishes cleaned_room
+    remember tasks_done = 0
+
+    if made_bed is yes
+        remember tasks_done = tasks_done + 1
+    if washed_dishes is yes
+        remember tasks_done = tasks_done + 1
+    if cleaned_room is yes
+        remember tasks_done = tasks_done + 1
+
+    if tasks_done is 3
+        return "Full allowance: $10! Great job!"
+    else
+      if tasks_done is 2
+        return "Partial allowance: $5. Keep working!"
+    else
+      if tasks_done is 1
+        return "Small allowance: $2. Do more chores!"
+    else
+        return "No allowance. Please do your chores!"
+
+print "=== ALLOWANCE CALCULATOR ==="
+print ""
+
+print "Chores: Made bed? yes, Washed dishes? yes, Cleaned room? yes"
+print "->" calc_allowance yes yes yes
+print ""
+
+print "Chores: Made bed? yes, Washed dishes? no, Cleaned room? yes"
+print "->" calc_allowance yes no yes
+print ""
+
+print "Chores: Made bed? no, Washed dishes? no, Cleaned room? yes"
+print "->" calc_allowance no no yes
+print ""
+
+print "Chores: Made bed? no, Washed dishes? no, Cleaned room? no"
+print "->" calc_allowance no no no
+
+
+

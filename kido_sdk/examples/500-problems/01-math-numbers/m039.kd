@@ -1,0 +1,8 @@
+# Pounds to kilograms: Convert your backpack weight
+remember pounds = 15
+remember kg = pounds * 0.453592
+kg = round kg
+print "Your backpack weighs " pounds " pounds."
+print "That is about " kg " kilograms."
+
+

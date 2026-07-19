@@ -1,0 +1,11 @@
+# Recursion: Countdown
+fun cd n
+    if n smaller 1
+        print "Blast off!"
+        return nothing
+    else
+        print n
+        return cd(n - 1)
+cd(5)
+
+

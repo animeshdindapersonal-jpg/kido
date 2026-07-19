@@ -1,0 +1,8 @@
+# Miles to kilometers: Convert running distance
+remember miles = 5
+remember km = miles * 1.60934
+km = round km
+print "A " miles " mile run is about " km " kilometers."
+print "That's a great distance for a jog!"
+
+

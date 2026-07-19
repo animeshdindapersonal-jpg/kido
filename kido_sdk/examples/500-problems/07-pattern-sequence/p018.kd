@@ -1,0 +1,6 @@
+# p018: Skip counting by 3 (3, 6, 9... up to 30)
+print "Count by 3:"
+repeat 10 times as i
+    print i * 3
+
+

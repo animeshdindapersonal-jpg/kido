@@ -1,0 +1,7 @@
+# Life: Allowance
+remember allow = 10
+remember spent = 4
+remember saved = 3
+print "Allowance: $" allow "Spent: $" spent "Saved: $" saved
+
+

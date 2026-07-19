@@ -1,0 +1,14 @@
+# Palindrome number: Check if number reads same backward
+remember num = 121
+remember temp = num
+remember reversed = 0
+while temp bigger 0
+  remember digit = temp - floor(temp / 10) * 10
+  reversed = reversed * 10 + digit
+  temp = floor temp / 10
+if reversed is num
+  print num " is a PALINDROME! It reads the same backward!"
+else
+  print num " is NOT a palindrome. Reversed: " reversed
+
+

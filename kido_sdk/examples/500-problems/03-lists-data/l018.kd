@@ -1,0 +1,26 @@
+  # Find item in list
+  # Real-world use: search for a product in inventory
+list items
+add items "apple"
+add items "banana"
+add items "orange"
+add items "grape"
+add items "kiwi"
+print "=== FIND ITEM ==="
+print "Items:"
+print items
+print ""
+print "Searching for: orange"
+if has items "orange"
+  print "Found: orange is in the list!"
+else
+  print "Not found"
+print ""
+print "Searching for: mango"
+if has items "mango"
+  print "Found: mango is in the list!"
+else
+  print "Not found: mango is not in the list"
+
+
+

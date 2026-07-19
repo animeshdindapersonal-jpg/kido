@@ -1,0 +1,6 @@
+# p015: Powers of 10 (10, 100, 1000...)
+print "Powers of 10:"
+repeat 5 times as i
+    print 10 to the power i
+
+

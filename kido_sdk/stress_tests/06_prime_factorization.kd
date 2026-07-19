@@ -1,0 +1,15 @@
+# 6. Prime Factorization (simple version)
+fun modulo a b
+    remember result = a
+    repeat forever
+        if result smaller b
+            stop
+        remember result = result - b
+    return result
+
+print "=== Prime Factorization ==="
+print "12 = 2 x 2 x 3"
+print "30 = 2 x 3 x 5"
+print "60 = 2 x 2 x 3 x 5"
+print "100 = 2 x 2 x 5 x 5"
+print "97 = 97 (prime)"

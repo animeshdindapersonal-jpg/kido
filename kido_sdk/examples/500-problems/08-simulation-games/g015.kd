@@ -1,0 +1,56 @@
+# Lemonade stand
+print "=== LEMONADE STAND ==="
+print ""
+remember money = 200
+remember lemons = 10
+remember sugar = 10
+remember cups = 20
+remember profit = 0
+remember days = 5
+
+print "Starting budget: $" money
+print ""
+
+repeat days times as i
+    print "--- Day " i " ---"
+    remember made = random 3 8
+    if lemons bigger or same made and sugar bigger or same made and cups bigger or same made
+        remember lemons = lemons - made
+        remember sugar = sugar - made
+        remember cups = cups - made
+        remember weather = random 1 3
+        if weather is 1
+            print "Sunny day! Sold " made " lemonades!"
+            remember earnings = made * 50
+        else
+          if weather is 2
+            remember sold = made - 1
+            if sold smaller 0
+                remember sold = 0
+            print "Cloudy day. Sold " sold " lemonades."
+            remember earnings = sold * 50
+        else
+            remember sold = made / 2
+            if sold smaller 0
+                remember sold = 0
+            print "Rainy day. Only sold " sold " lemonades."
+            remember earnings = sold * 50
+        remember cost = made * 15
+        remember dayProfit = earnings - cost
+        remember profit = profit + dayProfit
+        remember money = money + dayProfit
+        print "Earned: $" earnings " Cost: $" cost " Profit: $" dayProfit
+    else
+        print "Not enough supplies! Need more lemons, sugar, or cups."
+    print ""
+
+print "=== END OF SUMMER ==="
+print "Total profit: $" profit
+print "Final money: $" money
+if profit bigger 0
+    print "You made a profit! Great business!"
+else
+    print "You lost money. Better luck next summer!"
+
+
+

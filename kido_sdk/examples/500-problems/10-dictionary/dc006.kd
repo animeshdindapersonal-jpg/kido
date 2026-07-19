@@ -1,0 +1,29 @@
+# dc006: Family Member Details
+# Store details about a family member
+
+dict family = {
+    "name": "Priya",
+    "age": 35,
+    "role": "mother",
+    "hobby": "reading"
+}
+
+print "=== FAMILY MEMBER ==="
+print ""
+print "Name:" family at "name"
+print "Age:" family at "age"
+print "Role:" family at "role"
+print "Hobby:" family at "hobby"
+print ""
+
+remember f_age = family at "age"
+if f_age smaller 18
+    print family at "name" " is a child"
+else
+  if f_age smaller 60
+    print family at "name" " is an adult"
+else
+    print family at "name" " is a senior"
+
+
+

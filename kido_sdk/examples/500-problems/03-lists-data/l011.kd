@@ -1,0 +1,22 @@
+  # Class roster - student names
+  # Real-world use: teacher managing student list
+list students
+add students "Emma"
+add students "Liam"
+add students "Olivia"
+add students "Noah"
+add students "Ava"
+add students "Ethan"
+add students "Sophia"
+print "=== CLASS ROSTER ==="
+print students
+print ""
+print "Number of students:"
+print length students
+print "First student:"
+print students at 1
+print "Last student:"
+print students at 7
+
+
+

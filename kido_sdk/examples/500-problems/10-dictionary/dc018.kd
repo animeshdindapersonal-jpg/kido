@@ -1,0 +1,33 @@
+# dc018: Car Info
+# Store details about a car
+
+dict car = {
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2022,
+    "color": "blue"
+}
+
+print "=== CAR INFO ==="
+print ""
+print "Make:" car at "make"
+print "Model:" car at "model"
+print "Year:" car at "year"
+print "Color:" car at "color"
+print ""
+
+set car "color" "red"
+print "After repaint:"
+print "New color:" car at "color"
+print ""
+
+remember car_age = 2025 - (car at "year")
+print "This car is" car_age "years old"
+
+if car_age smaller 5
+    print "It is a relatively new car"
+else
+    print "It is an older car"
+
+
+

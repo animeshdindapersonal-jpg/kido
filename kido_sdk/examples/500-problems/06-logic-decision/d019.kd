@@ -1,0 +1,25 @@
+# d019: Day of Week Activity
+# Weekday = school, Weekend = play
+
+fun is_weekend day
+    if day is "saturday" or day is "sunday"
+        return yes
+    return no
+
+fun get_activity day
+    if is_weekend day is yes
+        return "PLAY! Go to the park or meet friends"
+    else
+        return "SCHOOL DAY! Time to learn"
+
+print "=== DAY OF WEEK ACTIVITY ==="
+print ""
+
+list days = "monday" "tuesday" "wednesday" "thursday" "friday" "saturday" "sunday"
+
+repeat length days times as i
+    remember d = days at i
+    print d "->" get_activity d
+
+
+

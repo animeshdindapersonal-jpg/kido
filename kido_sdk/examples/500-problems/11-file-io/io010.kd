@@ -1,0 +1,8 @@
+# File: Config reader
+write "name=KIDO" to "config.txt"
+append "version=1.1" to "config.txt"
+remember cfg = read "config.txt"
+print "Config:"
+print cfg
+
+

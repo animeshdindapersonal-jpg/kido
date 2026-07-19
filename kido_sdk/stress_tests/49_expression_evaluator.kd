@@ -1,0 +1,33 @@
+# 49. Polynomial Evaluator
+# Evaluate: 3x^2 + 2x + 1 for various x values
+fun eval_poly x
+    remember x2 = x * x
+    remember term1 = 3 * x2
+    remember term2 = 2 * x
+    remember result = term1 + term2 + 1
+    return result
+
+fun eval_poly2 x
+    # x^3 - 2x^2 + x - 5
+    remember x2 = x * x
+    remember x3 = x2 * x
+    remember t1 = x3
+    remember t2 = 2 * x2
+    remember result = t1 - t2 + x - 5
+    return result
+
+print "=== Polynomial Evaluator ==="
+print "f(x) = 3x² + 2x + 1"
+print ""
+repeat 11 times as i
+    remember x = i - 6
+    remember y = eval_poly x
+    print "f(" x ") =" y
+
+print ""
+print "g(x) = x³ - 2x² + x - 5"
+print ""
+repeat 7 times as i
+    remember x = i - 3
+    remember y = eval_poly2 x
+    print "g(" x ") =" y

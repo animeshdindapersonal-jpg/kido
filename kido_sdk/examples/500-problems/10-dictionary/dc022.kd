@@ -1,0 +1,31 @@
+# dc022: Birthday Calendar
+# Map names to their birthday dates
+
+dict birthdays = {
+    "Aarav": "April 10",
+    "Priya": "July 25",
+    "Ravi": "January 15",
+    "Neha": "December 3"
+}
+
+print "=== BIRTHDAY CALENDAR ==="
+print ""
+print "Aarav:" birthdays at "Aarav"
+print "Priya:" birthdays at "Priya"
+print "Ravi:" birthdays at "Ravi"
+print "Neha:" birthdays at "Neha"
+print ""
+
+set birthdays "Maya" "September 20"
+print "Added Maya:" birthdays at "Maya"
+print ""
+
+if birthdays has "Ravi"
+    print "Ravi's birthday is on" birthdays at "Ravi"
+
+remember folks = keys birthdays
+print ""
+print "Total people:" length folks
+
+
+

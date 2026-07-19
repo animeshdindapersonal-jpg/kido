@@ -1,0 +1,9 @@
+# Geometry: Pythagorean theorem
+remember a = 3
+remember b = 4
+remember c_sq = a * a + b * b
+print "If a=" a "and b=" b
+print "Then c^2 =" c_sq
+print "So c =" sqrt c_sq
+
+

@@ -1,0 +1,10 @@
+# My first KIDO program!
+print "Hello World!"
+print "I am learning KIDO!"
+print 2 + 2 "is four!"
+print ""
+
+remember name = "Aarav"
+remember my_age = 7
+print "My name is" name
+print "I am" my_age "years old"

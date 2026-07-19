@@ -1,0 +1,11 @@
+fun celsiusToFahrenheit c
+    return c * 9 / 5 + 32
+
+remember tempC = 100
+remember tempF = celsiusToFahrenheit tempC
+print "f022: 100 Celsius = "
+print tempF
+print " Fahrenheit"
+
+
+

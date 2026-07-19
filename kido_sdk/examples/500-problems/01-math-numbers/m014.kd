@@ -1,0 +1,7 @@
+# Area of a circle: Calculate using radius
+const PI = 3.14159
+remember radius = 5
+remember area = PI * radius * radius
+print "A circle with radius " radius " has an area of: " area
+
+

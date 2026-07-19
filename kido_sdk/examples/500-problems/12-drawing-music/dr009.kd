@@ -1,0 +1,11 @@
+# Drawing: Ice cream cone
+print "   /\\"
+print "  /  \\"
+print " | () |"
+print " | () |"
+print " | () |"
+print "  \\/"
+print "   |||"
+print "Yummy ice cream!"
+
+

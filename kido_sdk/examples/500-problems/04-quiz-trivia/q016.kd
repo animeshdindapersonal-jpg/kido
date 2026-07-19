@@ -1,0 +1,63 @@
+# q016: Months of the Year Quiz
+# Questions about months
+
+print "=== Months Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: Which month has 28 or 29 days?"
+ask "Your answer: " answer
+
+if answer is "February" or answer is "february"
+    print "Correct! February has 28 or 29 days."
+    remember score = score + 1
+else
+    print "February has 28 or 29 days."
+
+print ""
+print "Question 2: How many months have 31 days?"
+ask "Your answer: " answer2
+
+remember num2 = as number answer2
+if num2 is 7
+    print "Correct! 7 months have 31 days."
+    remember score = score + 1
+else
+    print "7 months have 31 days."
+
+print ""
+print "Question 3: What month comes after June?"
+ask "Your answer: " answer3
+
+if answer3 is "July" or answer3 is "july"
+    print "Correct! July comes after June."
+    remember score = score + 1
+else
+    print "July comes after June."
+
+print ""
+print "Question 4: Which is the first month of the year?"
+ask "Your answer: " answer4
+
+if answer4 is "January" or answer4 is "january"
+    print "Correct! January is the first month."
+    remember score = score + 1
+else
+    print "January is the first month."
+
+print ""
+print "Question 5: Which month is known for giving thanks?"
+ask "Your answer: " answer5
+
+if answer5 is "November" or answer5 is "november"
+    print "Correct! November is Thanksgiving month."
+    remember score = score + 1
+else
+    print "November is known for Thanksgiving."
+
+print ""
+print "Months Score: " score "/" total
+
+
+

@@ -1,0 +1,37 @@
+# 22. Anagram Detector
+fun sort_string s
+    list chars
+    remember s_len = length s
+    remember i = 1
+    repeat forever
+        if i bigger s_len
+            stop
+        add chars s at i
+        remember i = i + 1
+    sort chars
+    remember result = ""
+    remember chars_len = length chars
+    remember i = 1
+    repeat forever
+        if i bigger chars_len
+            stop
+        remember result = result + chars at i
+        remember i = i + 1
+    return result
+
+fun is_anagram a b
+    remember sorted_a = sort_string a
+    remember sorted_b = sort_string b
+    return sorted_a is sorted_b
+
+print "=== Anagram Detector ==="
+list pairs_a = "listen" "hello" "triangle" "apple"
+list pairs_b = "silent" "world" "integral" "papel"
+repeat length pairs_a times as i
+    remember a = pairs_a at i
+    remember b = pairs_b at i
+    remember result = is_anagram a b
+    if result is yes
+        print a "and" b "- ANAGRAM"
+    else
+        print a "and" b "- NOT anagram"

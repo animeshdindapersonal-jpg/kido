@@ -1,0 +1,27 @@
+  # Pet care checklist - daily tasks
+  # Real-world use: ensure pet is properly cared for
+list tasks
+add tasks "feed breakfast"
+add tasks "fresh water"
+add tasks "morning walk"
+add tasks "evening walk"
+add tasks "feed dinner"
+add tasks "brush fur"
+print "=== PET CARE DAILY ==="
+print "Daily routine:"
+print tasks
+print ""
+print "Total tasks:"
+print length tasks
+print ""
+print "Completed: feed breakfast"
+remove tasks tasks at 1
+print "Remaining tasks:"
+print tasks
+if empty tasks
+  print "All done!"
+else
+  print "Keep going!"
+
+
+

@@ -1,0 +1,5 @@
+# Life: Chore checklist
+list chores = "make bed" "brush teeth" "clean room" "homework"
+print "Done:" length chores "chores!"
+
+

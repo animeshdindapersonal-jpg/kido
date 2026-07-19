@@ -1,0 +1,11 @@
+# Class grade average: Find average of test scores
+remember math = 88
+remember science = 92
+remember english = 79
+remember art = 95
+remember total = math + science + english + art
+remember average = total / 4
+print "Your grades are: Math=" math ", Science=" science ", English=" english ", Art=" art
+print "Your average score is: " average
+
+

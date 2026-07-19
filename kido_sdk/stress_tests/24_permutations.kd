@@ -1,0 +1,41 @@
+# 24. Permutations Generator
+list all_perms
+
+fun permute arr left right
+    if left is right
+        remember perm = ""
+        remember arr_len = length arr
+        remember i = 1
+        repeat forever
+            if i bigger arr_len
+                stop
+            remember perm = perm + arr at i
+            remember i = i + 1
+        add all_perms perm
+        stop
+    remember i = left
+    repeat forever
+        if i bigger right
+            stop
+        # Swap left and i
+        remember temp = arr at left
+        remember temp2 = arr at i
+        replace arr at left with temp2
+        replace arr at i with temp
+        # Recurse
+        remember left1 = left + 1
+        permute arr left1 right
+        # Backtrack
+        remember temp3 = arr at left
+        remember temp4 = arr at i
+        replace arr at left with temp4
+        replace arr at i with temp3
+        remember i = i + 1
+
+print "=== Permutations of ABC ==="
+list arr = "A" "B" "C"
+remember arr_len = length arr
+permute arr 1 arr_len
+print all_perms
+remember cnt = length all_perms
+print "Total:" cnt

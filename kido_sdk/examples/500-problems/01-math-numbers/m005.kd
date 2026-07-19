@@ -1,0 +1,9 @@
+# Even or odd detector: Check if a number is even or odd
+remember num = 17
+remember remainder = num - floor(num / 2) * 2
+if remainder is 0
+  print num " is an EVEN number!"
+else
+  print num " is an ODD number!"
+
+

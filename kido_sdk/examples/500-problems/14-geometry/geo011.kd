@@ -1,0 +1,6 @@
+# Measurement: Feet to meters
+remember feet = 10
+remember meters = feet * 0.3048
+print feet "feet =" meters "meters"
+
+

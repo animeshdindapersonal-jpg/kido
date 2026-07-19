@@ -1,0 +1,35 @@
+# Dictionary Demo
+
+dict student = {
+    "name": "Aarav",
+    "age": 7,
+    "grade": "2nd",
+    "school": "ABC School"
+}
+
+print "=== STUDENT INFO ==="
+print ""
+
+print "Name:" student at "name"
+print "Age:" student at "age"
+print "Grade:" student at "grade"
+print "School:" student at "school"
+print ""
+
+# Add new field
+set student "hobby" "coding"
+print "Hobby:" student at "hobby"
+print ""
+
+# Check if key exists
+if student has "name"
+    print "Student has a name!"
+
+# Get all keys
+remember all_keys = keys student
+print ""
+print "All fields:"
+repeat length all_keys times as i
+    remember the_key = all_keys at i
+    remember the_val = student at the_key
+    print " " the_key ":" the_val

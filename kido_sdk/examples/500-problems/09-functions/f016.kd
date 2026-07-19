@@ -1,0 +1,15 @@
+fun sumList items
+    remember total = 0
+    remember i = 1
+    repeat length items times
+        total = total + items[i]
+        i = i + 1
+    return total
+
+list numbers = 10 20 30 40 50
+remember s = sumList numbers
+print "f016: sum of list = "
+print s
+
+
+

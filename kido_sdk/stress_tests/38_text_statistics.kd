@@ -1,0 +1,53 @@
+# 38. Text Statistics Analyzer
+fun count_words text
+    remember count = 1
+    remember text_len = length text
+    remember i = 1
+    repeat forever
+        if i bigger text_len
+            stop
+        if text at i is " "
+            remember count = count + 1
+        remember i = i + 1
+    return count
+
+fun count_vowels text
+    remember count = 0
+    remember text_len = length text
+    remember i = 1
+    repeat forever
+        if i bigger text_len
+            stop
+        remember ch = uppercase text at i
+        if ch is "A" or ch is "E" or ch is "I" or ch is "O" or ch is "U"
+            remember count = count + 1
+        remember i = i + 1
+    return count
+
+fun count_consonants text
+    remember text_len = length text
+    remember vowels = count_vowels text
+    remember spaces = 0
+    remember i = 1
+    repeat forever
+        if i bigger text_len
+            stop
+        if text at i is " "
+            remember spaces = spaces + 1
+        remember i = i + 1
+    remember consonants = text_len - vowels - spaces
+    return consonants
+
+print "=== Text Statistics ==="
+remember text = "The quick brown fox jumps over the lazy dog"
+print "Text:" text
+print ""
+remember chars = length text
+remember words = count_words text
+remember vowels = count_vowels text
+remember consonants = count_consonants text
+
+print "Characters:" chars
+print "Words:" words
+print "Vowels:" vowels
+print "Consonants:" consonants

@@ -1,0 +1,40 @@
+# 29. Hangman Game Logic
+fun check_guess word guess
+    remember word_len = length word
+    remember i = 1
+    repeat forever
+        if i bigger word_len
+            stop
+        if word at i is guess
+            return yes
+        remember i = i + 1
+    return no
+
+fun update_display word guessed
+    remember result = ""
+    remember word_len = length word
+    remember i = 1
+    repeat forever
+        if i bigger word_len
+            stop
+        remember ch = word at i
+        if has guessed ch
+            remember result = result + ch
+        else
+            remember result = result + "_"
+        remember i = i + 1
+    return result
+
+print "=== Hangman Logic ==="
+remember word = "KIDO"
+list guessed = "K" "D"
+
+remember display = update_display word guessed
+print "Word:" word
+print "Guessed: K, D"
+print "Display:" display
+
+remember has_i = check_guess word "I"
+remember has_x = check_guess word "X"
+print "Has 'I':" has_i
+print "Has 'X':" has_x

@@ -1,0 +1,6 @@
+# p014: Powers of 2 (2, 4, 8, 16... up to 1024)
+print "Powers of 2:"
+repeat 10 times as i
+    print 2 to the power i
+
+

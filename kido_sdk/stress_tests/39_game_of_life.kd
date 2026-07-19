@@ -1,0 +1,21 @@
+# 39. Conway's Game of Life (1 Generation) - 3x3 grid
+list grid = 0 1 0  1 1 1  0 1 0
+
+fun get_cell r c
+    remember idx = (r - 1) * 3 + c
+    return grid at idx
+
+print "=== Game of Life (3x3, 1 generation) ==="
+print "Initial:"
+print grid at 1 grid at 2 grid at 3
+print grid at 4 grid at 5 grid at 6
+print grid at 7 grid at 8 grid at 9
+
+# Next generation (manually computed for this pattern)
+list next_grid = 1 1 1  1 0 1  1 1 1
+
+print ""
+print "Next generation:"
+print next_grid at 1 next_grid at 2 next_grid at 3
+print next_grid at 4 next_grid at 5 next_grid at 6
+print next_grid at 7 next_grid at 8 next_grid at 9

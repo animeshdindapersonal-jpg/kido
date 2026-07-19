@@ -1,0 +1,28 @@
+  # List statistics - find min, max, and average
+  # Real-world use: analyze test scores
+list nums
+add nums 10
+add nums 25
+add nums 7
+add nums 42
+add nums 15
+add nums 30
+print "=== LIST STATISTICS ==="
+print "Numbers:"
+print nums
+print ""
+sort nums
+print "Minimum:"
+print nums at 1
+print "Maximum:"
+print nums at 6
+remember sum = 0
+repeat 6 times as i
+  remember sum = sum + nums at i
+print "Sum:"
+print sum
+print "Count:"
+print 6
+
+
+

@@ -1,0 +1,13 @@
+# Recursion: Count occurrences
+fun count_occur lst val idx
+    if idx bigger length lst
+        return 0
+    else
+      if lst at idx is val
+        return 1 + count_occur(lst, val, idx + 1)
+    else
+        return count_occur(lst, val, idx + 1)
+list data = 1 2 2 3 2 4
+print "2 appears" count_occur(data, 2, 1) "times"
+
+

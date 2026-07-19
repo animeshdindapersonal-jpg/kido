@@ -1,0 +1,25 @@
+# dc010: Movie Info
+# Store details about a movie
+
+dict movie = {
+    "title": "Finding Nemo",
+    "director": "Andrew Stanton",
+    "year": 2003,
+    "rating": 8
+}
+
+print "=== MOVIE INFO ==="
+print ""
+print "Title:" movie at "title"
+print "Director:" movie at "director"
+print "Year:" movie at "year"
+print "Rating:" movie at "rating" "/10"
+print ""
+
+if movie at "rating" bigger 7
+    print "This is a highly rated movie!"
+else
+    print "This movie has an average rating"
+
+
+

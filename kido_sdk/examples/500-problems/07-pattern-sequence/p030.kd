@@ -1,0 +1,13 @@
+# p030: Alternating star and number pattern
+print "Alternating star and number pattern:"
+repeat 5 times as i
+    remember star_row = ""
+    repeat i times as j
+        remember star_row = star_row + "*"
+    print star_row
+    remember num_row = ""
+    repeat i times as j
+        remember num_row = num_row + i
+    print num_row
+
+

@@ -1,0 +1,12 @@
+remember str = "hello world"
+remember n = 5
+remember result = ""
+if n bigger length str
+  remember n = length str
+repeat n times as i
+  remember result = result + (str at i)
+print "String: " str
+print "First " n " chars: " result
+
+
+

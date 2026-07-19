@@ -1,0 +1,44 @@
+# 37. Morse Code Translator
+list morse_letters = "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"
+list morse_codes = ".-" "-..." "-.-." "-.." "." "..-." "--." "...." ".." ".---" "-.-" ".-.." "--" "-." "---" ".--." "--.-" ".-." "..." "-" "..-" "...-" ".--" "-..-" "-.--" "--.."
+
+fun char_to_morse ch
+    remember upper_ch = uppercase ch
+    remember letters_len = length morse_letters
+    remember i = 1
+    repeat forever
+        if i bigger letters_len
+            stop
+        if morse_letters at i is upper_ch
+            return morse_codes at i
+        remember i = i + 1
+    return ""
+
+fun text_to_morse text
+    remember result = ""
+    remember text_len = length text
+    remember i = 1
+    repeat forever
+        if i bigger text_len
+            stop
+        remember ch = text at i
+        if ch is " "
+            remember result = result + " / "
+        else
+            remember morse = char_to_morse ch
+            remember result = result + morse + " "
+        remember i = i + 1
+    return result
+
+print "=== Morse Code Translator ==="
+remember text1 = "HELLO"
+remember text2 = "KIDO"
+remember text3 = "SOS"
+
+remember m1 = text_to_morse text1
+remember m2 = text_to_morse text2
+remember m3 = text_to_morse text3
+
+print text1 "->" m1
+print text2 "->" m2
+print text3 "->" m3

@@ -1,0 +1,27 @@
+# s008: Story - The Magic Tree
+# A tree that grows different fruits
+
+print "=== THE MAGIC TREE ==="
+print ""
+
+list fruits = "apples" "bananas" "cherries" "mangoes" "strawberries"
+
+print "In a tiny village, there stood a very special tree."
+print "It was called the Magic Tree."
+print "Every morning, the tree grew a different fruit!"
+print ""
+print "On Monday, it grew " fruits at 1 "."
+print "On Tuesday, it grew " fruits at 2 "."
+print "On Wednesday, it grew " fruits at 3 "."
+print "On Thursday, it grew " fruits at 4 "."
+print "On Friday, it grew " fruits at 5 "."
+print ""
+print "The villagers loved the Magic Tree."
+print "They would gather around and pick the fresh fruit."
+print "The tree made everyone in the village happy."
+print "And it never ran out of fruits to share!"
+print ""
+print "THE END"
+
+
+

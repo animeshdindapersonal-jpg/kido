@@ -1,0 +1,6 @@
+# Measurement: Celsius to Fahrenheit
+remember c = 25
+remember f = c * 9 / 5 + 32
+print c "C =" f "F"
+
+

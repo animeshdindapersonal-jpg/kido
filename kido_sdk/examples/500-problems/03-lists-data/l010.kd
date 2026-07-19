@@ -1,0 +1,18 @@
+  # Books to read list
+  # Real-world use: reading list for personal growth
+list books
+add books "1984"
+add books "To Kill a Mockingbird"
+add books "The Great Gatsby"
+add books "Pride and Prejudice"
+add books "The Catcher in the Rye"
+print "=== BOOKS TO READ ==="
+print books
+print ""
+print "Start with:"
+print books at 1
+print "Total books:"
+print length books
+
+
+

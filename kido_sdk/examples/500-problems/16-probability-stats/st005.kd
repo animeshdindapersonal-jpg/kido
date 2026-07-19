@@ -1,0 +1,12 @@
+# Stats: Even vs odd
+remember evens = 0
+remember odds = 0
+repeat 100 times as i
+    remember num = random 1 100
+    if num - floor(num / 2) * 2 is 0
+        remember evens = evens + 1
+    else
+        remember odds = odds + 1
+print "Even:" evens "Odd:" odds
+
+

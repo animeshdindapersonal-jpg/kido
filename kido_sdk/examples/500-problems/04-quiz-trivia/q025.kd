@@ -1,0 +1,63 @@
+# q025: Ocean Quiz
+# Questions about oceans and sea life
+
+print "=== Ocean Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: What is the largest ocean on Earth?"
+ask "Your answer: " answer
+
+if answer is "Pacific" or answer is "pacific" or answer is "Pacific Ocean"
+    print "Correct! The Pacific Ocean is the largest."
+    remember score = score + 1
+else
+    print "The Pacific Ocean is the largest."
+
+print ""
+print "Question 2: How many oceans are there on Earth?"
+ask "Your answer: " answer2
+
+remember num2 = as number answer2
+if num2 is 5
+    print "Correct! There are 5 oceans."
+    remember score = score + 1
+else
+    print "There are 5 oceans on Earth."
+
+print ""
+print "Question 3: What is the biggest animal in the ocean?"
+ask "Your answer: " answer3
+
+if answer3 is "whale" or answer3 is "blue whale"
+    print "Correct! The blue whale is the biggest."
+    remember score = score + 1
+else
+    print "The blue whale is the biggest ocean animal."
+
+print ""
+print "Question 4: What ocean animal has eight arms?"
+ask "Your answer: " answer4
+
+if answer4 is "octopus"
+    print "Correct! An octopus has eight arms."
+    remember score = score + 1
+else
+    print "An octopus has eight arms."
+
+print ""
+print "Question 5: What is the deepest part of the ocean called?"
+ask "Your answer: " answer5
+
+if answer5 is "Mariana Trench" or answer5 is "trench" or answer5 is "mariana trench"
+    print "Correct! The Mariana Trench is the deepest part."
+    remember score = score + 1
+else
+    print "The Mariana Trench is the deepest part of the ocean."
+
+print ""
+print "Ocean Score: " score "/" total
+
+
+

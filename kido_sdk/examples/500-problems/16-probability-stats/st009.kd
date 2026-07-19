@@ -1,0 +1,32 @@
+# Stats: Sum of two dice
+remember sums = 0 0 0 0 0 0 0 0 0 0 0
+repeat 1000 times as i
+    remember d1 = random 1 6
+    remember d2 = random 1 6
+    remember s = d1 + d2
+    if s is 2 sums at 1 = sums at 1 + 1
+    else
+        if s is 3 sums at 2 = sums at 2 + 1
+    else
+        if s is 4 sums at 3 = sums at 3 + 1
+    else
+        if s is 5 sums at 4 = sums at 4 + 1
+    else
+        if s is 6 sums at 5 = sums at 5 + 1
+    else
+        if s is 7 sums at 6 = sums at 6 + 1
+    else
+        if s is 8 sums at 7 = sums at 7 + 1
+    else
+        if s is 9 sums at 8 = sums at 8 + 1
+    else
+        if s is 10 sums at 9 = sums at 9 + 1
+    else
+        if s is 11 sums at 10 = sums at 10 + 1
+    else
+        if s is 12 sums at 11 = sums at 11 + 1
+print "Sum distribution:"
+repeat 11 times as i
+    print i + 1 ":" sums at i
+
+

@@ -1,0 +1,33 @@
+# Cooking simulator
+print "=== COOKING SIMULATOR ==="
+print ""
+list recipe = "Chop vegetables" "Boil water" "Add pasta" "Stir sauce" "Mix ingredients" "Simmer for 10 min" "Serve on plate"
+remember chef = "Chef Kid"
+print chef " is cooking!"
+print ""
+
+remember steps = length recipe
+repeat steps times as i
+    print "Step " i "/" steps ": " recipe i
+    remember quality = random 1 5
+    if quality bigger 3
+        print "  Perfect!"
+    else
+      if quality bigger 1
+        print "  Okay..."
+    else
+        print "  Oops! Need more practice."
+    print ""
+
+print "=== DISH COMPLETE! ==="
+print chef " made a delicious meal!"
+print "Recipe used: "
+remember idx = 1
+repeat steps times
+    print "  " idx ". " recipe idx
+    remember idx = idx + 1
+print ""
+print "Bon appetit!"
+
+
+

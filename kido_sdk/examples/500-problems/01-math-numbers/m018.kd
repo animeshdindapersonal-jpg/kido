@@ -1,0 +1,8 @@
+# Kilometers to miles: Distance conversion for a road trip
+remember km = 10
+remember miles = km * 0.621371
+print "A " km " kilometer run is about " miles " miles!"
+remember rounded = round miles
+print "That is roughly " rounded " miles."
+
+

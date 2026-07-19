@@ -1,0 +1,18 @@
+  # Wish list - items I want
+  # Real-world use: save desired items for future purchase
+list wishes
+add wishes "new laptop"
+add wishes "bicycle"
+add wishes "guitar"
+add wishes "books"
+add wishes "watch"
+print "=== MY WISH LIST ==="
+print wishes
+print ""
+print "Total wishes:"
+print length wishes
+if not empty wishes
+  print "Start saving!"
+
+
+

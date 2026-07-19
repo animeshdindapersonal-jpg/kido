@@ -1,0 +1,37 @@
+# p020: Number diamond pattern
+print "Number diamond:"
+remember n = 5
+
+# Top half
+repeat n times as i
+    remember row = ""
+    remember spaces = n - i
+    repeat spaces times as j
+        remember row = row + " "
+    repeat i times as j
+        remember row = row + j
+    if i bigger 1
+        remember count = i - 1
+        repeat count times as j
+            remember num = count - j + 1
+            remember row = row + num
+    print row
+
+# Bottom half
+remember n2 = n - 1
+repeat n2 times as i
+    remember row = ""
+    remember spaces = i
+    repeat spaces times as j
+        remember row = row + " "
+    remember max = n - i
+    repeat max times as j
+        remember row = row + j
+    if max bigger 1
+        remember count = max - 1
+        repeat count times as j
+            remember num = count - j + 1
+            remember row = row + num
+    print row
+
+

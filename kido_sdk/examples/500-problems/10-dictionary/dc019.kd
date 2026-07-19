@@ -1,0 +1,27 @@
+# dc019: Plant Care Guide
+# Store care instructions for a plant
+
+dict plant = {
+    "name": "Snake Plant",
+    "water": "every 2 weeks",
+    "sunlight": "low to bright"
+}
+
+print "=== PLANT CARE GUIDE ==="
+print ""
+print "Plant:" plant at "name"
+print "Water:" plant at "water"
+print "Sunlight:" plant at "sunlight"
+print ""
+
+set plant "difficulty" "easy"
+print "Difficulty:" plant at "difficulty"
+print ""
+
+if plant at "difficulty" is "easy"
+    print "Great for beginners!"
+else
+    print "Needs more attention"
+
+
+

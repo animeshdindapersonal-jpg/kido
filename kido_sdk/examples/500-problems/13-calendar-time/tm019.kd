@@ -1,0 +1,5 @@
+# Calendar: Sundays in month
+print "Most months have 4 Sundays"
+print "Some have 5!"
+
+

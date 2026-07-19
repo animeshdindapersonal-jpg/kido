@@ -1,0 +1,10 @@
+# Drawing: Cute cat
+print "  /\\___/\\"
+print " (  o o  )"
+print " (  =^=  )"
+print "  |     |"
+print "  |     |"
+print "  |_____|"
+print "Meow!"
+
+

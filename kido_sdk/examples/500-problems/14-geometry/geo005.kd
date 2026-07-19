@@ -1,0 +1,6 @@
+# Geometry: Volume of a cube
+remember side = 4
+remember vol = side * side * side
+print "Cube volume =" vol
+
+

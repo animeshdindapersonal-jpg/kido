@@ -1,0 +1,35 @@
+# Reaction time tester
+print "=== REACTION TIME TESTER ==="
+print ""
+remember attempts = 5
+remember totalTime = 0
+
+print "Test your reaction time!"
+print "Wait for GO then react..."
+print ""
+
+repeat attempts times as i
+    remember wait = random 100 500
+    print "Wait..."
+    remember count = 0
+    repeat wait times
+        remember count = count + 1
+    print "GO! You reacted in " wait "ms!"
+    remember totalTime = totalTime + wait
+    print ""
+
+remember avgTime = totalTime / attempts
+print "=== RESULTS ==="
+print "Attempts: " attempts
+print "Total time: " totalTime "ms"
+print "Average reaction: " avgTime "ms"
+if avgTime smaller 200
+    print "Super fast reflexes!"
+else
+  if avgTime smaller 350
+    print "Good reaction time!"
+else
+    print "You might need more coffee!"
+
+
+

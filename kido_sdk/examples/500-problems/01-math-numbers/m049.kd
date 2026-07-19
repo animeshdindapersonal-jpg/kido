@@ -1,0 +1,25 @@
+# Random math problem generator: Practice math!
+remember a = random 1 20
+remember b = random 1 20
+list ops = "+" "-" "*"
+remember choice = random ops
+remember answer = 0
+if choice is "+"
+  answer = a + b
+  print "What is " a " + " b "?"
+else
+  if choice is "-"
+  if a smaller b
+    remember temp = a
+    a = b
+    b = temp
+  answer = a - b
+  print "What is " a " - " b "?"
+else
+  answer = a * b
+  print "What is " a " x " b "?"
+ask "Your answer: " answer
+print "Checking..."
+print "The correct answer was " answer
+
+

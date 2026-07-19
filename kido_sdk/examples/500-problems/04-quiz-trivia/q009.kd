@@ -1,0 +1,62 @@
+# q009: Geography Quiz
+# Questions about continents and countries
+
+print "=== Geography Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: Which continent is Egypt in?"
+ask "Your answer: " answer
+
+if answer is "Africa" or answer is "africa"
+    print "Correct! Egypt is in Africa."
+    remember score = score + 1
+else
+    print "Egypt is in Africa."
+
+print ""
+print "Question 2: Which is the largest continent?"
+ask "Your answer: " answer2
+
+if answer2 is "Asia" or answer2 is "asia"
+    print "Correct! Asia is the largest continent."
+    remember score = score + 1
+else
+    print "Asia is the largest continent."
+
+print ""
+print "Question 3: Which ocean is between North America and Europe?"
+ask "Your answer: " answer3
+
+if answer3 is "Atlantic" or answer3 is "atlantic"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "The Atlantic Ocean."
+
+print ""
+print "Question 4: Which country has the most people?"
+ask "Your answer: " answer4
+
+if answer4 is "India" or answer4 is "india" or answer4 is "China" or answer4 is "china"
+    print "Correct! India and China are the most populous."
+    remember score = score + 1
+else
+    print "India has the most people."
+
+print ""
+print "Question 5: What is the longest river in the world?"
+ask "Your answer: " answer5
+
+if answer5 is "Nile" or answer5 is "nile" or answer5 is "Amazon" or answer5 is "amazon"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "The Nile River is the longest."
+
+print ""
+print "Geography Score: " score "/" total
+
+
+

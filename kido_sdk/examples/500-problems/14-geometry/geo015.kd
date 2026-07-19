@@ -1,0 +1,6 @@
+# Measurement: Kilograms to pounds
+remember kg = 5
+remember lb = kg * 2.20462
+print kg "kg =" lb "lbs"
+
+

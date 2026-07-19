@@ -1,0 +1,41 @@
+# 26. Tic-Tac-Toe Winner Checker
+fun check_winner board
+    list wins = 1 2 3  4 5 6  7 8 9  1 4 7  2 5 8  3 6 9  1 5 9  3 5 7
+    remember i = 1
+    repeat 8 times
+        remember a = wins at i
+        remember i1 = i + 1
+        remember b = wins at i1
+        remember i2 = i + 2
+        remember c = wins at i2
+        remember va = board at a
+        remember vb = board at b
+        remember vc = board at c
+        if va is vb and vb is vc and not va is "."
+            return va
+        remember i = i + 3
+    return "none"
+
+print "=== Tic-Tac-Toe Winner ==="
+list board1 = "X" "O" "X" "O" "X" "O" "X" "O" "X"
+list board2 = "X" "X" "O" "O" "X" "." "O" "." "X"
+list board3 = "X" "O" "X" "X" "O" "O" "O" "X" "X"
+
+remember w1 = check_winner board1
+remember w2 = check_winner board2
+remember w3 = check_winner board3
+
+print "Board 1:" board1 at 1 board1 at 2 board1 at 3
+print "         " board1 at 4 board1 at 5 board1 at 6
+print "         " board1 at 7 board1 at 8 board1 at 9
+print "Winner:" w1
+print ""
+print "Board 2:" board2 at 1 board2 at 2 board2 at 3
+print "         " board2 at 4 board2 at 5 board2 at 6
+print "         " board2 at 7 board2 at 8 board2 at 9
+print "Winner:" w2
+print ""
+print "Board 3:" board3 at 1 board3 at 2 board3 at 3
+print "         " board3 at 4 board3 at 5 board3 at 6
+print "         " board3 at 7 board3 at 8 board3 at 9
+print "Winner:" w3

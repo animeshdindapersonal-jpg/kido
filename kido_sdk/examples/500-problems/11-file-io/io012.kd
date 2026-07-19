@@ -1,0 +1,10 @@
+# File: Combine files
+write "Hello" to "p1.txt"
+write "World" to "p2.txt"
+remember a = read "p1.txt"
+remember b = read "p2.txt"
+write a " " b to "combined.txt"
+remember c = read "combined.txt"
+print "Combined:" c
+
+

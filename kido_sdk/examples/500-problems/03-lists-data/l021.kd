@@ -1,0 +1,28 @@
+  # Merge two lists into one
+  # Real-world use: combine two class groups
+list groupA
+add groupA "Alice"
+add groupA "Bob"
+add groupA "Charlie"
+list groupB
+add groupB "Diana"
+add groupB "Eve"
+add groupB "Frank"
+list combined
+print "=== MERGE LISTS ==="
+print "Group A:"
+print groupA
+print "Group B:"
+print groupB
+print ""
+repeat 3 times as i
+  add combined groupA at i
+repeat 3 times as i
+  add combined groupB at i
+print "Combined class:"
+print combined
+print "Total students:"
+print length combined
+
+
+

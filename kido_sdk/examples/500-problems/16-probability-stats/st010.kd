@@ -1,0 +1,10 @@
+# Stats: Birthday paradox
+remember count = 0
+repeat 365 times as i
+    remember b = random 1 365
+    if b is 1
+        remember count = count + 1
+print "People born Jan 1 in 365:" count
+print "In 23 people, 50 - floor(50 / chance) * chance two share a birthday!"
+
+

@@ -1,0 +1,57 @@
+# 14. Merge Sort
+fun merge left right
+    list result
+    remember i = 1
+    remember j = 1
+    remember left_len = length left
+    remember right_len = length right
+    repeat forever
+        if i bigger left_len or j bigger right_len
+            stop
+        remember val_l = left at i
+        remember val_r = right at j
+        if val_l smaller or same val_r
+            add result val_l
+            remember i = i + 1
+        else
+            add result val_r
+            remember j = j + 1
+    repeat forever
+        if i bigger left_len
+            stop
+        add result left at i
+        remember i = i + 1
+    repeat forever
+        if j bigger right_len
+            stop
+        add result right at j
+        remember j = j + 1
+    return result
+
+fun merge_sort arr
+    remember arr_len = length arr
+    if arr_len smaller or same 1
+        return arr
+    remember mid = arr_len / 2
+    list left
+    list right
+    remember i = 1
+    repeat forever
+        if i bigger mid
+            stop
+        add left arr at i
+        remember i = i + 1
+    repeat forever
+        if i bigger arr_len
+            stop
+        add right arr at i
+        remember i = i + 1
+    remember sorted_left = merge_sort left
+    remember sorted_right = merge_sort right
+    return merge sorted_left sorted_right
+
+print "=== Merge Sort ==="
+list arr = 38 27 43 3 9 82 10
+print "Before:" arr
+remember sorted = merge_sort arr
+print "After:" sorted

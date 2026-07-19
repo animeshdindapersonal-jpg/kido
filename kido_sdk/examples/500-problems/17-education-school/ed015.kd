@@ -1,0 +1,6 @@
+# School: Study plan
+remember days = 5
+remember hours = 2
+print "Study" days "days x" hours "hrs =" days * hours "total hours"
+
+

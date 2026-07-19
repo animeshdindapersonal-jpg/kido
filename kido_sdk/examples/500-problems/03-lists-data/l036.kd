@@ -1,0 +1,35 @@
+  # Voting counter - count votes for each option
+  # Real-world use: tally election results
+list votes
+add votes "pizza"
+add votes "burger"
+add votes "pizza"
+add votes "taco"
+add votes "burger"
+add votes "pizza"
+add votes "pizza"
+add votes "salad"
+print "=== VOTING RESULTS ==="
+print "All votes:"
+print votes
+print ""
+list options
+repeat 8 times as i
+  if not has options votes at i
+    add options votes at i
+print "Candidates:"
+print options
+print ""
+print "Final tally:"
+remember oi = 1
+remember vi = 1
+repeat 4 times as oi
+  remember cnt = 0
+  repeat 8 times as vi
+    if votes at vi is options at oi
+      remember cnt = cnt + 1
+  print options at oi
+  print cnt
+
+
+

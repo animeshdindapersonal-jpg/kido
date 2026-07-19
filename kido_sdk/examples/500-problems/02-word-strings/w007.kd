@@ -1,0 +1,7 @@
+remember str = "HELLO WORLD"
+remember result = lowercase str
+print "Original: " str
+print "Lowercase: " result
+
+
+

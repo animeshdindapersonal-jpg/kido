@@ -1,0 +1,21 @@
+# io003: Count number of words in a file
+# Real-world use: estimate reading time for a document
+
+remember filename = "article.txt"
+write "KIDO is a fun language for kids to learn programming" to filename
+
+remember text = read filename
+remember wordCount = 0
+
+repeat length text times as i
+    remember ch = text at i
+    if ch is " "
+        wordCount = wordCount + 1
+
+wordCount = wordCount + 1
+
+print "File: " filename
+print "Words: " wordCount
+
+
+

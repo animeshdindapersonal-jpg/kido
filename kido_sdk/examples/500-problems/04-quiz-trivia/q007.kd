@@ -1,0 +1,70 @@
+# q007: Spelling Quiz
+# Test spelling of common words
+
+print "=== Spelling Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: Spell the word for a large gray animal with a trunk"
+ask "Your spelling: " answer
+
+if answer is "elephant"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "The correct spelling is: elephant"
+
+print ""
+print "Question 2: Spell the word for something you read"
+ask "Your spelling: " answer2
+
+if answer2 is "book"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "The correct spelling is: book"
+
+print ""
+print "Question 3: Spell the word for the color of grass"
+ask "Your spelling: " answer3
+
+if answer3 is "green"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "The correct spelling is: green"
+
+print ""
+print "Question 4: Spell the word for a baby dog"
+ask "Your spelling: " answer4
+
+if answer4 is "puppy"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "The correct spelling is: puppy"
+
+print ""
+print "Question 5: Spell the word for the opposite of hot"
+ask "Your spelling: " answer5
+
+if answer5 is "cold"
+    print "Correct!"
+    remember score = score + 1
+else
+    print "The correct spelling is: cold"
+
+print ""
+print "Spelling Score: " score "/" total
+
+if score is total
+    print "Spelling bee champion!"
+else
+  if score bigger 3
+    print "Great spelling!"
+else
+    print "Keep practicing your spelling!"
+
+
+

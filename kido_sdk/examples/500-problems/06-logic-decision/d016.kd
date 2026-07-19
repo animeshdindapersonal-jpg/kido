@@ -1,0 +1,46 @@
+# d016: Sort Three Numbers
+
+fun sort_three a b c
+    remember smallest_val = a
+    remember middle_val = b
+    remember largest_val = c
+
+    if a bigger b
+        remember smallest_val = b
+        remember middle_val = a
+
+    if middle_val bigger c
+        remember largest_val = middle_val
+        remember middle_val = c
+
+    if a bigger b
+        if a bigger c
+            remember largest_val = a
+
+    if smallest_val bigger middle_val
+        remember temp = smallest_val
+        remember smallest_val = middle_val
+        remember middle_val = temp
+
+    print "Sorted:" smallest_val "," middle_val "," largest_val
+
+print "=== SORT THREE NUMBERS ==="
+print ""
+
+print "Input: 8, 3, 5"
+sort_three 8 3 5
+print ""
+
+print "Input: 10, 20, 5"
+sort_three 10 20 5
+print ""
+
+print "Input: 1, 2, 3"
+sort_three 1 2 3
+print ""
+
+print "Input: 7, 7, 2"
+sort_three 7 7 2
+
+
+

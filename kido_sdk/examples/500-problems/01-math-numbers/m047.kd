@@ -1,0 +1,13 @@
+# Compare two numbers: Find which is bigger
+remember a = 42
+remember b = 37
+print "Comparing " a " and " b ":"
+if a bigger b
+  print a " is bigger than " b
+else
+  if a smaller b
+  print a " is smaller than " b
+else
+  print a " and " b " are equal!"
+
+

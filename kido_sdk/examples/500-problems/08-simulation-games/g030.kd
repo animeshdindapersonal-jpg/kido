@@ -1,0 +1,46 @@
+# Vending machine 2 with coins
+print "=== VENDING MACHINE 2 ==="
+print ""
+list items = "Water" "Juice" "Crackers" "Candy"
+list prices = 100 150 200 175
+list coins = 200 100 50 25
+remember money = 500
+
+print "You have $" money " (coins: " coins ")"
+print ""
+list bought
+remember totalSpent = 0
+
+repeat 3 times as i
+    print "--- Purchase " i " ---"
+    remember pick = random 1 4
+    remember price = prices pick
+    if money bigger or same price
+        print "Buying " items pick " for $" price
+        remember paid = no
+        remember cIdx = 1
+        repeat length coins times
+            if coins cIdx bigger or same price and paid is no
+                remember change = coins cIdx - price
+                print "Paid with $" coins cIdx " coin. Change: $" change
+                remember money = money - price
+                remember totalSpent = totalSpent + price
+                add bought items pick
+                remember paid = yes
+            remember cIdx = cIdx + 1
+        if paid is no
+            print "No exact coin! Using $" coins 1
+            remember money = money - price
+            remember totalSpent = totalSpent + price
+            add bought items pick
+    else
+        print "Need $" price " but only have $" money
+    print ""
+
+print "=== PURCHASES COMPLETE ==="
+print "Items bought: " bought
+print "Total spent: $" totalSpent
+print "Money left: $" money
+
+
+

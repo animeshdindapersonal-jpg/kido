@@ -1,0 +1,6 @@
+# Measurement: Inches to centimeters
+remember inches = 12
+remember cm = inches * 2.54
+print inches "inches =" cm "cm"
+
+

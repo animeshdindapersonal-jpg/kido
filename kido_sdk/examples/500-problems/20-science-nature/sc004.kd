@@ -1,0 +1,7 @@
+# Science: Plant life cycle
+print "Plant Life Cycle:"
+list stages = "Seed" "Sprout" "Seedling" "Mature" "Flower" "Fruit"
+repeat length stages times as i
+    print i "." stages at i
+
+

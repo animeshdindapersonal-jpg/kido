@@ -1,0 +1,36 @@
+# Quiz show game
+print "=== QUIZ SHOW ==="
+print ""
+list questions = "What is 2+2?" "What color is the sky?" "What sound does a cow make?" "How many legs does a dog have?" "What planet do we live on?"
+list answers = "4" "Blue" "Moo" "4" "Earth"
+list playerAnswers = "4" "Blue" "Moo" "4" "Earth"
+remember points = 0
+remember total = length questions
+
+print "Welcome to the KIDO Quiz Show!"
+print ""
+
+repeat total times as i
+    print "Question " i ": " questions i
+    print "Your answer: " playerAnswers i
+    print "Correct answer: " answers i
+    if playerAnswers i is answers i
+        print "CORRECT! +10 points!"
+        remember points = points + 10
+    else
+        print "Wrong! No points."
+    print "Score: " points
+    print ""
+
+print "=== GAME OVER ==="
+print "Final score: " points "/" total * 10
+if points is total * 10
+    print "PERFECT SCORE! You're a genius!"
+else
+  if points bigger or same total * 5
+    print "Good job! You know your stuff!"
+else
+    print "Better luck next time!"
+
+
+

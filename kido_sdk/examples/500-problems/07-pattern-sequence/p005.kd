@@ -1,0 +1,8 @@
+# p005: Triangular numbers (1, 3, 6, 10, 15... up to 10th)
+print "Triangular numbers (first 10):"
+remember tri = 0
+repeat 10 times as i
+    remember tri = tri + i
+    print tri
+
+

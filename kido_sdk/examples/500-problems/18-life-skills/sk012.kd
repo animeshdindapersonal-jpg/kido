@@ -1,0 +1,7 @@
+# Life: Room cleaning
+list tasks = "bed" "toys" "desk" "floor" "shelves"
+print "Clean:"
+repeat length tasks times as i
+    print i "." tasks at i "- done!"
+
+

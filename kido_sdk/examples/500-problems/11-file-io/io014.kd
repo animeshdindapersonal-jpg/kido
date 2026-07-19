@@ -1,0 +1,12 @@
+# File: Name organizer
+write "Alice" to "names.txt"
+append "Bob" to "names.txt"
+append "Charlie" to "names.txt"
+remember data = read "names.txt"
+remember names = split data
+"
+print "Names:"
+repeat length names times as i
+    print i "." names at i
+
+

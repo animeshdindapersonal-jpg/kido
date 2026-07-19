@@ -1,0 +1,11 @@
+# p013: Fibonacci sequence (first 10 terms)
+print "Fibonacci sequence (first 10):"
+remember a = 0
+remember b = 1
+repeat 10 times as i
+    print b
+    remember next_val = a + b
+    remember a = b
+    remember b = next_val
+
+

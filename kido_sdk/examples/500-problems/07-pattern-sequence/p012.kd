@@ -1,0 +1,9 @@
+# p012: Number triangle (1, 12, 123, 1234, 12345)
+print "Number triangle:"
+repeat 5 times as i
+    remember row = ""
+    repeat i times as j
+        remember row = row + j
+    print row
+
+

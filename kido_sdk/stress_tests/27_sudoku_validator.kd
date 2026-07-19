@@ -1,0 +1,24 @@
+# 27. Sudoku Row Validator
+fun is_valid_row row
+    list seen
+    remember i = 1
+    repeat 9 times
+        remember val = row at i
+        if has seen val
+            return no
+        add seen val
+        remember i = i + 1
+    return yes
+
+print "=== Sudoku Row Validator ==="
+list valid_row = 1 2 3 4 5 6 7 8 9
+list invalid_row = 1 2 3 4 5 6 7 8 8
+list another_valid = 9 8 7 6 5 4 3 2 1
+
+remember r1 = is_valid_row valid_row
+remember r2 = is_valid_row invalid_row
+remember r3 = is_valid_row another_valid
+
+print "Row 1-9:" r1
+print "Row with dup:" r2
+print "Row 9-1:" r3

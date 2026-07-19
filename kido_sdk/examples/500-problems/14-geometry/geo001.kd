@@ -1,0 +1,7 @@
+# Geometry: Area of a rectangle
+remember w = 5
+remember h = 3
+remember area = w * h
+print "Rectangle " w "x" h "area =" area
+
+

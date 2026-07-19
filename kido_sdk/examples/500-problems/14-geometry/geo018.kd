@@ -1,0 +1,6 @@
+# Measurement: Miles per gallon to km per liter
+remember mpg = 30
+remember kmpl = mpg * 0.425144
+print mpg "MPG =" kmpl "km/L"
+
+

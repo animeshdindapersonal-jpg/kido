@@ -1,0 +1,35 @@
+# d024: Snack Decision
+# Hungry AND healthy options available
+
+fun snack_decision is_hungry has_healthy has_junk
+    if is_hungry is no
+        return "You're not hungry. Wait until mealtime."
+
+    if has_healthy is yes
+        return "Great! Have some fruit or nuts. Healthy and tasty!"
+    else
+      if has_junk is yes
+        return "Only junk food available. Have a small portion."
+    else
+        return "No food available. Ask an adult for help!"
+
+print "=== SNACK DECISION ==="
+print ""
+
+print "Hungry? yes, Healthy snacks? yes, Junk? no"
+print "->" snack_decision yes yes no
+print ""
+
+print "Hungry? yes, Healthy snacks? no, Junk? yes"
+print "->" snack_decision yes no yes
+print ""
+
+print "Hungry? no, Healthy snacks? yes, Junk? yes"
+print "->" snack_decision no yes yes
+print ""
+
+print "Hungry? yes, Healthy snacks? no, Junk? no"
+print "->" snack_decision yes no no
+
+
+

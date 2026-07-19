@@ -1,0 +1,11 @@
+# p016: Alphabet pattern (A, AB, ABC, ABCD, ABCDE)
+print "Alphabet pattern:"
+remember letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+repeat 5 times as i
+    remember row = ""
+    repeat i times as j
+        remember ch = letters at j
+        remember row = row + ch
+    print row
+
+

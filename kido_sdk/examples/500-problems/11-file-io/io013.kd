@@ -1,0 +1,6 @@
+# File: Quote keeper
+write "Be kind to others" to "quote.txt"
+remember q = read "quote.txt"
+print "Quote:" q
+
+

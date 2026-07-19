@@ -1,0 +1,34 @@
+# 11. Bubble Sort
+fun bubble_sort arr
+    remember n = length arr
+    remember swaps = 0
+    remember i = 1
+    repeat forever
+        remember n_minus_i = n - i
+        if i bigger n_minus_i
+            stop
+        remember swapped = no
+        remember j = 1
+        repeat forever
+            if j bigger n_minus_i
+                stop
+            remember j1 = j + 1
+            remember val_j = arr at j
+            remember val_j1 = arr at j1
+            if val_j bigger val_j1
+                replace arr at j with val_j1
+                replace arr at j1 with val_j
+                remember swapped = yes
+                remember swaps = swaps + 1
+            remember j = j + 1
+        if swapped is no
+            stop
+        remember i = i + 1
+    return swaps
+
+print "=== Bubble Sort ==="
+list arr = 64 34 25 12 22 11 90
+print "Before:" arr
+remember s = bubble_sort arr
+print "After:" arr
+print "Swaps:" s

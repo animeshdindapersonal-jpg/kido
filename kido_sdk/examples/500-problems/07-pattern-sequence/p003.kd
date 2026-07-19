@@ -1,0 +1,7 @@
+# p003: Odd numbers from 1 to 19
+print "Odd numbers 1 to 19:"
+repeat 10 times as i
+    remember odd = i * 2 - 1
+    print odd
+
+

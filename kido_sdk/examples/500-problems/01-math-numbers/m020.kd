@@ -1,0 +1,8 @@
+# Currency converter: Convert USD to Euros for a trip
+const usdToEur = 0.85
+remember usd = 100
+remember eur = usd * usdToEur
+print "$" usd " USD is equal to " eur " EUR"
+print "Have a great trip to Europe!"
+
+

@@ -1,0 +1,8 @@
+# School: Practice timer
+remember t = 10
+print "Countdown:"
+repeat t times as i
+    print t - i + 1
+print "Go!"
+
+

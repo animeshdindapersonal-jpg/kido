@@ -1,0 +1,12 @@
+# io001: Write a message to a file, read it back
+# Real-world use: save and load user notes
+
+remember filename = "note.txt"
+write "Hello from KIDO!" to filename
+
+remember content = read filename
+print "File contents:"
+print content
+
+
+

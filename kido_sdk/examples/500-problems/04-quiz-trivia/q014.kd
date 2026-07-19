@@ -1,0 +1,72 @@
+# q014: Opposite Words Quiz
+# Test knowledge of opposites
+
+print "=== Opposite Words Quiz ==="
+print ""
+remember score = 0
+remember total = 6
+
+print "Question 1: What is the opposite of hot?"
+ask "Your answer: " answer
+
+if answer is "cold"
+    print "Right! Hot and cold are opposites."
+    remember score = score + 1
+else
+    print "The opposite of hot is cold."
+
+print ""
+print "Question 2: What is the opposite of big?"
+ask "Your answer: " answer2
+
+if answer2 is "small" or answer2 is "little"
+    print "Right! Big and small are opposites."
+    remember score = score + 1
+else
+    print "The opposite of big is small."
+
+print ""
+print "Question 3: What is the opposite of happy?"
+ask "Your answer: " answer3
+
+if answer3 is "sad"
+    print "Right! Happy and sad are opposites."
+    remember score = score + 1
+else
+    print "The opposite of happy is sad."
+
+print ""
+print "Question 4: What is the opposite of fast?"
+ask "Your answer: " answer4
+
+if answer4 is "slow"
+    print "Right! Fast and slow are opposites."
+    remember score = score + 1
+else
+    print "The opposite of fast is slow."
+
+print ""
+print "Question 5: What is the opposite of day?"
+ask "Your answer: " answer5
+
+if answer5 is "night"
+    print "Right! Day and night are opposites."
+    remember score = score + 1
+else
+    print "The opposite of day is night."
+
+print ""
+print "Question 6: What is the opposite of up?"
+ask "Your answer: " answer6
+
+if answer6 is "down"
+    print "Right! Up and down are opposites."
+    remember score = score + 1
+else
+    print "The opposite of up is down."
+
+print ""
+print "Opposites Score: " score "/" total
+
+
+

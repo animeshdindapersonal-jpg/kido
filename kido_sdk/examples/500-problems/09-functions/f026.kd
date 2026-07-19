@@ -1,0 +1,18 @@
+fun factorial n
+    if n smaller 0
+        print "f026: error - negative input"
+        return 0
+    remember result = 1
+    remember i = 1
+    repeat n times
+        result = result * i
+        i = i + 1
+    return result
+
+remember x = 6
+remember fact = factorial x
+print "f026: factorial(6) = "
+print fact
+
+
+

@@ -1,0 +1,15 @@
+# Times table quiz: Practice multiplication
+remember num = random 2 12
+remember multiplier = random 1 12
+remember correct = num * multiplier
+remember answer = 0
+print "QUIZ TIME!"
+print "What is " num " x " multiplier "?"
+ask "Your answer: " answer
+if answer is correct
+  print "Correct! " num " x " multiplier " = " correct
+else
+  print "Oops! The answer is " correct
+  print "You said " answer ". Try again next time!"
+
+

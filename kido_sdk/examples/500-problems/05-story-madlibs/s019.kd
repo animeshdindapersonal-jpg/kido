@@ -1,0 +1,28 @@
+# s019: Restaurant Name Generator
+# Fancy food words
+
+print "=== RESTAURANT NAME GENERATOR ==="
+print ""
+
+list fancy = "Royal" "Golden" "Crystal" "Velvet" "Emerald" "Sapphire" "Ivory" "Crimson" "Moonlit" "Sunrise"
+list food = "Kitchen" "Plate" "Bistro" "Diner" "Cafe" "Grill" "Table" "Feast" "Garden" "House"
+list cuisines = "Pasta" "Burger" "Pizza" "Noodle" "Taco" "Soup" "Salad" "Steak" "Bread" "Curry"
+
+shuffle fancy
+shuffle food
+shuffle cuisines
+
+remember fn = fancy at 1
+remember fd = food at 1
+remember cq = cuisines at 1
+
+print "Your restaurant name ideas:"
+print ""
+print "1. The " fn " " fd
+print "2. " cq " " fn
+print "3. The " fn " " cq " House"
+print ""
+print "Five-star rating guaranteed!"
+
+
+

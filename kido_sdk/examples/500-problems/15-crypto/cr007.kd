@@ -1,0 +1,7 @@
+# Crypto: Keyboard shift
+print "Original: hello"
+print "Shift right on QWERTY:"
+print "h->j, e->r, l->., l->., o->p"
+print "Result: jr..p"
+
+

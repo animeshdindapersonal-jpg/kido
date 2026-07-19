@@ -1,0 +1,8 @@
+# p008: Countdown from 10 to 1
+print "Countdown:"
+repeat 10 times as i
+    remember num = 11 - i
+    print num
+print "Blast off!"
+
+

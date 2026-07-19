@@ -1,0 +1,18 @@
+# s015: Tongue Twister Generator
+# Random tongue twisters
+
+print "=== TONGUE TWISTER GENERATOR ==="
+print ""
+
+list twisters = "She sells seashells by the seashore." "Peter Piper picked a peck of pickled peppers." "How much wood would a woodchuck chuck if a woodchuck could chuck wood?" "Betty Botter bought some butter but she said the butter is bitter." "Fuzzy Wuzzy was a bear. Fuzzy Wuzzy had no hair." "I saw Susie sitting in a shoeshine shop." "Six slippery snails slid slowly seaward." "Red lorry, yellow lorry." "Unique New York." "Four fine fresh fish for you."
+
+shuffle twisters
+
+print "Try saying this three times fast!"
+print ""
+print twisters at 1
+print ""
+print "How did you do?"
+
+
+

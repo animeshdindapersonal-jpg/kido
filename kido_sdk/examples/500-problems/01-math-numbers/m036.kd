@@ -1,0 +1,8 @@
+# Speed calculator: How fast are you going?
+remember distance = 150
+remember time = 3
+remember speed = distance / time
+print "You traveled " distance " miles in " time " hours."
+print "Your average speed was " speed " miles per hour!"
+
+

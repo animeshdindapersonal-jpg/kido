@@ -1,0 +1,7 @@
+# School: Times table
+remember num = 7
+print "Multiplication Table for" num":"
+repeat 10 times as i
+    print num "x" i "=" num * i
+
+

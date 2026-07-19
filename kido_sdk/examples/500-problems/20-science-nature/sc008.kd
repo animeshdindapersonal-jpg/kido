@@ -1,0 +1,8 @@
+# Science: Five senses
+list senses = "Sight" "Hearing" "Touch" "Taste" "Smell"
+list organs = "eyes" "ears" "skin" "tongue" "nose"
+print "Senses:"
+repeat 5 times as i
+    print senses at i "- we use our" organs at i
+
+

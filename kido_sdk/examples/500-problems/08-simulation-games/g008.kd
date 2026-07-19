@@ -1,0 +1,29 @@
+# Weather simulator
+print "=== WEATHER SIMULATOR ==="
+print ""
+list seasons = "Spring" "Summer" "Fall" "Winter"
+list conditions = "Sunny" "Cloudy" "Rainy" "Windy" "Stormy" "Snowy"
+
+remember days = 5
+print "5-Day Weather Forecast:"
+print ""
+
+repeat days times as i
+    remember season = random seasons
+    remember condition = random conditions
+    remember temp = random 15 40
+    if season is "Winter"
+        remember temp = random -5 15
+    if season is "Summer"
+        remember temp = random 20 45
+    print "Day " i ": " season " - " condition " - " temp "C"
+    if condition is "Rainy" or condition is "Stormy"
+        print "  Don't forget your umbrella!"
+    if condition is "Snowy"
+        print "  Time to build a snowman!"
+
+print ""
+print "Forecast complete!"
+
+
+

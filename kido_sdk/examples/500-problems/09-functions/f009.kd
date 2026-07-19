@@ -1,0 +1,10 @@
+fun square n
+    return n * n
+
+remember x = 7
+remember sq = square x
+print "f009: square(7) = "
+print sq
+
+
+

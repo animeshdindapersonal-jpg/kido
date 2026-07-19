@@ -1,0 +1,63 @@
+# q015: Days of the Week Quiz
+# Questions about days of the week
+
+print "=== Days of the Week Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: What day comes after Monday?"
+ask "Your answer: " answer
+
+if answer is "Tuesday" or answer is "tuesday"
+    print "Correct! Tuesday comes after Monday."
+    remember score = score + 1
+else
+    print "Tuesday comes after Monday."
+
+print ""
+print "Question 2: How many days are in a week?"
+ask "Your answer: " answer2
+
+remember num2 = as number answer2
+if num2 is 7
+    print "Correct! There are 7 days."
+    remember score = score + 1
+else
+    print "There are 7 days in a week."
+
+print ""
+print "Question 3: What is the first day of the week?"
+ask "Your answer: " answer3
+
+if answer3 is "Sunday" or answer3 is "sunday" or answer3 is "Monday" or answer3 is "monday"
+    print "Correct! Sunday (or Monday) is the first day."
+    remember score = score + 1
+else
+    print "Sunday is often considered the first day."
+
+print ""
+print "Question 4: What day comes before Friday?"
+ask "Your answer: " answer4
+
+if answer4 is "Thursday" or answer4 is "thursday"
+    print "Correct! Thursday comes before Friday."
+    remember score = score + 1
+else
+    print "Thursday comes before Friday."
+
+print ""
+print "Question 5: Which day starts with 'W'?"
+ask "Your answer: " answer5
+
+if answer5 is "Wednesday" or answer5 is "wednesday"
+    print "Correct! Wednesday starts with W."
+    remember score = score + 1
+else
+    print "Wednesday starts with W."
+
+print ""
+print "Days of Week Score: " score "/" total
+
+
+

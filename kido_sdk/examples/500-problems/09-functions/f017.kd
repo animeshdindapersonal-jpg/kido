@@ -1,0 +1,16 @@
+fun maxList items
+    remember m = items[1]
+    remember i = 2
+    repeat length items - 1 times
+        if items[i] bigger m
+            m = items[i]
+        i = i + 1
+    return m
+
+list numbers = 7 23 5 18 42 9
+remember mx = maxList numbers
+print "f017: max of list = "
+print mx
+
+
+

@@ -1,0 +1,8 @@
+# Calendar: School vs holiday
+remember m = 7
+if m is 6 or m is 7 or m is 8
+    print "Summer vacation!"
+else
+    print "School in session"
+
+

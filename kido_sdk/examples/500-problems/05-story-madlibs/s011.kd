@@ -1,0 +1,18 @@
+# s011: Fortune Teller
+# Random fortunes from a list
+
+print "=== FORTUNE TELLER ==="
+print ""
+
+list fortunes = "You will find something shiny today!" "A surprise is waiting for you at home." "Your next meal will be delicious." "Someone is thinking about you right now." "You will make a new friend soon." "Good luck will follow you all week." "An exciting adventure is coming your way." "You will learn something new tomorrow." "A wish you made will come true." "Happiness is right around the corner."
+
+shuffle fortunes
+
+print "Your fortune says..."
+print ""
+print fortunes at 1
+print ""
+print "The magic ball has spoken!"
+
+
+

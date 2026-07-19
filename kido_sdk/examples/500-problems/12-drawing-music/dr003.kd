@@ -1,0 +1,10 @@
+# Drawing: Christmas tree with stars
+print "   *"
+print "  ***"
+print " *****"
+print "*******"
+print "  |||"
+print "  |||"
+print "Merry Christmas!"
+
+

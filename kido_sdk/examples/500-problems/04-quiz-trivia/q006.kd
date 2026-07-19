@@ -1,0 +1,53 @@
+# q006: Division Quiz
+# Simple division problems for kids
+
+print "=== Division Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+# Division problems using simple numbers
+list problems_a
+add problems_a 12
+add problems_a 20
+add problems_a 15
+add problems_a 24
+add problems_a 30
+
+list problems_b
+add problems_b 3
+add problems_b 4
+add problems_b 5
+add problems_b 6
+add problems_b 3
+
+remember i = 1
+
+repeat total times as i
+    remember a = problems_a i
+    remember b = problems_b i
+    remember correct = a / b
+
+    print "Question " i ": What is " a " / " b "?"
+    ask "Your answer: " answer
+    remember numAns = as number answer
+
+    if numAns is correct
+        print "Correct! " a " / " b " = " correct
+        remember score = score + 1
+    else
+        print "The answer is " a " / " b " = " correct
+    print ""
+
+print "Score: " score "/" total
+
+if score is total
+    print "Division expert!"
+else
+  if score bigger 2
+    print "Good job!"
+else
+    print "Review your division facts."
+
+
+

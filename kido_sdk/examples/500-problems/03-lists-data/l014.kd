@@ -1,0 +1,18 @@
+  # Menu for the week - 7 days
+  # Real-world use: meal planning
+list menu
+add menu "Monday: Pasta"
+add menu "Tuesday: Tacos"
+add menu "Wednesday: Pizza"
+add menu "Thursday: Salad"
+add menu "Friday: Sushi"
+add menu "Saturday: BBQ"
+add menu "Sunday: Soup"
+print "=== WEEKLY MENU ==="
+print menu
+print ""
+print "Best day:"
+print menu at 5
+
+
+

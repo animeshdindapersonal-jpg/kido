@@ -1,0 +1,30 @@
+# dc025: Player Stats
+# Track a game player's stats
+
+dict player = {
+    "name": "Neo",
+    "score": 1500,
+    "level": 8,
+    "lives": 3
+}
+
+print "=== PLAYER STATS ==="
+print ""
+print "Name:" player at "name"
+print "Score:" player at "score"
+print "Level:" player at "level"
+print "Lives:" player at "lives"
+print ""
+
+remember new_score = (player at "score") + 500
+set player "score" new_score
+print "After bonus:"
+print "New score:" player at "score"
+
+if player at "lives" bigger 0
+    print player at "name" " is still alive!"
+else
+    print "Game Over!"
+
+
+

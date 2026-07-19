@@ -1,0 +1,30 @@
+# dc024: Weather Data
+# Map cities to their temperature and conditions
+
+dict weather = {
+    "Mumbai": "32C Sunny",
+    "Delhi": "28C Cloudy",
+    "Bangalore": "22C Rainy",
+    "Chennai": "35C Humid"
+}
+
+print "=== WEATHER DATA ==="
+print ""
+print "Mumbai:" weather at "Mumbai"
+print "Delhi:" weather at "Delhi"
+print "Bangalore:" weather at "Bangalore"
+print "Chennai:" weather at "Chennai"
+print ""
+
+set weather "Kolkata" "30C Clear"
+print "Added Kolkata:" weather at "Kolkata"
+print ""
+
+if weather has "Bangalore"
+    print "Bangalore weather:" weather at "Bangalore"
+
+remember cities = keys weather
+print "Number of cities:" length cities
+
+
+

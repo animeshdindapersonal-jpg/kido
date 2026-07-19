@@ -1,0 +1,12 @@
+# File I/O: Save a list of items to a file and load them
+list fruits = "apple" "banana" "mango" "grape" "orange"
+write "Fruits List:" to "fruits.txt"
+repeat length fruits times as i
+    append fruits at i to "fruits.txt"
+remember loaded = read "fruits.txt"
+print "Saved fruits to file."
+print ""
+print "File contents:"
+print loaded
+
+

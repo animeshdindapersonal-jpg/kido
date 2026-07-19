@@ -1,0 +1,8 @@
+# Science: Animal sounds
+list animals = "cow" "dog" "cat" "duck" "sheep"
+list sounds = "moo" "woof" "meow" "quack" "baa"
+print "Animal Sounds:"
+repeat length animals times as i
+    print "A" animals at i "says" sounds at i
+
+

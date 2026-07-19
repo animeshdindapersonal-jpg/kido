@@ -1,0 +1,14 @@
+remember str = "hello world"
+remember vowels = "aeiou"
+remember len = length str
+remember count = 0
+repeat len times as i
+  remember ch = str at i
+  if ch is not " "
+    if not (has vowels ch)
+      remember count = count + 1
+print "String: " str
+print "Consonant count: " count
+
+
+

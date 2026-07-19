@@ -1,0 +1,45 @@
+# String Operations Demo
+
+print "=== STRING OPERATIONS ==="
+print ""
+
+remember msg = "Hello World"
+
+print "Original:" msg
+print "Length:" length msg
+print "Uppercase:" uppercase msg
+print "Lowercase:" lowercase msg
+print ""
+
+print "Trim:" trim "  hello  "
+print "Replace:" replace msg "World" "KIDO"
+print ""
+
+print "Split:"
+remember parts = split "apple,banana,mango" ","
+repeat length parts times as i
+    print " " parts at i
+
+print ""
+print "Join:"
+remember joined = join parts " | "
+print " " joined
+
+print ""
+print "Contains check:"
+if msg has "World"
+    print "  Contains 'World': yes"
+if not msg has "xyz"
+    print "  Contains 'xyz': no"
+
+print ""
+print "Find:"
+print "  Position of 'World':" find msg "World"
+
+print ""
+print "Type conversion:"
+remember num_str = "42"
+remember num = as number num_str
+print "  String '42' as number:" num
+print "  Type:" type num
+print "  num + 8 =" num + 8

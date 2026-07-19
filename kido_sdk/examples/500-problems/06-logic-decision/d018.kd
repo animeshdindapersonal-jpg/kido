@@ -1,0 +1,54 @@
+# d018: Odd One Out (which number doesn't belong)
+
+fun find_odd_one a b c d
+    # Count how many are even and odd
+    remember even_count = 0
+    remember odd_count = 0
+
+    if a / 2 * 2 is a
+        remember even_count = even_count + 1
+    else
+        remember odd_count = odd_count + 1
+
+    if b / 2 * 2 is b
+        remember even_count = even_count + 1
+    else
+        remember odd_count = odd_count + 1
+
+    if c / 2 * 2 is c
+        remember even_count = even_count + 1
+    else
+        remember odd_count = odd_count + 1
+
+    if d / 2 * 2 is d
+        remember even_count = even_count + 1
+    else
+        remember odd_count = odd_count + 1
+
+    if even_count is 1
+        if a / 2 * 2 is a
+            return a
+        if b / 2 * 2 is b
+            return b
+        if c / 2 * 2 is c
+            return c
+        return d
+    else
+        if a / 2 * 2 not a
+            return a
+        if b / 2 * 2 not b
+            return b
+        if c / 2 * 2 not c
+            return c
+        return d
+
+print "=== ODD ONE OUT ==="
+print ""
+
+print "Set: 2, 4, 7, 10 -> Odd one out:" find_odd_one 2 4 7 10
+print "Set: 3, 5, 8, 9 -> Odd one out:" find_odd_one 3 5 8 9
+print "Set: 12, 14, 16, 19 -> Odd one out:" find_odd_one 12 14 16 19
+print "Set: 21, 25, 30, 33 -> Odd one out:" find_odd_one 21 25 30 33
+
+
+

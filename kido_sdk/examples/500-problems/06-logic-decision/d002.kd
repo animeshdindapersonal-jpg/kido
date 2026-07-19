@@ -1,0 +1,29 @@
+# d002: Grade Letter Calculator
+# Score to A/B/C/D/F
+
+fun get_grade score
+    if score bigger or same 90
+        return "A"
+    else
+      if score bigger or same 80
+        return "B"
+    else
+      if score bigger or same 70
+        return "C"
+    else
+      if score bigger or same 60
+        return "D"
+    else
+        return "F"
+
+print "=== GRADE CALCULATOR ==="
+
+list scores = 95 82 74 63 51 100 0 88
+
+repeat length scores times as i
+    remember s = scores at i
+    remember g = get_grade s
+    print "Score:" s "-> Grade:" g
+
+
+

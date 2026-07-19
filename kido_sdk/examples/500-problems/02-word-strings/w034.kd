@@ -1,0 +1,15 @@
+remember str = "hello world"
+remember n = 5
+remember len = length str
+if n bigger len
+  remember n = len
+remember start = len - n + 1
+remember result = ""
+repeat n times as i
+  remember idx = start + i - 1
+  remember result = result + (str at idx)
+print "String: " str
+print "Last " n " chars: " result
+
+
+

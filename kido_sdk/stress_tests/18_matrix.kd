@@ -1,0 +1,18 @@
+# 18. Matrix Operations
+print "=== Matrix Addition ==="
+list mat_a = 1 2 3 4 5 6
+list mat_b = 7 8 9 10 11 12
+list mat_sum
+
+repeat 6 times as i
+    remember a = mat_a at i
+    remember b = mat_b at i
+    remember s = a + b
+    add mat_sum s
+
+print "Matrix A:" mat_a at 1 mat_a at 2 mat_a at 3
+print "         " mat_a at 4 mat_a at 5 mat_a at 6
+print "Matrix B:" mat_b at 1 mat_b at 2 mat_b at 3
+print "         " mat_b at 4 mat_b at 5 mat_b at 6
+print "A + B:   " mat_sum at 1 mat_sum at 2 mat_sum at 3
+print "         " mat_sum at 4 mat_sum at 5 mat_sum at 6

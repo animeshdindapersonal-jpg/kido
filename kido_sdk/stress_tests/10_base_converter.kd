@@ -1,0 +1,46 @@
+# 10. Number Base Converter
+fun modulo a b
+    remember result = a
+    repeat forever
+        if result smaller b
+            stop
+        remember result = result - b
+    return result
+
+fun to_binary num
+    if num is 0
+        return "0"
+    remember result = ""
+    remember n = num
+    repeat forever
+        if n is 0
+            stop
+        remember bit = modulo n 2
+        remember bit_str = as string bit
+        remember result = bit_str + result
+        remember n = n / 2
+    return result
+
+fun to_hex num
+    if num is 0
+        return "0"
+    list hex_chars = "0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "A" "B" "C" "D" "E" "F"
+    remember result = ""
+    remember n = num
+    repeat forever
+        if n is 0
+            stop
+        remember digit = modulo n 16
+        remember digit1 = digit + 1
+        remember ch = hex_chars at digit1
+        remember result = ch + result
+        remember n = n / 16
+    return result
+
+print "=== Base Converter ==="
+list nums = 0 1 10 42 100 255 1024 4096
+repeat length nums times as i
+    remember n = nums at i
+    remember bin = to_binary n
+    remember hex = to_hex n
+    print n "| bin:" bin "| hex:" hex

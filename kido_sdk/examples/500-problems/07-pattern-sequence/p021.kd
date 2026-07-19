@@ -1,0 +1,15 @@
+# p021: Arrow pattern using stars (increasing then decreasing)
+print "Arrow pattern:"
+repeat 5 times as i
+    remember row = ""
+    repeat i times as j
+        remember row = row + "*"
+    print row
+repeat 4 times as i
+    remember row = ""
+    remember count = 5 - i
+    repeat count times as j
+        remember row = row + "*"
+    print row
+
+

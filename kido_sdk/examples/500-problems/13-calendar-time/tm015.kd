@@ -1,0 +1,9 @@
+# Time: Seconds to HH:MM:SS
+remember total = 3665
+remember h = total / 3600
+remember r = total - h * 3600
+remember m = r / 60
+remember s = r - m * 60
+print total "seconds =" h ":" m ":" s
+
+

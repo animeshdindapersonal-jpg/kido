@@ -1,0 +1,19 @@
+  # Movies to watch list
+  # Real-world use: keep a movie watchlist
+list movies
+add movies "The Matrix"
+add movies "Inception"
+add movies "Interstellar"
+add movies "The Godfather"
+add movies "Pulp Fiction"
+add movies "The Dark Knight"
+print "=== MOVIES TO WATCH ==="
+print movies
+print ""
+print "Top pick:"
+print movies at 1
+print "Number of movies:"
+print length movies
+
+
+

@@ -1,0 +1,34 @@
+# s024: Friendship Certificate Generator
+# Print a certificate template
+
+print "=== FRIENDSHIP CERTIFICATE GENERATOR ==="
+print ""
+
+remember friend = "Sam"
+remember fromPerson = "Alex"
+remember reason = "being an awesome buddy"
+remember date = "July 18, 2026"
+
+print "*************************************"
+print "*                                   *"
+print "*    FRIENDSHIP CERTIFICATE         *"
+print "*                                   *"
+print "*************************************"
+print ""
+print "This certifies that"
+print ""
+print "      *** " friend " ***"
+print ""
+print "is an AMAZING friend because of"
+print ""
+print "      " reason "!"
+print ""
+print "Presented by: " fromPerson
+print "Date: " date
+print ""
+print "*************************************"
+print "*  Thank you for being a friend!   *"
+print "*************************************"
+
+
+

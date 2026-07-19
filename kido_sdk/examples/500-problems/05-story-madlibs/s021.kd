@@ -1,0 +1,23 @@
+# s021: Acrostic Poem
+# Spell a word vertically with descriptive lines
+
+print "=== ACROSTIC POEM GENERATOR ==="
+print ""
+
+remember word = "STAR"
+remember line1 = "Shining bright up in the sky"
+remember line2 = "Twinkling when you wink your eye"
+remember line3 = "Always there to guide the way"
+remember line4 = "Reaching out to light my day"
+
+print "Acrostic poem for: " word
+print ""
+print word at 1 " - " line1
+print word at 2 " - " line2
+print word at 3 " - " line3
+print word at 4 " - " line4
+print ""
+print "Beautiful!"
+
+
+

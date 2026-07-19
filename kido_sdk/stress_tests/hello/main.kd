@@ -1,0 +1,6 @@
+# My KIDO Program
+print "Hello from KIDO!"
+print ""
+
+ask "What is your name?" name
+print "Welcome to KIDO," name "!"

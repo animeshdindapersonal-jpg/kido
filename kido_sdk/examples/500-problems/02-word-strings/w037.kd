@@ -1,0 +1,12 @@
+remember str = "the quick brown fox jumps over the lazy dog"
+remember words = split str " "
+remember shortest = words at 1
+repeat length words times as i
+  remember w = words at i
+  if length w smaller length shortest
+    remember shortest = w
+print "Sentence: " str
+print "Shortest word: " shortest
+
+
+

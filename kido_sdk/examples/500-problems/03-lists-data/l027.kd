@@ -1,0 +1,27 @@
+  # Checklist - mark items as done
+  # Real-world use: track household chores
+list allTasks
+add allTasks "wash dishes"
+add allTasks "do laundry"
+add allTasks "sweep floor"
+add allTasks "make bed"
+add allTasks "water plants"
+list done
+list remaining
+print "=== CHECKLIST ==="
+print "All tasks:"
+print allTasks
+print ""
+add done allTasks at 1
+add done allTasks at 2
+print "Completed tasks:"
+print done
+print ""
+repeat 5 times as i
+  if not has done allTasks at i
+    add remaining allTasks at i
+print "Still to do:"
+print remaining
+
+
+

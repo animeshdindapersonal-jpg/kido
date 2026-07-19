@@ -1,0 +1,16 @@
+fun minList items
+    remember m = items[1]
+    remember i = 2
+    repeat length items - 1 times
+        if items[i] smaller m
+            m = items[i]
+        i = i + 1
+    return m
+
+list numbers = 7 23 5 18 42 9
+remember mn = minList numbers
+print "f018: min of list = "
+print mn
+
+
+

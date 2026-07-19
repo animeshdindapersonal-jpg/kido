@@ -1,0 +1,13 @@
+# Recursion: String reverse
+fun rev s
+    if length s is 1
+        return s
+    else
+        return rev(s from 2 to length s) + (s at 1)
+print "Reverse of hello:"
+remember text = "hello"
+remember n = length text
+repeat n times as i
+    print text at (n - i + 1)
+
+

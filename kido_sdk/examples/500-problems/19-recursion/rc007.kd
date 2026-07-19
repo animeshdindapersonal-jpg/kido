@@ -1,0 +1,12 @@
+# Recursion: Tower of Hanoi
+fun hanoi n f t v
+    if n is 1
+        print "Move disk 1 from" f "to" t
+    else
+        hanoi(n - 1, f, v)
+        print "Move disk" n "from" f "to" t
+        hanoi(n - 1, v, t)
+print "Tower of Hanoi (3 disks):"
+hanoi(3, "A", "C", "B")
+
+

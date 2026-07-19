@@ -1,0 +1,10 @@
+remember name = "John Doe"
+remember parts = split name " "
+remember first = parts at 1
+remember last = parts at 2
+remember username = (lowercase (first at 1)) + (lowercase last)
+print "Name: " name
+print "Username: " username
+
+
+

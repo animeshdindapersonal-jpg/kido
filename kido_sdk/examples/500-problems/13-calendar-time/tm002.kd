@@ -1,0 +1,6 @@
+# Calendar: Day of week finder
+remember d = 3
+list days = "Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday" "Sunday"
+print "Day" d "is" days at d
+
+

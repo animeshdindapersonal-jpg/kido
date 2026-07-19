@@ -1,0 +1,14 @@
+# Science: Animal classification
+remember a = "dolphin"
+if a is "dolphin" or a is "whale"
+    print a "is a mammal"
+else
+    if a is "eagle" or a is "sparrow"
+    print a "is a bird"
+else
+    if a is "shark" or a is "salmon"
+    print a "is a fish"
+else
+    print a "is an animal!"
+
+

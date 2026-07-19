@@ -1,0 +1,30 @@
+# Coin flip simulator
+print "=== COIN FLIP SIMULATOR ==="
+print ""
+remember heads = 0
+remember tails = 0
+remember flips = 5
+
+repeat flips times as i
+    remember result = random 0 1
+    if result is 0
+        print "Flip " i ": HEADS"
+        remember heads = heads + 1
+    else
+        print "Flip " i ": TAILS"
+        remember tails = tails + 1
+
+print ""
+print "=== RESULTS ==="
+print "Heads: " heads
+print "Tails: " tails
+if heads bigger tails
+    print "Heads wins!"
+else
+  if tails bigger heads
+    print "Tails wins!"
+else
+    print "It's a tie!"
+
+
+

@@ -1,0 +1,11 @@
+# Sum of digits: Add all digits of a number
+remember num = 12345
+remember sum = 0
+remember original = num
+while num bigger 0
+  remember digit = num - floor(num / 10) * 10
+  sum = sum + digit
+  num = floor num / 10
+print "The sum of digits in " original " is: " sum
+
+

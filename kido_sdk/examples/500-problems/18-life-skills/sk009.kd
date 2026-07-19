@@ -1,0 +1,13 @@
+# Life: Weather prep
+remember t = 15
+print "Temp:" t "C"
+if t bigger 30 print "Very hot!"
+else
+    if t bigger 20
+        print "Warm!"
+else
+    if t bigger 10
+        print "Cool! Jacket"
+else print "Cold! Coat!"
+
+

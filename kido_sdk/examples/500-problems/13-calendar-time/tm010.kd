@@ -1,0 +1,8 @@
+# Calendar: Weekend checker
+remember day = "Saturday"
+if day is "Saturday" or day is "Sunday"
+    print day "is a weekend! Time to play!"
+else
+    print day "is a weekday. School day!"
+
+

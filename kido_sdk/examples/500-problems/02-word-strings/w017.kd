@@ -1,0 +1,11 @@
+remember name = "John Doe"
+remember parts = split name " "
+remember initials = ""
+repeat length parts times as i
+  remember part = parts at i
+  remember initials = initials + (uppercase (part at 1))
+print "Name: " name
+print "Initials: " initials
+
+
+

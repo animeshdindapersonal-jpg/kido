@@ -1,0 +1,26 @@
+remember a = "listen"
+remember b = "silent"
+remember la = length a
+remember lb = length b
+if la is not lb
+  print a " and " b " are NOT anagrams"
+else
+  remember ok = yes
+  repeat la times as i
+    remember ch = a at i
+    remember ca = 0
+    remember cb = 0
+    repeat la times as j
+      if (a at j) is ch
+        remember ca = ca + 1
+      if (b at j) is ch
+        remember cb = cb + 1
+    if ca is not cb
+      remember ok = no
+  if ok is yes
+    print a " and " b " are anagrams"
+  else
+    print a " and " b " are NOT anagrams"
+
+
+

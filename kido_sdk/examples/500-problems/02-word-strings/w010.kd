@@ -1,0 +1,12 @@
+remember str = "banana"
+remember target = "a"
+remember len = length str
+remember count = 0
+repeat len times as i
+  if (str at i) is target
+    remember count = count + 1
+print "String: " str
+print "Character '" target "' frequency: " count
+
+
+

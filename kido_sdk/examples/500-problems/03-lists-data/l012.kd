@@ -1,0 +1,19 @@
+  # Contact list - names only
+  # Real-world use: simple address book
+list contacts
+add contacts "Alice Johnson"
+add contacts "Bob Smith"
+add contacts "Carol Williams"
+add contacts "David Brown"
+add contacts "Eve Davis"
+add contacts "Frank Miller"
+print "=== CONTACTS ==="
+print contacts
+print ""
+print "First contact:"
+print contacts at 1
+print "Total contacts:"
+print length contacts
+
+
+

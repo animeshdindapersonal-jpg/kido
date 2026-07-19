@@ -1,0 +1,11 @@
+# Drawing: House using characters
+print "   /\\"
+print "  /  \\"
+print " /    \\"
+print "/______\\"
+print "|      |"
+print "|  []  |"
+print "|______|"
+print "A cozy house!"
+
+

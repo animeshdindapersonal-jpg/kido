@@ -1,0 +1,21 @@
+# d003: Pass or Fail
+# If score bigger or same 50 pass else fail
+
+fun check_pass score
+    if score bigger or same 50
+        return yes
+    return no
+
+print "=== PASS OR FAIL CHECKER ==="
+
+list test_scores = 85 49 50 23 100 0 67
+
+repeat length test_scores times as i
+    remember s = test_scores at i
+    if check_pass s is yes
+        print "Score:" s "-> PASS"
+    else
+        print "Score:" s "-> FAIL"
+
+
+

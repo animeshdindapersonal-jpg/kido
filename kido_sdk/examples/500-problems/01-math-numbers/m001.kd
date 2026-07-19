@@ -1,0 +1,8 @@
+# Pocket money total: Add two numbers to find total money
+remember pocketMoney = 15
+remember choreMoney = 10
+remember total = pocketMoney + choreMoney
+print "You got $" pocketMoney " from allowance and $" choreMoney " from chores."
+print "Total money you have: $" total
+
+

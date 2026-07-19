@@ -1,0 +1,8 @@
+# Crypto: Vowel replacement
+remember text = "hello world"
+print "Original:" text
+remember encoded = replace text "e" "3"
+remember encoded = replace encoded "o" "0"
+print "Encoded:" encoded
+
+

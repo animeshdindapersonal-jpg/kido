@@ -1,0 +1,10 @@
+fun cube n
+    return n * n * n
+
+remember x = 4
+remember c = cube x
+print "f010: cube(4) = "
+print c
+
+
+

@@ -1,0 +1,35 @@
+  # List chunker - split a big list into smaller groups
+  # Real-world use: divide students into teams
+list students
+add students "Anna"
+add students "Ben"
+add students "Chris"
+add students "Diana"
+add students "Ella"
+add students "Finn"
+add students "Grace"
+add students "Henry"
+list team1
+list team2
+list team3
+print "=== LIST CHUNKER ==="
+print "All students:"
+print students
+print ""
+add team1 students at 1
+add team1 students at 2
+add team1 students at 3
+add team2 students at 4
+add team2 students at 5
+add team2 students at 6
+add team3 students at 7
+add team3 students at 8
+print "Team 1 (students 1-3):"
+print team1
+print "Team 2 (students 4-6):"
+print team2
+print "Team 3 (students 7-8):"
+print team3
+
+
+

@@ -1,0 +1,11 @@
+# Drawing: Rainbow colors
+print "R - Red"
+print "  O - Orange"
+print "    Y - Yellow"
+print "      G - Green"
+print "        B - Blue"
+print "          I - Indigo"
+print "            V - Violet"
+print "ROYGBIV - Rainbow colors!"
+
+

@@ -1,0 +1,30 @@
+# 12. Selection Sort
+fun selection_sort arr
+    remember n = length arr
+    remember i = 1
+    repeat forever
+        remember n1 = n - 1
+        if i bigger n1
+            stop
+        remember min_idx = i
+        remember j = i + 1
+        repeat forever
+            if j bigger n
+                stop
+            remember val_j = arr at j
+            remember val_min = arr at min_idx
+            if val_j smaller val_min
+                remember min_idx = j
+            remember j = j + 1
+        if not min_idx is i
+            remember temp = arr at i
+            remember temp2 = arr at min_idx
+            replace arr at i with temp2
+            replace arr at min_idx with temp
+        remember i = i + 1
+
+print "=== Selection Sort ==="
+list arr = 29 10 14 37 13
+print "Before:" arr
+selection_sort arr
+print "After:" arr

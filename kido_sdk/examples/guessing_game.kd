@@ -1,0 +1,26 @@
+# Number Guessing Game
+remember secret = random 1 10
+remember tries = 0
+
+print "=== GUESS THE NUMBER ==="
+print "I am thinking of a number between 1 and 10"
+print ""
+
+repeat 5 times
+    remember tries = tries + 1
+    ask "Your guess:" guess
+    remember guess = as number guess
+    
+    if guess is secret
+        print "You got it in" tries "tries!"
+        stop
+    
+    if guess smaller secret
+        print "Too low! Try higher."
+    
+    if guess bigger secret
+        print "Too high! Try lower."
+    
+    print ""
+
+print "Game over! The number was" secret

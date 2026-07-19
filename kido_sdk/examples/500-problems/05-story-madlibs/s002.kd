@@ -1,0 +1,24 @@
+# s002: Mad Libs - My Pet Dragon
+# Fill in a color, name, and food for a dragon story
+
+print "=== MAD LIBS: MY PET DRAGON ==="
+print ""
+
+remember color = "purple"
+remember petName = "Spike"
+remember food = "pizza"
+
+print "My Pet Dragon"
+print ""
+print "I have a " color " pet dragon named " petName "."
+print petName " is the only " color " dragon in the whole world."
+print "Every morning I feed " petName " some " food "."
+print petName " loves " food " more than anything!"
+print "When " petName " burps, little " color " flames come out."
+print "My friends think a " color " dragon is the coolest pet ever."
+print "Especially one that eats " food "!"
+print ""
+print "THE END"
+
+
+

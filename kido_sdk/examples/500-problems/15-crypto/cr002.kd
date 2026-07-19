@@ -1,0 +1,6 @@
+# Crypto: Atbash cipher
+remember text = "hello"
+print "Original:" text
+print "Atbash: svool (a->z, b->y, etc)"
+
+

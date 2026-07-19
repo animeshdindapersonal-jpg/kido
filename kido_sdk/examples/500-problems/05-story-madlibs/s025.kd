@@ -1,0 +1,33 @@
+# s025: Birthday Message Generator
+# Customizable wishes
+
+print "=== BIRTHDAY MESSAGE GENERATOR ==="
+print ""
+
+list names = "Mom" "Dad" "Grandma" "Best Friend" "Sister" "Brother" "Teacher"
+list wishes = "the happiest birthday ever!" "a day full of joy and surprises!" "all your dreams come true!" "the best year of your life!" "tons of cake and fun!" "a fantastic celebration!" "everything you wish for!"
+
+shuffle names
+shuffle wishes
+
+remember person = names at 1
+remember wish = wishes at 1
+remember age = 10
+
+print "Happy Birthday to you!"
+print ""
+print "Dear " person ","
+print ""
+print "Wishing you " wish
+print "May your " age "th year be filled with"
+print "laughter, love, and lots of cake!"
+print ""
+print "You are one of a kind!"
+print ""
+print "With love and hugs,"
+print "Your friend"
+print ""
+print "*** HAPPY BIRTHDAY " person "! ***"
+
+
+

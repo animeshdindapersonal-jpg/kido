@@ -1,0 +1,9 @@
+# Recursion: Sum of N
+fun sum_n n
+    if n is 1
+        return 1
+    else
+        return n + sum_n(n - 1)
+print "Sum 1-10 =" sum_n(10)
+
+

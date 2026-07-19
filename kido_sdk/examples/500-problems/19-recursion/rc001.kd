@@ -1,0 +1,10 @@
+# Recursion: Factorial
+fun factorial n
+    if n smaller or same 1
+        return 1
+    else
+        return n * factorial(n - 1)
+remember result = factorial(5)
+print "5! =" result
+
+

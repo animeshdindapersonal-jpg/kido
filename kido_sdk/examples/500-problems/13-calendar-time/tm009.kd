@@ -1,0 +1,5 @@
+# Time: Hours in a week
+remember hours = 24 * 7
+print "There are" hours "hours in a week"
+
+

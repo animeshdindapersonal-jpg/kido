@@ -1,0 +1,10 @@
+# Factorial calculator: Multiply descending numbers
+remember n = 5
+remember result = 1
+remember i = 1
+repeat n times as i
+  result = result * i
+print "The factorial of " n " is: " result
+print "That means: 1 * 2 * 3 * 4 * 5 = " result
+
+

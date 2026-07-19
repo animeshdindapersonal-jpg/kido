@@ -1,0 +1,46 @@
+# Memory game
+print "=== MEMORY SEQUENCE GAME ==="
+print ""
+list sequence
+remember round = 1
+remember maxRounds = 5
+
+print "Watch the sequence and repeat it!"
+print ""
+
+repeat maxRounds times
+    remember newNum = random 1 9
+    add sequence newNum
+    print "--- Round " round " ---"
+    print "Sequence: "
+    remember s = ""
+    remember idx = 1
+    repeat length sequence times
+        print sequence idx
+        remember idx = idx + 1
+    print "Now repeat:"
+    remember correct = yes
+    remember j = 1
+    repeat length sequence times
+        remember playerNum = random 1 9
+        if playerNum is sequence j
+            print "  " playerNum " correct"
+        else
+            print "  " playerNum " WRONG!"
+            remember correct = no
+            stop
+        remember j = j + 1
+    if correct is no
+        print "Wrong! Game over at round " round "!"
+        stop
+    else
+        print "Correct! You remembered the sequence!"
+    print ""
+    remember round = round + 1
+
+if correct is yes
+    print "You completed all " maxRounds " rounds!"
+    print "Final sequence: " sequence
+
+
+

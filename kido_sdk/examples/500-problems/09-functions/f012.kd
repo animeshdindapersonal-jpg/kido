@@ -1,0 +1,13 @@
+fun stringLength s
+    remember count = 0
+    repeat length s times
+        count = count + 1
+    return count
+
+remember word = "hello"
+remember len = stringLength word
+print "f012: length of 'hello' = "
+print len
+
+
+

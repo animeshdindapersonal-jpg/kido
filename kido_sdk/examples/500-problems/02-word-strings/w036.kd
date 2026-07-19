@@ -1,0 +1,12 @@
+remember str = "the quick brown fox jumps over the lazy dog"
+remember words = split str " "
+remember longest = ""
+repeat length words times as i
+  remember w = words at i
+  if length w bigger length longest
+    remember longest = w
+print "Sentence: " str
+print "Longest word: " longest
+
+
+

@@ -1,0 +1,29 @@
+# d009: Choose Your Own Adventure (simple branching)
+
+print "=== THE MYSTERIOUS DOOR ==="
+print "You find two doors: a RED door and a BLUE door."
+print ""
+
+remember choice = "red"
+
+if choice is "red"
+    print "You open the RED door..."
+    print "You find a room full of TREASURE!"
+
+    remember action = "take"
+    if action is "take"
+        print "You take some gold coins. You win!"
+    else
+        print "You leave the treasure. The adventure ends."
+else
+    print "You open the BLUE door..."
+    print "You find a sleeping DRAGON!"
+
+    remember action2 = "sneak"
+    if action2 is "sneak"
+        print "You sneak past the dragon and find the exit. You win!"
+    else
+        print "The dragon wakes up! You run away safely."
+
+
+

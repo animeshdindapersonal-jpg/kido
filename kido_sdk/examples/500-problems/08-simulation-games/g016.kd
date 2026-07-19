@@ -1,0 +1,50 @@
+# Rock paper scissors (best of 5)
+print "=== ROCK PAPER SCISSORS ==="
+print "Best of 5!"
+print ""
+list choices = "rock" "paper" "scissors"
+remember playerWins = 0
+remember cpuWins = 0
+remember round = 1
+remember maxRounds = 5
+
+repeat maxRounds times
+    if playerWins is 3 or cpuWins is 3
+        print "Someone already won 3!"
+        stop
+    print "--- Round " round " ---"
+    remember player = random choices
+    remember cpu = random choices
+    print "You: " player " | CPU: " cpu
+    if player is cpu
+        print "Tie!"
+    else
+      if player is "rock" and cpu is "scissors"
+        print "You win! Rock beats scissors!"
+        remember playerWins = playerWins + 1
+    else
+      if player is "paper" and cpu is "rock"
+        print "You win! Paper beats rock!"
+        remember playerWins = playerWins + 1
+    else
+      if player is "scissors" and cpu is "paper"
+        print "You win! Scissors beats paper!"
+        remember playerWins = playerWins + 1
+    else
+        print "CPU wins!"
+        remember cpuWins = cpuWins + 1
+    print "Score: You " playerWins " - " cpuWins " CPU"
+    print ""
+    remember round = round + 1
+
+print "=== GAME OVER ==="
+if playerWins bigger cpuWins
+    print "YOU WIN THE SERIES!"
+else
+  if cpuWins bigger playerWins
+    print "CPU WINS THE SERIES!"
+else
+    print "SERIES IS TIED!"
+
+
+

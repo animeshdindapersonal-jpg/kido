@@ -1,0 +1,22 @@
+fun isOdd n
+    remember remainder = n - floor(n / 2) * 2
+    if remainder not 0
+        return 1
+    return 0
+
+remember num = 9
+remember odd = isOdd num
+if odd is 1
+    print "f008: 9 is odd"
+else
+    print "f008: 9 is even"
+
+remember num2 = 4
+remember odd2 = isOdd num2
+if odd2 is 1
+    print "f008: 4 is odd"
+else
+    print "f008: 4 is even"
+
+
+

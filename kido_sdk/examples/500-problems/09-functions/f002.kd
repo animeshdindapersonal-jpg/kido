@@ -1,0 +1,11 @@
+fun subtract a b
+    return a - b
+
+remember x = 20
+remember y = 7
+remember result = subtract x y
+print "f002: subtract(20, 7) = "
+print result
+
+
+

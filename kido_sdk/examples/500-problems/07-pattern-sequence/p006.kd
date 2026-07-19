@@ -1,0 +1,7 @@
+# p006: Square numbers (1, 4, 9, 16... up to 10th)
+print "Square numbers (first 10):"
+repeat 10 times as i
+    remember sq = i * i
+    print sq
+
+

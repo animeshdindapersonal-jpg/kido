@@ -1,0 +1,6 @@
+# p019: Skip counting by 7 (7, 14, 21... up to 70)
+print "Count by 7:"
+repeat 10 times as i
+    print i * 7
+
+

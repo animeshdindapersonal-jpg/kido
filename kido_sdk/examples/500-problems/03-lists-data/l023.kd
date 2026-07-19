@@ -1,0 +1,19 @@
+  # Random item picker from a list
+  # Real-world use: prize draw or random selection
+list prizes
+add prizes "car"
+add prizes "bike"
+add prizes "phone"
+add prizes "book"
+add prizes "hat"
+print "=== PRIZE DRAWING ==="
+print "Available prizes:"
+print prizes
+print ""
+remember winner = random prizes
+print "And the winner gets:"
+print winner
+print "Congratulations!"
+
+
+

@@ -1,0 +1,14 @@
+# Stats: Coin flips
+remember heads = 0
+remember tails = 0
+repeat 100 times as i
+    remember flip = random 1 2
+    if flip is 1
+        remember heads = heads + 1
+    else
+        remember tails = tails + 1
+print "100 coin flips:"
+print "Heads:" heads
+print "Tails:" tails
+
+

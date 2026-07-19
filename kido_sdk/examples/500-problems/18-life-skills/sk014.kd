@@ -1,0 +1,9 @@
+# Life: Healthy eating
+remember fruits = 3
+remember veggies = 2
+remember total = fruits + veggies
+print "Fruits+" fruits "Veggies+" veggies "=" total "servings"
+if total bigger or same 5
+    print "5 a day goal met!"
+
+

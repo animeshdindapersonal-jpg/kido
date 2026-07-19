@@ -1,0 +1,7 @@
+# Science: Food groups
+list groups = "Fruits" "Vegetables" "Grains" "Protein" "Dairy"
+print "Food Groups:"
+repeat length groups times as i
+    print i "." groups at i
+
+

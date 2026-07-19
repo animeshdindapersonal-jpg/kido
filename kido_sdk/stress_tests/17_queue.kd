@@ -1,0 +1,34 @@
+# 17. Queue Implementation
+list queue
+
+fun enqueue value
+    add queue value
+
+fun dequeue
+    if empty queue
+        return "EMPTY"
+    remember front = queue at 1
+    remove queue at 1
+    return front
+
+fun front_val
+    if empty queue
+        return "EMPTY"
+    return queue at 1
+
+fun queue_size
+    return length queue
+
+print "=== Queue (FIFO) ==="
+enqueue "Alice"
+enqueue "Bob"
+enqueue "Charlie"
+enqueue "Diana"
+print "Queue:" queue
+remember f = front_val
+print "Front:" f
+remember d1 = dequeue
+print "Dequeue:" d1
+remember d2 = dequeue
+print "Dequeue:" d2
+print "Queue:" queue

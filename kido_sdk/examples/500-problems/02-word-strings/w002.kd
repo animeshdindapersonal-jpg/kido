@@ -1,0 +1,14 @@
+remember str = "racecar"
+remember len = length str
+remember rev = ""
+repeat len times as i
+  remember idx = len - i + 1
+  remember ch = str at idx
+  remember rev = rev + ch
+if str is rev
+  print str " is a palindrome"
+else
+  print str " is NOT a palindrome"
+
+
+

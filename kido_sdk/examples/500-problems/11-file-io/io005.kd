@@ -1,0 +1,22 @@
+# io005: File backup (read, write copy)
+# Real-world use: create a safety copy of important files
+
+remember source = "data.txt"
+remember backup = "data_backup.txt"
+
+write "My important data - do not lose!" to source
+append "Score: 9500" to source
+append "Level: 12" to source
+
+remember original = read source
+write original to backup
+
+if file exists backup
+    print "Backup created successfully!"
+    print "Original: " source
+    print "Backup: " backup
+else
+    print "Backup failed!"
+
+
+

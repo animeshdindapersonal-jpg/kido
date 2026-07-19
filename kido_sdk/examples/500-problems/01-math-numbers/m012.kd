@@ -1,0 +1,11 @@
+# Simple interest: Calculate interest on savings
+remember principal = 1000
+remember rate = 5
+remember years = 3
+remember interest = principal * rate * years / 100
+remember totalAmount = principal + interest
+print "If you save $" principal " at " rate "% for " years " years:"
+print "Interest earned: $" interest
+print "Total amount: $" totalAmount
+
+

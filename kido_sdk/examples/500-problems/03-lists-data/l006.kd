@@ -1,0 +1,20 @@
+  # Party planner - guest list management
+  # Real-world use: track invited guests for an event
+list guests
+add guests "Alice"
+add guests "Bob"
+add guests "Charlie"
+add guests "Diana"
+add guests "Eve"
+add guests "Frank"
+print "=== PARTY GUEST LIST ==="
+print "Invited:"
+print guests
+print ""
+print "Total guests:"
+print length guests
+if length guests bigger 4
+  print "Big party! Need more snacks."
+
+
+

@@ -1,0 +1,10 @@
+# Life: Good deeds
+remember d = 0
+remember d = d + 1
+print "Helped clean! Deeds:" d
+remember d = d + 1
+print "Shared snack! Deeds:" d
+remember d = d + 1
+print "Was kind! Deeds:" d
+
+

@@ -1,0 +1,31 @@
+# Day simulator
+print "=== DAY SIMULATOR ==="
+print ""
+remember time = 1
+remember day = 1
+
+print "Simulating a day..."
+print ""
+
+repeat 3 days times
+    print "--- Day " day " ---"
+    remember time = 1
+    repeat 4 times
+        if time is 1
+            print "MORNING: The sun rises. Time to wake up!"
+        else
+          if time is 2
+            print "NOON: The sun is high. Bright and warm."
+        else
+          if time is 3
+            print "EVENING: The sun sets. Orange and pink sky."
+        else
+            print "NIGHT: Stars twinkle. The moon shines."
+        remember time = time + 1
+    print ""
+    remember day = day + 1
+
+print "Day simulation complete!"
+
+
+

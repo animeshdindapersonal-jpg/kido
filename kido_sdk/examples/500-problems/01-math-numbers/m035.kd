@@ -1,0 +1,8 @@
+# Miles per gallon: Calculate car fuel efficiency
+remember milesDriven = 300
+remember gallonsUsed = 10
+remember mpg = milesDriven / gallonsUsed
+print "You drove " milesDriven " miles using " gallonsUsed " gallons."
+print "Your car gets " mpg " miles per gallon!"
+
+

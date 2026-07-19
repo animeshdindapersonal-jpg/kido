@@ -1,0 +1,27 @@
+# s007: Story - The Brave Knight
+# A short tale with a hero
+
+print "=== THE BRAVE KNIGHT ==="
+print ""
+
+remember hero = "Sir Leo"
+remember quest = "the Golden Apple"
+
+print "Long ago, a brave knight named " hero " set out on a quest."
+print "The king had asked " hero " to find " quest "."
+print hero " traveled through dark forests and over high mountains."
+print ""
+print "Finally, " hero " reached the enchanted garden."
+print "A giant dragon guarded " quest "."
+print hero " did not fight the dragon."
+print "Instead, " hero " played a gentle song on a flute."
+print "The dragon fell asleep, and " hero " took " quest "."
+print ""
+print hero " returned to the king as a hero."
+print "The kingdom celebrated with a great feast!"
+print "And " hero " lived happily ever after."
+print ""
+print "THE END"
+
+
+

@@ -1,0 +1,8 @@
+remember str = "the quick brown fox jumps"
+remember words = split str " "
+remember count = length words
+print "Sentence: " str
+print "Word count: " count
+
+
+

@@ -1,0 +1,9 @@
+# p024: Right angle number pattern where each row repeats row number
+print "Row number repeated:"
+repeat 5 times as i
+    remember row = ""
+    repeat i times as j
+        remember row = row + i
+    print row
+
+

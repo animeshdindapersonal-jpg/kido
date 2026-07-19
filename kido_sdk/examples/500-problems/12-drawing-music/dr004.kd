@@ -1,0 +1,12 @@
+# Drawing: Rocket ship
+print "   /\\"
+print "  /  \\"
+print " /    \\"
+print " |    |"
+print " |    |"
+print " |    |"
+print " /\\/\\"
+print "/______\\"
+print "3... 2... 1... Blast off!"
+
+

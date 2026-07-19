@@ -1,0 +1,47 @@
+# 19. Caesar Cipher
+list alphabet = "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"
+
+fun modulo a b
+    remember result = a
+    repeat forever
+        if result smaller b
+            stop
+        remember result = result - b
+    return result
+
+fun find_pos letter
+    repeat 26 times as i
+        if alphabet at i is letter
+            return i
+    return 0
+
+fun encrypt_char ch shift
+    remember upper_ch = uppercase ch
+    remember pos = find_pos upper_ch
+    if pos is 0
+        return ch
+    remember shifted = pos - 1 + shift
+    remember new_pos = modulo shifted 26
+    remember new_pos1 = new_pos + 1
+    return alphabet at new_pos1
+
+fun encrypt text shift
+    remember result = ""
+    remember text_len = length text
+    remember i = 1
+    repeat forever
+        if i bigger text_len
+            stop
+        remember ch = text at i
+        remember enc = encrypt_char ch shift
+        remember result = result + enc
+        remember i = i + 1
+    return result
+
+print "=== Caesar Cipher ==="
+remember plain = "HELLO"
+remember enc = encrypt plain 3
+print "Plain:" plain
+print "Encrypted (shift 3):" enc
+remember dec = encrypt enc 23
+print "Decrypted:" dec

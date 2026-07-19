@@ -1,0 +1,14 @@
+# Calendar: Season activity
+remember s = "summer"
+if s is "summer" print "Go swimming!"
+else
+    if s is "winter"
+        print "Make a snowman!"
+else
+    if s is "spring"
+        print "Plant flowers!"
+else
+    if s is "fall"
+        print "Rake leaves!"
+
+

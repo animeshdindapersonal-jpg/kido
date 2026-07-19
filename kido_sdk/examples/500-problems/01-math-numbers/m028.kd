@@ -1,0 +1,10 @@
+# Countdown: Countdown from N to 1 (like a rocket launch)
+remember n = 10
+remember i = n
+print "Countdown starting..."
+while i bigger 0
+  print i
+  i = i - 1
+print "BLAST OFF!  "
+
+

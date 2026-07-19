@@ -1,0 +1,31 @@
+# Simple slot machine
+print "=== SUPER SLOT MACHINE ==="
+print ""
+list symbols = "CHERRY" "LEMON" "ORANGE" "BELL" "SEVEN" "BAR" "DIAMOND"
+remember spins = 5
+remember wins = 0
+
+print "Spinning " spins " times..."
+print ""
+
+repeat spins times as i
+    remember s1 = random symbols
+    remember s2 = random symbols
+    remember s3 = random symbols
+    print "Spin " i ": [ " s1 " | " s2 " | " s3 " ]"
+    if s1 is s2 and s2 is s3
+        print "  JACKPOT! All three match!"
+        remember wins = wins + 3
+    else
+      if s1 is s2 or s2 is s3 or s1 is s3
+        print "  Small win! Two match!"
+        remember wins = wins + 1
+    else
+        print "  No match. Try again!"
+
+print ""
+print "=== GAME OVER ==="
+print "Total wins: " wins
+
+
+

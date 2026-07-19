@@ -1,0 +1,10 @@
+remember str = "hello"
+remember letter = "o"
+remember len = length str
+if (str at len) is letter
+  print str " ends with " letter
+else
+  print str " does NOT end with " letter
+
+
+

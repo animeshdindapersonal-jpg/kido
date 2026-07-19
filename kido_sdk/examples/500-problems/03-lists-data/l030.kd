@@ -1,0 +1,22 @@
+  # Fruit list with check for favorites
+  # Real-world use: verify items are in stock
+list fruits
+add fruits "apple"
+add fruits "banana"
+add fruits "orange"
+add fruits "mango"
+add fruits "grape"
+print "=== FRUIT LIST ==="
+print fruits
+print ""
+if has fruits "mango"
+  print "Mango is in the list - my favorite!"
+if has fruits "kiwi"
+  print "Kiwi is available"
+else
+  print "Kiwi is not in the list"
+if has fruits "apple"
+  print "Apples are available"
+
+
+

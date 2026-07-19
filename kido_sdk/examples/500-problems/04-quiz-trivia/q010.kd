@@ -1,0 +1,63 @@
+# q010: Science Quiz
+# Fun science facts for kids
+
+print "=== Science Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: What planet is known as the Red Planet?"
+ask "Your answer: " answer
+
+if answer is "Mars" or answer is "mars"
+    print "Correct! Mars is the Red Planet."
+    remember score = score + 1
+else
+    print "Mars is known as the Red Planet."
+
+print ""
+print "Question 2: What gas do plants breathe in?"
+ask "Your answer: " answer2
+
+if answer2 is "carbon dioxide" or answer2 is "CO2" or answer2 is "co2"
+    print "Correct! Plants breathe in carbon dioxide."
+    remember score = score + 1
+else
+    print "Plants breathe in carbon dioxide."
+
+print ""
+print "Question 3: How many planets are in our solar system?"
+ask "Your answer: " answer3
+
+remember num3 = as number answer3
+if num3 is 8
+    print "Correct! There are 8 planets."
+    remember score = score + 1
+else
+    print "There are 8 planets in our solar system."
+
+print ""
+print "Question 4: What is H2O better known as?"
+ask "Your answer: " answer4
+
+if answer4 is "water"
+    print "Correct! H2O is water."
+    remember score = score + 1
+else
+    print "H2O is water."
+
+print ""
+print "Question 5: What force keeps us on the ground?"
+ask "Your answer: " answer5
+
+if answer5 is "gravity"
+    print "Correct! Gravity keeps us on the ground."
+    remember score = score + 1
+else
+    print "Gravity keeps us on the ground."
+
+print ""
+print "Science Score: " score "/" total
+
+
+

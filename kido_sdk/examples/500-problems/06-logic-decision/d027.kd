@@ -1,0 +1,47 @@
+# d027: Sports Eligibility
+# Age between 8 and 16 AND signed permission
+
+fun can_play_sport age_param has_permission
+    if age_param bigger or same 8 and age_param smaller or same 16 and has_permission is yes
+        return yes
+    return no
+
+print "=== SPORTS ELIGIBILITY ==="
+print ""
+
+print "Age: 10, Signed permission? yes"
+if can_play_sport 10 yes is yes
+    print "  ELIGIBLE! You can join the team!"
+else
+    print "  NOT ELIGIBLE"
+print ""
+
+print "Age: 7, Signed permission? yes"
+if can_play_sport 7 yes is yes
+    print "  ELIGIBLE! You can join the team!"
+else
+    print "  NOT ELIGIBLE - You must be at least 8 years old."
+print ""
+
+print "Age: 10, Signed permission? no"
+if can_play_sport 10 no is yes
+    print "  ELIGIBLE! You can join the team!"
+else
+    print "  NOT ELIGIBLE - You need parent permission."
+print ""
+
+print "Age: 17, Signed permission? yes"
+if can_play_sport 17 yes is yes
+    print "  ELIGIBLE! You can join the team!"
+else
+    print "  NOT ELIGIBLE - Age must be between 8 and 16."
+print ""
+
+print "Age: 12, Signed permission? yes"
+if can_play_sport 12 yes is yes
+    print "  ELIGIBLE! You can join the team!"
+else
+    print "  NOT ELIGIBLE"
+
+
+

@@ -1,0 +1,11 @@
+remember str = "World Health Organization"
+remember words = split str " "
+remember acronym = ""
+repeat length words times as i
+  remember w = words at i
+  remember acronym = acronym + (uppercase (w at 1))
+print "Phrase: " str
+print "Acronym: " acronym
+
+
+

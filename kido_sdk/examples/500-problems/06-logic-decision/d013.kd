@@ -1,0 +1,55 @@
+# d013: Fruit Ripeness Checker (color based)
+
+fun check_ripeness fruit color_param
+    if fruit is "banana"
+        if color_param is "green"
+            return "Not ripe yet - wait a few days"
+        else
+          if color_param is "yellow"
+            return "Perfect to eat!"
+        else
+          if color_param is "brown"
+            return "Overripe - good for baking"
+        else
+            return "Check the banana for ripeness"
+
+    else
+      if fruit is "apple"
+        if color_param is "green"
+            return "Sour and crisp - ripe!"
+        else
+          if color_param is "red"
+            return "Sweet and ready to eat!"
+        else
+          if color_param is "yellow"
+            return "Mild flavor - good to eat"
+        else
+            return "Check the apple"
+
+    else
+      if fruit is "mango"
+        if color_param is "green"
+            return "Not ripe yet"
+        else
+          if color_param is "yellow"
+            return "Almost ready"
+        else
+          if color_param is "orange"
+            return "Perfectly ripe and sweet!"
+        else
+            return "Check the mango"
+
+    return "Unknown fruit"
+
+print "=== FRUIT RIPENESS CHECKER ==="
+print ""
+
+print "Banana (green):" check_ripeness "banana" "green"
+print "Banana (yellow):" check_ripeness "banana" "yellow"
+print "Banana (brown):" check_ripeness "banana" "brown"
+print "Apple (red):" check_ripeness "apple" "red"
+print "Apple (green):" check_ripeness "apple" "green"
+print "Mango (orange):" check_ripeness "mango" "orange"
+
+
+

@@ -1,0 +1,11 @@
+# Simple calculator: Show all operations on two numbers
+remember a = 15
+remember b = 4
+print "Calculator: " a " and " b
+print a " + " b " = " (a + b)
+print a " - " b " = " (a - b)
+print a " * " b " = " (a * b)
+print a " / " b " = " (a / b)
+print a " to the power " b " = " (a to the power b)
+
+

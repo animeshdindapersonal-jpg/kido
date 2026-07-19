@@ -1,0 +1,9 @@
+# File: Shopping list to file
+write "Shopping:" to "shop.txt"
+append "milk" to "shop.txt"
+append "bread" to "shop.txt"
+append "eggs" to "shop.txt"
+remember list_data = read "shop.txt"
+print list_data
+
+

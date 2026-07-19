@@ -1,0 +1,7 @@
+remember str = "hello world"
+remember len = length str
+print "String: '" str "'"
+print "Length: " len
+
+
+

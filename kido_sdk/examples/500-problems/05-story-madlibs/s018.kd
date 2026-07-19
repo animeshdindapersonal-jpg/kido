@@ -1,0 +1,24 @@
+# s018: Band Name Generator
+# Random word combinations
+
+print "=== BAND NAME GENERATOR ==="
+print ""
+
+list first = "Electric" "Cosmic" "Silent" "Raging" "Midnight" "Neon" "Crystal" "Velvet" "Atomic" "Ocean"
+list second = "Waves" "Stars" "Shadows" "Fireflies" "Thunder" "Dreams" "Echoes" "Penguins" "Volcanoes" "Comets"
+
+shuffle first
+shuffle second
+
+remember name1 = first at 1
+remember name2 = second at 1
+
+print "Your band name is:"
+print ""
+print ">>> " name1 " " name2 " <<<"
+print ""
+print "Your debut album drops next month!"
+print "Top hit: '" name1 " " name2 " Groove'"
+
+
+

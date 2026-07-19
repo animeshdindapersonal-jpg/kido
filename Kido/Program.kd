@@ -1,0 +1,18 @@
+print "Guess a number between 1 and 10!"
+remember secret = random 1 10
+remember tries = 0
+repeat 5 times
+    remember tries = tries + 1
+    ask "Your guess:" guess
+    remember guess = as number guess
+    
+    if guess is secret
+        print "You got it in" tries "tries!"
+        stop
+    
+    if guess smaller secret
+        print "Too low!"
+    
+    if guess bigger secret
+        print "Too high!"
+print "The number was" secret

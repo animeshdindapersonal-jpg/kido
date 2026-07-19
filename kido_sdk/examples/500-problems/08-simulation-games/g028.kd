@@ -1,0 +1,41 @@
+# Marble race
+print "=== MARBLE RACE ==="
+print ""
+list marbles = "Red" "Blue" "Green" "Yellow" "Purple"
+list positions = 0 0 0 0 0
+remember trackLength = 30
+remember turn = 1
+
+print "Five marbles race to the finish!"
+print "Track length: " trackLength
+print ""
+
+repeat forever
+    print "--- Turn " turn " ---"
+    remember j = 1
+    repeat length marbles times
+        remember speed = random 1 5
+        remember positions j = positions j + speed
+        print marbles j " speeds +" speed " (at " positions j ")"
+        if positions j bigger or same trackLength
+            print ""
+            print marbles j " WINS THE RACE!"
+            stop
+        remember j = j + 1
+    print ""
+    remember turn = turn + 1
+    if turn bigger 15
+        print "Race limit reached!"
+        remember k = 1
+        remember lead = 0
+        remember leader = ""
+        repeat length marbles times
+            if positions k bigger lead
+                remember lead = positions k
+                remember leader = marbles k
+            remember k = k + 1
+        print leader " is in the lead!"
+        stop
+
+
+

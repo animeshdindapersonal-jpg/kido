@@ -1,0 +1,43 @@
+# d028: Library Book Limit
+# Can borrow if less than 5 books AND no overdue
+
+fun can_borrow_books current_books has_overdue
+    if current_books smaller 5 and has_overdue is no
+        return yes
+    return no
+
+print "=== LIBRARY BOOK LIMIT ==="
+print ""
+
+print "Currently borrowed: 3, Has overdue? no"
+if can_borrow_books 3 no is yes
+    print "  You can borrow more books!"
+else
+    if 3 bigger or same 5
+        print "  You already have 3 books. Limit is 5."
+    if no is yes
+        print "  You have overdue books. Return them first!"
+print ""
+
+print "Currently borrowed: 5, Has overdue? no"
+if can_borrow_books 5 no is yes
+    print "  You can borrow more books!"
+else
+    print "  You reached the limit of 5 books. Return some first."
+print ""
+
+print "Currently borrowed: 2, Has overdue? yes"
+if can_borrow_books 2 yes is yes
+    print "  You can borrow more books!"
+else
+    print "  You have overdue books. Please return them first."
+print ""
+
+print "Currently borrowed: 4, Has overdue? no"
+if can_borrow_books 4 no is yes
+    print "  You can borrow more books! You have 1 slot left."
+else
+    print "  Cannot borrow."
+
+
+

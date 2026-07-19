@@ -1,0 +1,250 @@
+# ============================================
+# 🧒 KIDO PROBLEM: Student Report Card Generator
+# ============================================
+#
+# PROBLEM:
+# A teacher has 5 students with marks in 3 subjects (Math, Science, English).
+# She needs a program that:
+#   1. Stores all student names and their marks
+#   2. Calculates total and percentage for each student
+#   3. Assigns a grade (A+, A, B, C, Fail)
+#   4. Finds the class topper
+#   5. Finds the class average
+#   6. Counts how many passed (33% or above in ALL subjects)
+#   7. Shows who failed and in which subject
+#   8. Generates a full report card
+#
+# GRADING RULES:
+#   90-100 = A+ (Outstanding)
+#   80-89  = A  (Excellent)
+#   65-79  = B  (Good)
+#   33-64  = C  (Average)
+#   0-32   = Fail
+#   Must score 33+ in EVERY subject to pass overall
+#
+# ============================================
+
+# ---- Student Data ----
+list names = "Aarav" "Priya" "Rahul" "Sneha" "Arjun"
+
+list math_marks = 92 78 45 88 25
+list science_marks = 85 91 38 76 30
+list english_marks = 88 82 55 95 28
+
+# ---- Helper Functions ----
+
+fun get_grade percentage
+    if percentage bigger or same 90
+        return "A+"
+    if percentage bigger or same 80
+        return "A"
+    if percentage bigger or same 65
+        return "B"
+    if percentage bigger or same 33
+        return "C"
+    return "Fail"
+
+fun get_remark percentage
+    if percentage bigger or same 90
+        return "Outstanding!"
+    if percentage bigger or same 80
+        return "Excellent!"
+    if percentage bigger or same 65
+        return "Good"
+    if percentage bigger or same 33
+        return "Average"
+    return "Needs Improvement"
+
+fun check_subject_pass marks
+    if marks bigger or same 33
+        return "PASS"
+    return "FAIL"
+
+fun get_bar percentage
+    remember bar = ""
+    remember blocks = percentage / 5
+    repeat blocks times
+        remember bar = bar + "#"
+    return bar
+
+# ---- Main Program ----
+
+print "╔══════════════════════════════════════════════════╗"
+print "║       📚 STUDENT REPORT CARD GENERATOR          ║"
+print "║          ABC Public School, Patna               ║"
+print "║          Session: 2025-2026                      ║"
+print "╚══════════════════════════════════════════════════╝"
+print ""
+
+# Track statistics
+remember total_students = length names
+remember passed_count = 0
+remember failed_count = 0
+remember class_total = 0
+remember topper_name = ""
+remember topper_percentage = 0
+
+list failed_students
+
+# ---- Process Each Student ----
+repeat total_students times as i
+    remember student_name = names at i
+    remember math = math_marks at i
+    remember science = science_marks at i
+    remember english = english_marks at i
+    
+    # Calculate totals
+    remember total = math + science + english
+    remember percentage = total / 3
+    
+    # Add to class total
+    remember class_total = class_total + percentage
+    
+    # Get grade and remark
+    remember grade = get_grade percentage
+    remember remark = get_remark percentage
+    
+    # Check if passed ALL subjects
+    remember math_status = check_subject_pass math
+    remember science_status = check_subject_pass science
+    remember english_status = check_subject_pass english
+    
+    remember all_pass = yes
+    if math_status is "FAIL"
+        remember all_pass = no
+    if science_status is "FAIL"
+        remember all_pass = no
+    if english_status is "FAIL"
+        remember all_pass = no
+    
+    if all_pass is yes
+        remember passed_count = passed_count + 1
+    else
+        remember failed_count = failed_count + 1
+        add failed_students student_name
+    
+    # Track topper
+    if percentage bigger topper_percentage
+        remember topper_percentage = percentage
+        remember topper_name = student_name
+    
+    # Print individual report card
+    print "┌──────────────────────────────────────────────────┐"
+    print "│  Name:" student_name
+    print "│  Roll No:" i
+    print "├──────────────────────────────────────────────────┤"
+    print "│  Subject        Marks    Status    Bar"
+    print "│  ─────────────  ─────    ──────    ──────────────"
+    remember math_bar = get_bar math
+    remember science_bar = get_bar science
+    remember english_bar = get_bar english
+    print "│  Mathematics   " math "      " math_status "     " math_bar
+    print "│  Science       " science "      " science_status "     " science_bar
+    print "│  English       " english "      " english_status "     " english_bar
+    print "├──────────────────────────────────────────────────┤"
+    print "│  Total:" total "/300    Percentage:" percentage "%"
+    print "│  Grade:" grade "         Remark:" remark
+    print "│  Result:"
+    if all_pass is yes
+        print "│  ✅ PASSED"
+    else
+        print "│  ❌ FAILED"
+        if math_status is "FAIL"
+            print "│     → Failed in Mathematics"
+        if science_status is "FAIL"
+            print "│     → Failed in Science"
+        if english_status is "FAIL"
+            print "│     → Failed in English"
+    print "└──────────────────────────────────────────────────┘"
+    print ""
+
+# ---- Class Summary ----
+remember class_average = class_total / total_students
+remember pass_percentage = passed_count * 100 / total_students
+
+print ""
+print "╔══════════════════════════════════════════════════╗"
+print "║              📊 CLASS SUMMARY                    ║"
+print "╠══════════════════════════════════════════════════╣"
+print "║                                                  ║"
+print "║  Total Students:     " total_students
+print "║  Passed:             " passed_count
+print "║  Failed:             " failed_count
+print "║  Pass Percentage:    " pass_percentage "%"
+print "║  Class Average:      " class_average "%"
+print "║                                                  ║"
+print "║  🏆 CLASS TOPPER:                                ║"
+print "║     Name:" topper_name
+print "║     Percentage:" topper_percentage "%"
+remember topper_grade = get_grade topper_percentage
+print "║     Grade:" topper_grade
+print "║                                                  ║"
+
+if failed_count bigger 0
+    print "║  ⚠️  FAILED STUDENTS:                            ║"
+    repeat length failed_students times as j
+        print "║     -" failed_students at j
+    
+print "║                                                  ║"
+print "╚══════════════════════════════════════════════════╝"
+print ""
+
+# ---- Subject-wise Analysis ----
+remember math_total = 0
+remember science_total = 0
+remember english_total = 0
+
+repeat total_students times as i
+    remember math_total = math_total + math_marks at i
+    remember science_total = science_total + science_marks at i
+    remember english_total = english_total + english_marks at i
+
+remember math_avg = math_total / total_students
+remember science_avg = science_total / total_students
+remember english_avg = english_total / total_students
+
+print "📈 SUBJECT-WISE ANALYSIS:"
+print "──────────────────────────────────────"
+print "  Mathematics  Avg:" math_avg "%"
+remember math_bar = get_bar math_avg
+print "               " math_bar
+print ""
+print "  Science      Avg:" science_avg "%"
+remember sci_bar = get_bar science_avg
+print "               " sci_bar
+print ""
+print "  English      Avg:" english_avg "%"
+remember eng_bar = get_bar english_avg
+print "               " eng_bar
+print "──────────────────────────────────────"
+print ""
+
+# ---- Find strongest and weakest subject ----
+remember best_subject = "Mathematics"
+remember best_avg = math_avg
+
+if science_avg bigger best_avg
+    remember best_subject = "Science"
+    remember best_avg = science_avg
+
+if english_avg bigger best_avg
+    remember best_subject = "English"
+    remember best_avg = english_avg
+
+remember weak_subject = "Mathematics"
+remember weak_avg = math_avg
+
+if science_avg smaller weak_avg
+    remember weak_subject = "Science"
+    remember weak_avg = science_avg
+
+if english_avg smaller weak_avg
+    remember weak_subject = "English"
+    remember weak_avg = english_avg
+
+print "🏅 Strongest Subject:" best_subject "(" best_avg "%)"
+print "📉 Needs Attention:  " weak_subject "(" weak_avg "%)"
+print ""
+print "════════════════════════════════════════"
+print "  Report generated successfully!"
+print "════════════════════════════════════════"

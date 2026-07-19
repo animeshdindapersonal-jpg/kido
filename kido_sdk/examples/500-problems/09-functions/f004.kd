@@ -1,0 +1,19 @@
+fun divide a b
+    if b is 0
+        print "f004: error - cannot divide by zero"
+        return 0
+    return a / b
+
+remember x = 42
+remember y = 6
+remember result = divide x y
+print "f004: divide(42, 6) = "
+print result
+
+remember z = 0
+remember fail = divide x z
+print "f004: divide(42, 0) = "
+print fail
+
+
+

@@ -1,0 +1,10 @@
+# p029: Decreasing triangle (5, 44, 333, 2222, 11111)
+print "Decreasing triangle:"
+repeat 5 times as i
+    remember row = ""
+    remember num = 6 - i
+    repeat i times as j
+        remember row = row + num
+    print row
+
+

@@ -1,0 +1,51 @@
+# 41. Linked List Simulation using parallel arrays
+list node_values
+list node_next
+
+fun ll_add value
+    add node_values value
+    remember new_idx = length node_values
+    add node_next 0
+    # Link previous node to this one
+    if new_idx bigger 1
+        remember prev_idx = new_idx - 1
+        replace node_next at prev_idx with new_idx
+
+fun ll_print
+    if empty node_values
+        print "(empty)"
+        stop
+    remember result = ""
+    remember current = 1
+    repeat forever
+        if current is 0
+            stop
+        remember val = node_values at current
+        remember val_str = as string val
+        remember result = result + val_str + " -> "
+        remember current = node_next at current
+    remember result = result + "NULL"
+    print result
+
+fun ll_find value
+    remember current = 1
+    repeat forever
+        if current is 0 or current bigger length node_values
+            stop
+        if node_values at current is value
+            return current
+        remember current = node_next at current
+    return 0
+
+print "=== Linked List Simulation ==="
+ll_add 10
+ll_add 20
+ll_add 30
+ll_add 40
+ll_add 50
+print "List:"
+ll_print
+remember pos = ll_find 30
+print "Find 30: node" pos
+remember pos2 = ll_find 99
+print "Find 99: node" pos2

@@ -1,0 +1,26 @@
+# dc009: Recipe
+# Store a recipe with name, ingredients list, and cook time
+
+dict recipe = {
+    "name": "Pancakes",
+    "cook_time": 15
+}
+
+list ingredients
+add ingredients "flour"
+add ingredients "eggs"
+add ingredients "milk"
+add ingredients "sugar"
+add ingredients "butter"
+
+print "=== RECIPE:" recipe at "name" "==="
+print ""
+print "Cook time:" recipe at "cook_time" "minutes"
+print "Ingredients:"
+repeat length ingredients times as i
+    print "  -" ingredients at i
+print ""
+print "Total ingredients:" length ingredients
+
+
+

@@ -1,0 +1,68 @@
+# q033: Pattern Recognition Quiz
+# Find the next number in the pattern
+
+print "=== Pattern Recognition Quiz ==="
+print "What comes next in each pattern?"
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: What comes next? 2, 4, 6, ?"
+ask "Your answer: " answer
+
+remember num1 = as number answer
+if num1 is 8
+    print "Correct! The pattern adds 2 each time."
+    remember score = score + 1
+else
+    print "The pattern is 2, 4, 6, 8 (add 2 each time)."
+print ""
+
+print "Question 2: What comes next? 10, 20, 30, ?"
+ask "Your answer: " answer2
+
+remember num2 = as number answer2
+if num2 is 40
+    print "Correct! The pattern adds 10 each time."
+    remember score = score + 1
+else
+    print "The pattern is 10, 20, 30, 40 (add 10 each time)."
+print ""
+
+print "Question 3: What comes next? 1, 3, 5, 7, ?"
+ask "Your answer: " answer3
+
+remember num3 = as number answer3
+if num3 is 9
+    print "Correct! The pattern is odd numbers."
+    remember score = score + 1
+else
+    print "The pattern is 1, 3, 5, 7, 9 (odd numbers)."
+print ""
+
+print "Question 4: What comes next? 5, 10, 20, 40, ?"
+ask "Your answer: " answer4
+
+remember num4 = as number answer4
+if num4 is 80
+    print "Correct! The pattern doubles each time."
+    remember score = score + 1
+else
+    print "The pattern is 5, 10, 20, 40, 80 (double each time)."
+print ""
+
+print "Question 5: What comes next? 100, 90, 80, 70, ?"
+ask "Your answer: " answer5
+
+remember num5 = as number answer5
+if num5 is 60
+    print "Correct! The pattern subtracts 10 each time."
+    remember score = score + 1
+else
+    print "The pattern is 100, 90, 80, 70, 60 (subtract 10 each time)."
+print ""
+
+print "Pattern Score: " score "/" total
+
+
+

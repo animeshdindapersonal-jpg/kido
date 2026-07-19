@@ -1,0 +1,11 @@
+fun multiply a b
+    return a * b
+
+remember x = 6
+remember y = 9
+remember result = multiply x y
+print "f003: multiply(6, 9) = "
+print result
+
+
+

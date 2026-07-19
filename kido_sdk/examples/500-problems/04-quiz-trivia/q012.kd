@@ -1,0 +1,37 @@
+# q012: Guess the Number
+# Guess a number between 1 and 100 with hints
+
+print "=== Guess the Number ==="
+print "I'm thinking of a number between 1 and 100"
+print ""
+remember target = random 1 100
+remember guesses = 0
+remember maxGuesses = 7
+remember found = no
+
+repeat maxGuesses times
+    remember guesses = guesses + 1
+    print "Guess " guesses "/" maxGuesses
+    ask "Your guess: " guessStr
+    remember guess = as number guessStr
+
+    if guess is target
+        print "You got it! The number was " target
+        remember found = yes
+        stop
+    else
+      if guess bigger target
+        print "Too high! Try a smaller number."
+    else
+        print "Too low! Try a bigger number."
+    print ""
+
+if found is no
+    print "The number was " target
+    print "Better luck next time!"
+
+print ""
+print "Thanks for playing!"
+
+
+

@@ -1,0 +1,47 @@
+# Race simulator
+print "=== RACE SIMULATOR ==="
+print ""
+remember racer1 = "Speedy"
+remember racer2 = "Bolt"
+remember pos1 = 0
+remember pos2 = 0
+remember finish = 20
+remember turn = 1
+
+print racer1 " vs " racer2
+print "First to " finish " wins!"
+print ""
+
+repeat forever
+    remember step1 = random 1 6
+    remember step2 = random 1 6
+    remember pos1 = pos1 + step1
+    remember pos2 = pos2 + step2
+    print "Turn " turn ": " racer1 " +" step1 " (at " pos1 ") | " racer2 " +" step2 " (at " pos2 ")"
+    if pos1 bigger or same finish and pos2 bigger or same finish
+        print ""
+        print "TIE!"
+        stop
+    if pos1 bigger or same finish
+        print ""
+        print racer1 " WINS!"
+        stop
+    if pos2 bigger or same finish
+        print ""
+        print racer2 " WINS!"
+        stop
+    remember turn = turn + 1
+    if turn bigger 20
+        print ""
+        print "Race limit reached!"
+        if pos1 bigger pos2
+            print racer1 " wins!"
+        else
+          if pos2 bigger pos1
+            print racer2 " wins!"
+        else
+            print "It's a tie!"
+        stop
+
+
+

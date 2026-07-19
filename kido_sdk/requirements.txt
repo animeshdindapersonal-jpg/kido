@@ -1,0 +1,12 @@
+# Runtime: KIDO has zero required third-party dependencies.
+# Install with:  pip install -e .
+# Optional build/dev extras:
+
+setuptools>=45.0.0
+wheel>=0.37.0
+
+# Optional: package standalone executables
+# pyinstaller>=5.0.0
+
+# Optional: test runner
+# pytest>=7.0.0

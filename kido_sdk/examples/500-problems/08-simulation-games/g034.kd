@@ -1,0 +1,52 @@
+# Toy car race
+print "=== TOY CAR RACE ==="
+print ""
+remember car1 = "Red Racer"
+remember car2 = "Blue Blazer"
+remember speed1 = 0
+remember speed2 = 0
+remember distance1 = 0
+remember distance2 = 0
+remember track = 50
+remember laps = 3
+
+print car1 " vs " car2
+print "Race for " laps " laps! Track: " track " units"
+print ""
+
+remember lap = 1
+repeat laps times
+    print "--- Lap " lap " ---"
+    remember dist = 0
+    repeat forever
+        remember s1 = random 1 8
+        remember s2 = random 1 8
+        remember speed1 = s1
+        remember speed2 = s2
+        remember distance1 = distance1 + speed1
+        remember distance2 = distance2 + speed2
+        print car1 " speed: " speed1 " | total: " distance1
+        print car2 " speed: " speed2 " | total: " distance2
+        if distance1 bigger or same track and distance2 bigger or same track
+            print "Both finish lap " lap " together!"
+            remember distance1 = 0
+            remember distance2 = 0
+            stop
+        if distance1 bigger or same track
+            print car1 " finishes lap " lap "!"
+            remember distance1 = 0
+            remember distance2 = 0
+            stop
+        if distance2 bigger or same track
+            print car2 " finishes lap " lap "!"
+            remember distance1 = 0
+            remember distance2 = 0
+            stop
+    print ""
+    remember lap = lap + 1
+
+print "=== RACE OVER ==="
+print "What a race!"
+
+
+

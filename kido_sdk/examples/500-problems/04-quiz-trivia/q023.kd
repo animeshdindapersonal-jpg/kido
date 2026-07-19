@@ -1,0 +1,64 @@
+# q023: Music Quiz
+# Questions about music
+
+print "=== Music Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: How many strings does a standard guitar have?"
+ask "Your answer: " answer
+
+remember num1 = as number answer
+if num1 is 6
+    print "Correct! A standard guitar has 6 strings."
+    remember score = score + 1
+else
+    print "A standard guitar has 6 strings."
+
+print ""
+print "Question 2: What instrument has black and white keys?"
+ask "Your answer: " answer2
+
+if answer2 is "piano" or answer2 is "keyboard"
+    print "Correct! The piano has black and white keys."
+    remember score = score + 1
+else
+    print "The piano has black and white keys."
+
+print ""
+print "Question 3: How many notes are in a musical scale?"
+ask "Your answer: " answer3
+
+remember num3 = as number answer3
+if num3 is 8
+    print "Correct! There are 8 notes in a scale."
+    remember score = score + 1
+else
+    print "There are 8 notes in a major scale."
+
+print ""
+print "Question 4: What instrument do you blow into to make sound?"
+ask "Your answer: " answer4
+
+if answer4 is "flute" or answer4 is "trumpet" or answer4 is "recorder" or answer4 is "clarinet" or answer4 is "saxophone"
+    print "Correct! Wind instruments make sound when you blow."
+    remember score = score + 1
+else
+    print "Many instruments like flute or trumpet you blow into."
+
+print ""
+print "Question 5: What word means how fast or slow music is played?"
+ask "Your answer: " answer5
+
+if answer5 is "tempo"
+    print "Correct! Tempo means the speed of music."
+    remember score = score + 1
+else
+    print "Tempo means the speed of music."
+
+print ""
+print "Music Score: " score "/" total
+
+
+

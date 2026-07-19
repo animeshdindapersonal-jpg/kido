@@ -1,0 +1,12 @@
+# Calendar: Days in each month
+remember m = 7
+if m is 1 or m is 3 or m is 5 or m is 7 or m is 8 or m is 10 or m is 12
+    print "Month" m "has 31 days"
+else
+  if m is 4 or m is 6 or m is 9 or m is 11
+    print "Month" m "has 30 days"
+else
+  if m is 2
+    print "February has 28 days (29 in leap year)"
+
+

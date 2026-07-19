@@ -1,0 +1,12 @@
+# Number reversal: Reverse the digits of a number
+remember num = 123
+remember reversed = 0
+remember original = num
+while num bigger 0
+  remember digit = num - floor(num / 10) * 10
+  reversed = reversed * 10 + digit
+  num = floor num / 10
+print "Original number: " original
+print "Reversed number: " reversed
+
+

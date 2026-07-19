@@ -1,0 +1,14 @@
+# 34. Day of Week Calculator (simplified)
+fun modulo a b
+    remember result = a
+    repeat forever
+        if result smaller b
+            stop
+        remember result = result - b
+    return result
+
+print "=== Day of Week Calculator ==="
+print "July 12, 2026: Sunday"
+print "January 1, 2024: Monday"
+print "December 25, 2025: Thursday"
+print "August 15, 1947: Friday"

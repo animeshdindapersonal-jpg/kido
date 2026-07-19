@@ -1,0 +1,8 @@
+# Geometry: Perimeter of a triangle
+remember a = 3
+remember b = 4
+remember c = 5
+remember p = a + b + c
+print "Triangle perimeter =" p
+
+

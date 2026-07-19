@@ -1,0 +1,15 @@
+# Recursion: Palindrome check
+fun is_pal s
+    if length s smaller or same 1
+        return yes
+    else
+      if s at 1 is s at length s
+        return yes
+    else
+        return no
+if is_pal("racecar") is yes
+    print "racecar is a palindrome"
+else
+    print "not a palindrome"
+
+

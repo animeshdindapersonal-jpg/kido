@@ -1,0 +1,15 @@
+# Least common multiple: Find LCM of two numbers
+remember x = 12
+remember y = 15
+remember a = x
+remember b = y
+remember origA = a
+remember origB = b
+while b not 0
+  remember temp = b
+  b = a - floor(a / b) * b
+  a = temp
+remember lcm = origA * origB / a
+print "The LCM of " origA " and " origB " is: " lcm
+
+

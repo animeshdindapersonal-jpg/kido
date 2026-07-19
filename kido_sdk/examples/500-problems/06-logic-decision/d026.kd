@@ -1,0 +1,26 @@
+# d026: Emergency Number Dialer
+# Fire = 101, Police = 100, Ambulance = 102
+
+fun emergency_number emergency_type
+    if emergency_type is "fire"
+        return 101
+    else
+      if emergency_type is "police"
+        return 100
+    else
+      if emergency_type is "ambulance"
+        return 102
+    else
+        return 112
+
+print "=== EMERGENCY NUMBER DIALER ==="
+print ""
+
+list emergencies = "fire" "police" "ambulance" "help"
+
+repeat length emergencies times as i
+    remember e = emergencies at i
+    print "Emergency:" e "-> Dial" emergency_number e
+
+
+

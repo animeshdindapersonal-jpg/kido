@@ -1,0 +1,9 @@
+# Life: Sleep tracker
+remember hours = 8
+print "Slept" hours "hours"
+if hours smaller 8
+    print "Try to sleep more!"
+else
+    print "Great sleep!"
+
+

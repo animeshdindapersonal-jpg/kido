@@ -1,0 +1,7 @@
+remember str = "hello world"
+remember result = uppercase str
+print "Original: " str
+print "Uppercase: " result
+
+
+

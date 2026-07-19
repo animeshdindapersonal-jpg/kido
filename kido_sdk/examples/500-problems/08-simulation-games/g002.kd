@@ -1,0 +1,31 @@
+# Dice rolling simulator
+print "=== DICE ROLLING SIMULATOR ==="
+print ""
+remember rolls = 10
+list history
+
+print "Rolling a 6-sided die " rolls " times:"
+print ""
+
+repeat rolls times as i
+    remember roll = random 1 6
+    add history roll
+    print "Roll " i ": " roll
+
+print ""
+print "=== ROLL HISTORY ==="
+print "All rolls: " history
+print ""
+
+remember total = 0
+remember idx = 1
+repeat length history times
+    remember total = total + history idx
+    remember idx = idx + 1
+
+remember avg = total / rolls
+print "Total: " total
+print "Average: " avg
+
+
+

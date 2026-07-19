@@ -1,0 +1,33 @@
+# dc017: Food Nutrition Facts
+# Map foods to their calorie counts per serving
+
+dict nutrition = {
+    "apple": 95,
+    "banana": 105,
+    "bread": 79,
+    "cheese": 113,
+    "egg": 78
+}
+
+print "=== FOOD NUTRITION FACTS ==="
+print ""
+print "Apple:" nutrition at "apple" "cal"
+print "Banana:" nutrition at "banana" "cal"
+print "Bread:" nutrition at "bread" "cal"
+print "Cheese:" nutrition at "cheese" "cal"
+print "Egg:" nutrition at "egg" "cal"
+print ""
+
+remember max_cal = 0
+remember max_food = ""
+remember foods = keys nutrition
+repeat length foods times as i
+    remember f = foods at i
+    remember cal = nutrition at f
+    if cal bigger max_cal
+        remember max_cal = cal
+        remember max_food = f
+print "Highest calorie:" max_food "with" max_cal "cal"
+
+
+

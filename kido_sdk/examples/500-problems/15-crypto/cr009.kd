@@ -1,0 +1,5 @@
+# Crypto: Emoji cipher
+print "Cipher: a=smile, b=heart, c=star"
+print "abc -> smile heart star"
+
+

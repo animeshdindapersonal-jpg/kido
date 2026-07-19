@@ -1,0 +1,19 @@
+  # Favorite songs playlist
+  # Real-world use: curate a music playlist
+list songs
+add songs "Bohemian Rhapsody"
+add songs "Imagine"
+add songs "Hotel California"
+add songs "Yesterday"
+add songs "Thriller"
+add songs "Billie Jean"
+print "=== MY PLAYLIST ==="
+print songs
+print ""
+print "Now playing:"
+print songs at 1
+print "Up next:"
+print songs at 2
+
+
+

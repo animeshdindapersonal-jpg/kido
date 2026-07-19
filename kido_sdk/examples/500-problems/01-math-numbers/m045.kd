@@ -1,0 +1,9 @@
+# Factors of a number: Find all factors
+remember num = 36
+remember i = 1
+print "Factors of " num ":"
+repeat num times as i
+  if num - floor(num / i) * i is 0
+    print i
+
+

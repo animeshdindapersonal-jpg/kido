@@ -1,0 +1,62 @@
+# q022: Language Quiz
+# Questions about world languages
+
+print "=== Language Quiz ==="
+print ""
+remember score = 0
+remember total = 5
+
+print "Question 1: Which language is spoken in Brazil?"
+ask "Your answer: " answer
+
+if answer is "Portuguese" or answer is "portuguese"
+    print "Correct! Brazilians speak Portuguese."
+    remember score = score + 1
+else
+    print "Portuguese is spoken in Brazil."
+
+print ""
+print "Question 2: Which language has the most native speakers in the world?"
+ask "Your answer: " answer2
+
+if answer2 is "Mandarin" or answer2 is "mandarin" or answer2 is "Chinese" or answer2 is "chinese"
+    print "Correct! Mandarin Chinese has the most native speakers."
+    remember score = score + 1
+else
+    print "Mandarin Chinese has the most native speakers."
+
+print ""
+print "Question 3: What language do people speak in Egypt?"
+ask "Your answer: " answer3
+
+if answer3 is "Arabic" or answer3 is "arabic"
+    print "Correct! Egyptians speak Arabic."
+    remember score = score + 1
+else
+    print "Arabic is spoken in Egypt."
+
+print ""
+print "Question 4: What language do people speak in Germany?"
+ask "Your answer: " answer4
+
+if answer4 is "German" or answer4 is "german"
+    print "Correct! Germans speak German."
+    remember score = score + 1
+else
+    print "German is spoken in Germany."
+
+print ""
+print "Question 5: What does 'Hola' mean in English?"
+ask "Your answer: " answer5
+
+if answer5 is "Hello" or answer5 is "hello" or answer5 is "Hi" or answer5 is "hi"
+    print "Correct! 'Hola' means Hello!"
+    remember score = score + 1
+else
+    print "'Hola' means Hello in English."
+
+print ""
+print "Language Score: " score "/" total
+
+
+

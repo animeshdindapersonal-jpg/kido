@@ -1,0 +1,22 @@
+# s001: Mad Libs - A Day at the Beach
+# Fill in a noun, verb, and adjective to make a silly beach story
+
+print "=== MAD LIBS: A DAY AT THE BEACH ==="
+print ""
+
+remember noun = "seagull"
+remember verb = "dance"
+remember adjective = "sparkly"
+
+print "Here is your beach story!"
+print ""
+print "One sunny morning, a " adjective " " noun " decided to " verb " on the sand."
+print "All the other " noun "s stopped and watched."
+print "The " noun " did a happy " verb " and kicked up " adjective " water everywhere."
+print "Everyone clapped and said, 'What a " adjective " show!'"
+print "The " noun " smiled and " verb "ed all the way home."
+print ""
+print "THE END"
+
+
+

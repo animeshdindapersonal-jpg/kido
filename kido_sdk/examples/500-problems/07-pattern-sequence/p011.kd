@@ -1,0 +1,14 @@
+# p011: Pyramid pattern of stars
+print "Pyramid of stars:"
+remember n = 5
+repeat n times as i
+    remember row = ""
+    remember spaces = n - i
+    repeat spaces times as j
+        remember row = row + " "
+    remember stars = 2 * i - 1
+    repeat stars times as j
+        remember row = row + "*"
+    print row
+
+
