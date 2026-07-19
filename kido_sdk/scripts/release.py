@@ -22,7 +22,7 @@ from urllib.request import Request, urlopen
 from urllib.error import HTTPError
 
 SDK_ROOT = Path(__file__).resolve().parent.parent
-GITHUB_API = "https://api.github.com/repos/kido-lang/kido"
+GITHUB_API = "https://api.github.com/repos/animeshdindapersonal-jpg/kido"
 
 
 def run(cmd, cwd=None):

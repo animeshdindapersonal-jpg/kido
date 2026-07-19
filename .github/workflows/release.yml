@@ -85,4 +85,5 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd kido_sdk
+          pip install pyinstaller
           python scripts/release.py --token $GH_TOKEN --version ${{ github.ref_name }}
