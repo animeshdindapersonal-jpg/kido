@@ -11,6 +11,10 @@
 
 [Explore Docs](https://kido.dev) · [Report Bug](https://github.com/animeshdindapersonal-jpg/kido/issues) · [Request Feature](https://github.com/animeshdindapersonal-jpg/kido/issues)
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/animeshdindapersonal-jpg/kido/master/assets/banner.png" alt="Kido Banner" width="800">
+</p>
+
 </div>
 
 ---
